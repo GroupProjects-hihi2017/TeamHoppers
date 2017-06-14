@@ -4,6 +4,7 @@ import nock from 'nock'
 import * as action from '../../client/actions'
 import * as orgAction from '../../client/actions/orgs'
 import * as itemAction from '../../client/actions/items'
+import * as categoriesAction from '../../client/actions/categories'
 
 
 test.cb('getOrgs', t => {
@@ -25,6 +26,17 @@ test.cb('getItems', t => {
 
     itemAction.getItems()((actual) => {
       t.is(actual.type, 'RECEIVE_ITEMS')
+      t.end()
+    })
+})
+
+test.cb('getCategories', t => {
+  const scope = nock('http://localhost:80')
+    .get('/api/categories')
+    .reply(200)
+
+    categoriesAction.getCategories()((actual) => {
+      t.is(actual.type, 'RECEIVE_CATEGORIES')
       t.end()
     })
 })
