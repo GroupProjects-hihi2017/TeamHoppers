@@ -4,7 +4,7 @@ import nock from 'nock'
 import * as action from '../../client/actions'
 
 
-test.cb('getCategories', t => {
+test.cb.skip('getCategories', t => {
   const scope = nock('http://localhost:80')
     .get('/api/categories')
     .reply(200)
