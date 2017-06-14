@@ -9,7 +9,7 @@ import App from '../../client/components/App'
 
 App.prototype.componentDidMount = () => {}
 
-test.skip('The header renders on home page', t =>  {
-  const wrapper = shallow(<Header store={store}/>)
-  t.is(wrapper.find('.header-text').text(),'NETFLIX AND CHOW')
+test('App is rendering', t =>  {
+  const wrapper = shallow(<App store={store}/>)
+  t.is(wrapper.find('.app-container').text(),'Team Hoppers for the win!')
 })

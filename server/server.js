@@ -4,7 +4,7 @@ var bodyParser = require('body-parser')
 const cors = require('cors')
 
 var categories = require('./routes/categories')
-var items = require('./routes/items')
+var items = require('./routes/itemClass')
 var orgs = require('./routes/orgs')
 
 
