@@ -54,6 +54,8 @@ More Orgs to potentially add:
 
 GURGL!: Address, url, img, description
 
+Community Sharing App!
+
 Salvation Army:
 Address: '203 Willis St, Te Aro, Wellington 6011; 20 Rintoul St, Newtown, Wellington 6021; 63 Miramar Ave, Miramar, Wellington 6022; 33 Kaiwharawhara Rd, Kaiwharawhara, Wellington 6035; See Website for Full List of Locations in Your Area', url, img, description
 
