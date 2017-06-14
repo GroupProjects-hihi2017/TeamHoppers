@@ -1,4 +1,4 @@
-![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/planning/planning%20images/Team%20Hoppers.jpg)
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/Team%20Hoppers.jpg)
 
 ## Team Hoppers Present...
 
