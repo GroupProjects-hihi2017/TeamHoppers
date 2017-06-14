@@ -50,5 +50,7 @@ FUN Master: Alternating
 ### Agile
 ![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/Planning%20board%201.jpg)
 
+### Inspiration
 Team Hoppers was inspired by the remarkable Grace Hopper, a pioneering computer programmer. She believed that "we've always done it that way" was not necessarily a good reason to continue to do so.
+
 ![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/hopper.jpg)
