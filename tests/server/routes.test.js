@@ -27,3 +27,16 @@ test.cb('GET /orgs', t => {
       t.end()
     })
 })
+
+// testing itemClass routes
+
+test.cb('GET /items', t => {
+  request(t.context.app)
+    .get('/api/items')
+    .expect(200)
+    .end((err,res) => {
+      t.is(res.body.length, 4)
+      // t.is(res.body.itemClass_id, 77003)
+      t.end()
+    })
+})
