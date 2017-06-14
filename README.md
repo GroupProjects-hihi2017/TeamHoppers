@@ -1,54 +1,32 @@
-# A starter webpack project for React, Redux, Express and Knex
+The Hoppers Present... Wellington Recycling Thing!
 
-This is a rad base for starting a new full-stack project, or just as reference for how to do things the Harrison way (which is with absolutely no test folder, I'll leave that one to Alan)
-
-* Fork this repo to your github
-* Rename your repo according to the app you're building
-* Clone your forked repo down
-* Run the following commands in your terminal
-
-```sh
-npm install
-knex migrate:latest
-knex seed:run
-
-```
-
-  `npm run dev` for bundling, watch and nodemon
-
-  `npm start` only runs server (setup for heroku)
+TEAM ROLES
+Stakeholder Liason: Jess
+Scrum Master: Natalie
+Git Master: Alternating
+Product Owner: Sarah
+FUN Master: Alternating
 
 
-# Heroku!!!
+USER STORIES:
 
-#### Creating your app
+- I want to find general info about how to get recycling bags and bins.
 
-Create your app with `heroku create [name]`
+- I can search for an item I want to dispose of by item or category.
 
-You can check that this was successful by running `heroku apps` to view a list of your apps
+- I can submit a donation/recycle location or update to the administrator using a contact form.
 
+- I can find a recycling/donation spot based on my location, or view spots on a map.
 
-#### Adding postgres
-
-Add postgresql (hobby dev) to your app at `https://dashboard.heroku.com/apps/[APP NAME HERE]/resources`
-
-Check that pg has been added by running `heroku addons` to ensure the postgresql db is on your app
+- I can be directed to other organizations' websites to learn more about them
 
 
-### Deploying!
+LEARNING OBJECTIVES:
 
-I have created several npm scripts that will be useful for deploying your app to heroku easily.
-
-`npm run h:deploy` will push your local master branch to your heroku app
-
-`npm run h:migrate` will run your knex migrations on your deployed heroku app
-
-`npm run h:seed` will run your seeds on your deployed app
-
-If ever you need to rollback, you can also just use `npm run h:rollback`
-
-
-## Ta-Da!
-Your app should be deployed!
-
-I can add some exercises/comments to this repo if there is desire for such, but for now, hopefully this proves useful :)
+- Database planning
+- Stakeholder consultation
+- Creating a search bar
+- Creating a contact forms
+- Auto-fill search bar
+- Build our confidence!
+- HAVE FUN.

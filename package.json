@@ -1,8 +1,8 @@
 {
-  "name": "boilerplate-react-webpack",
+  "name": "Green_Wellington",
   "version": "0.1.1",
-  "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "description": "A Guide to Recycling in Wellington",
+  "repository": "https://github.com/GroupProjects-hihi2017/TeamHoppers.git",
   "main": "server/index.js",
   "scripts": {
     "dev": "nodemon --watch server server/index & webpack --watch",
@@ -36,8 +36,10 @@
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.24.1",
     "enzyme": "^2.8.2",
+    "eslint": "^4.0.0",
     "jsdom": "^11.0.0",
     "jsx-loader": "^0.13.2",
+    "nock": "^9.0.13",
     "nodemon": "^1.11.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
