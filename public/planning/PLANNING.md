@@ -37,20 +37,20 @@ FUN Master: Alternating
 
 ## WIREFRAMES
 
-![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/wireframe_search-home.jpg)
-![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/wireframe_search-result.jpg)
-![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/wireframe_categories.jpg)
-![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/wireframe_about.jpg)
-![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/wireframe_contact.jpg)
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/public/planning/planning%20images/wireframe_search-home.jpg)
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/public/planning/planning%20images/wireframe_search-result.jpg)
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/public/planning/planning%20images/wireframe_categories.jpg)
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/public/planning/planning%20images/wireframe_about.jpg)
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/public/planning/planning%20images/wireframe_contact.jpg)
 
 ## PLANNING
 ### Database structure
-![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/Database%20planning.jpg)
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/public/planning/planning%20images/Database%20planning.jpg)
 
 ### Agile
-![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/Planning%20board%201.jpg)
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/public/planning/planning%20images/Planning%20board%201.jpg)
 
 ### Inspiration
 Team Hoppers was inspired by the remarkable Grace Hopper, a pioneering computer programmer. She believed that "we've always done it that way" was not necessarily a good reason to continue to do so.
 
-![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/planning/public/planning/planning%20images/hopper.jpg)
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/public/planning/planning%20images/hopper.jpg)
