@@ -1,9 +1,7 @@
 
 exports.seed = function(knex, Promise) {
-  // Deletes ALL existing entries
   return knex('itemClass').del()
     .then(function () {
-      // Inserts seed entries
       return knex('itemClass').insert([
         {itemClass_id: 77001, category_id: 88001, itemClass_name: 'Glass Jar', itemClass_info:"Remember to remove lids and washout all glass jars" ,itemClass_img:'https://www.freemanharding.co.uk/5-large/traditional-1lb-jam-jar-pack-of-33.jpg'},
         {itemClass_id: 77002, category_id: 88002, itemClass_name: 'Cardboard Box', itemClass_info:"Be sure to flatten boxes before recycling to save space!",itemClass_img:'https://static1.squarespace.com/static/534db10fe4b095683504776d/t/543f2721e4b0a72b21db3be7/1413424929836/'},
