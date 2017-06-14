@@ -6,18 +6,6 @@ import * as orgAction from '../../client/actions/orgs'
 import * as itemAction from '../../client/actions/items'
 
 
-test.cb.skip('getCategories', t => {
-  const scope = nock('http://localhost:80')
-    .get('/api/categories')
-    .reply(200)
-
-    action.getCategories()((actual) => {
-      console.log(actual);
-      t.is(actual.type, 'RECEIVE_CATEGORIES')
-      t.end()
-    })
-})
-
 test.cb('getOrgs', t => {
   const scope = nock('http://localhost:80')
     .get('/api/orgs')

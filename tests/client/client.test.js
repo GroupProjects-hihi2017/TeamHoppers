@@ -11,13 +11,6 @@ import About from '../../client/components/About'
 
 App.prototype.componentDidMount = () => {}
 
-// test.skip('App is rendering', t =>  {
-//   const wrapper = shallow(
-//     <App store={store}>
-//       <div className='app-container' />
-//     </App>
-//   t.is(wrapper.contains(<div className='app-container' />)).to.equal(true))
-// })
 
 test('Home is rendering', t => {
   const wrapper = shallow(<Home store={store}/>)
