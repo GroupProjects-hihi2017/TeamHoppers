@@ -29,7 +29,4 @@ server.use('/api/items', items)
 server.use('/api/orgs', orgs)
 
 
-module.exports = function(db) {
-  server.set('db', db)
-  return server
-}
+module.exports = server
