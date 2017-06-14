@@ -8,6 +8,9 @@ var configureDatabase = require('./helpers/database-config')
 
 configureDatabase(test, app)
 
+
+//testing categories routes
+
 test.cb('GET /categories', t => {
   request(t.context.app)
     .get('/api/categories')
@@ -23,7 +26,7 @@ test.cb('GET /orgs', t => {
     .get('/api/orgs')
     .expect(200)
     .end((err,res) => {
-      t.deepEqual(res.body.length, 4)
+      t.deepEqual(Object.keys(res.body).category_name)
       t.end()
     })
 })

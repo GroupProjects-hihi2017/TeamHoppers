@@ -1,9 +1,9 @@
 import {combineReducers} from 'redux'
-//
-// import greetings from './greetings'
+
   import orgs from './orgs'
+  import items from './items'
 
 export default combineReducers({
-  // greetings
+  items,
   orgs
 })
