@@ -1,8 +1,9 @@
 import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 
-import About from './About'
 import Home from './Home'
+import About from './About'
+import Orgs from './Orgs'
 
 const App = () => {
   return (

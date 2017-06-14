@@ -7,7 +7,6 @@ import * as itemAction from '../../client/actions/items'
 import * as categoriesAction from '../../client/actions/categories'
 
 
-
 test.cb('getOrgs', t => {
   const scope = nock('http://localhost:80')
     .get('/api/orgs')
