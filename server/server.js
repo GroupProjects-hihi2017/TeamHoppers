@@ -3,12 +3,9 @@ var express = require('express')
 var bodyParser = require('body-parser')
 const cors = require('cors')
 
-
-
-
 var categories = require('./routes/categories')
-
 var items = require('./routes/items')
+var orgs = require('./routes/orgs')
 
 
 
@@ -29,6 +26,7 @@ server.use(express.static(path.join(__dirname, '../public')))
 
 server.use('/api/categories', categories)
 server.use('/api/items', items)
+server.use('/api/orgs', orgs)
 
 
 module.exports = function(db) {
