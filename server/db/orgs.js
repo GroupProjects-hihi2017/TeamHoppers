@@ -1,5 +1,5 @@
 const getOrgs = (db) => {
-  return db('orgs')
+  return (db)('orgs')
     .select('*')
 }
 
