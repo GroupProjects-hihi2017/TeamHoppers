@@ -24,11 +24,11 @@ class ItemClass extends React.Component {
 render() {
   const {itemClass, dispatch} = this.props
   return (
-    <div className='itemClass-container container'>
+    <div className='container'>
       <div>
         <h4 className="itemClass-list-header">Items</h4>
       </div>
-      <div>
+      <div className='itemClass-container'>
         {itemClass.map((item, key) => renderItemClass(item, key))}
       </div>
     </div>
@@ -39,7 +39,6 @@ const mapStateToProps = (state, otherProps) => {
   const items = state.items.filter((item) => {
     return item.category_id == otherProps.match.params.category_id
   })
-  console.log(otherProps);
   return {itemClass: items}
 }
 
