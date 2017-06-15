@@ -4,7 +4,7 @@ import Categories from '../containers/Categories'
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       <Categories />
     </div>
   )
