@@ -8,8 +8,6 @@ var items = require('./routes/itemClass')
 var orgs = require('./routes/orgs')
 var joinItemToOrgs = require('./routes/joinItemToOrgs')
 
-
-
 const corsOptions = {
   origin: true,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
@@ -23,12 +21,9 @@ server.use(cors(corsOptions))
 server.use(bodyParser.json())
 server.use(express.static(path.join(__dirname, '../public')))
 
-
-
 server.use('/api/categories', categories)
 server.use('/api/items', items)
 server.use('/api/orgs', orgs)
 server.use('/api/joins', joinItemToOrgs)
-
 
 module.exports = server

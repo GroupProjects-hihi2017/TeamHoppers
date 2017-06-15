@@ -1,5 +1,4 @@
 
-
 const getCategories = (db) => {
   return db('categories').select('*')
 }

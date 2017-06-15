@@ -6,16 +6,16 @@ const ContactForm = () => {
       <form>
         <fieldset>
           <h4>Contact us</h4>
-          <label className="labelone" for="comments">Name: </label>
+          <label className="labelone" htmlFor="comments">Name: </label>
           <input name="name" />
-          <label for="email">Email: </label>
+          <label htmlFor="email">Email: </label>
           <input name="email" />
-          <label for="comments">Comments: </label>
+          <label htmlFor="comments">Comments: </label>
           <textarea name="comments"></textarea>
         </fieldset>
         <fieldset>
-          <input class="btn" type="submit" value="Send message" />
-          <input class="btn" type="reset" value="Reset form" />
+          <input className="btn" type="submit" value="Send message" />
+          <input className="btn" type="reset" value="Reset form" />
         </fieldset>
       </form>
     </div>
