@@ -27,7 +27,6 @@ class Categories extends React.Component {
 
 render() {
   const {categories, dispatch} = this.props
-    console.log(this.props);
   return (
     <div className='categories-container container'>
       <div>
@@ -41,7 +40,6 @@ render() {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {categories: state.categories}
 }
 

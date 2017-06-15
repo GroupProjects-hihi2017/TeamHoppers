@@ -39,7 +39,6 @@ const mapStateToProps = (state, otherProps) => {
   const items = state.items.filter((item) => {
     return item.category_id == otherProps.match.params.category_id
   })
-  console.log(otherProps);
   return {itemClass: items}
 }
 
