@@ -1,4 +1,4 @@
-function orgs (state = {}, action) {
+function orgs (state = [], action) {
   switch (action.type) {
     case 'RECEIVE_ORGS':
       return action.orgs
