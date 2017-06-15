@@ -1,4 +1,6 @@
 node_modules
 static
 npm-debug.log
+.nyc_output
 bundle*
+dev.sqlite3

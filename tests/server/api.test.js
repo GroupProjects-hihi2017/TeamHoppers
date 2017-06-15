@@ -17,7 +17,7 @@ test('getCategories gets all categories', (t) => {
     .then(function (result) {
       return new Promise((resolve, reject) => {
         var actual = result.length
-        t.is(actual, 4)
+        t.is(actual, 11)
         resolve()
       })
     })
@@ -30,7 +30,7 @@ test('getItemClass gets all itemClasses', (t) => {
     .then(function (result) {
       return new Promise((resolve, reject) => {
         var actual = result.length
-        t.is(actual, 4)
+        t.is(actual, 27)
         resolve()
       })
     })
@@ -43,7 +43,7 @@ test('getOrgs gets all organizations', (t) => {
     .then(function (result) {
       return new Promise((resolve, reject) => {
         var actual = result.length
-        t.is(actual, 4)
+        t.is(actual, 15)
         resolve()
       })
     })
