@@ -1,4 +1,3 @@
-
 import React from 'react'
 import {connect} from 'react-redux'
 
@@ -27,7 +26,6 @@ class Categories extends React.Component {
 
 render() {
   const {categories, dispatch} = this.props
-    console.log(this.props);
   return (
     <div className='container'>
       <div>
@@ -41,7 +39,6 @@ render() {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {categories: state.categories}
 }
 
