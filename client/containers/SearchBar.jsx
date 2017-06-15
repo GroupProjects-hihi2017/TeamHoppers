@@ -2,7 +2,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import {getOrgsByItem} from '../actions/joinItemToOrgs'
+import {getItems} from '../actions/items'
 import {Link} from 'react-router-dom'
 
 
@@ -26,7 +26,7 @@ class SearchBar extends React.Component {
   }
 
   componentDidMount() {
-    this.props.dispatch(getOrgsByItem())
+    this.props.dispatch(getItems())
     this.searchHandler = this.searchHandler.bind(this)
   }
 
@@ -40,7 +40,7 @@ class SearchBar extends React.Component {
 
   filterSearchItems(searchTerm, showMore){
     if (searchTerm == '' || !searchTerm) return []
-    let searchResults = this.props.joinItemToOrgs.filter((item) => {
+    let searchResults = this.props.items.filter((item) => {
       return item.itemClass_name.toLowerCase().includes(searchTerm.toLowerCase())
     })
     if (showMore) return searchResults
@@ -48,7 +48,7 @@ class SearchBar extends React.Component {
   }
 
 render() {
-  const {joinItemToOrgs, dispatch} = this.props
+  const {itemClass, dispatch} = this.props
   return (
     <div className='container'>
       <div>
@@ -57,7 +57,7 @@ render() {
       <form>
         <input placeholder='Search' type='text' onChange={(e) => this.searchHandler(e)}></input>
       </form>
-      <div className='categories-container' >
+      <div>
         <button onClick={() => this.showMoreItemsToggle(this.state.showMoreItems)}>{this.state.showMoreItems ? "Show Less" : "Show More"}</button>
         {this.state.searchResults.map((item, key) => renderItemInfo(item, key))}
       </div>
@@ -66,7 +66,7 @@ render() {
 }
 
 const mapStateToProps = (state) => {
-  return {joinItemToOrgs: state.joinItemToOrgs}
+  return {items: state.items}
 }
 
 export default connect(mapStateToProps)(SearchBar)
