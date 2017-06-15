@@ -8,8 +8,7 @@ var configureDatabase = require('./helpers/database-config')
 
 configureDatabase(test, app)
 
-
-//testing categories routes
+// testing categories routes
 
 test.cb('GET /categories', t => {
   request(t.context.app)
@@ -44,7 +43,6 @@ test.cb('GET /items', t => {
       t.end()
     })
 })
-
 
 // testing join table routes
 

@@ -7,7 +7,6 @@ import Nav from './Nav'
 import Header from './Header'
 import ContactForm from './ContactForm'
 
-
 import Orgs from '../containers/Orgs'
 import ItemClass from '../containers/ItemClass'
 import Categories from '../containers/Categories'

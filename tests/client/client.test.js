@@ -8,9 +8,7 @@ import App from '../../client/components/App'
 import Home from '../../client/components/Home'
 import About from '../../client/components/About'
 
-
 App.prototype.componentDidMount = () => {}
-
 
 test('Home is rendering', t => {
   const wrapper = shallow(<Home store={store}/>)

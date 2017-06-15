@@ -2,11 +2,9 @@ var test = require('ava')
 var request = require('supertest')
 var setUpDb = require('./helpers/database-config')
 
-
 var orgDb = require('../../server/db/orgs')
 var categoriesDb = require('../../server/db/categories')
 var itemClassDb = require('../../server/db/itemClass')
-
 
 setUpDb(test)
 
@@ -36,7 +34,7 @@ test('getItemClass gets all itemClasses', (t) => {
     })
 })
 
-//testing orgs
+// testing orgs
 
 test('getOrgs gets all organizations', (t) => {
   return orgDb.getOrgs(t.context.db)

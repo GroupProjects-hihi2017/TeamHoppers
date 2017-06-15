@@ -3,7 +3,6 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 import {getCategories} from '../actions/categories'
-import {getItems} from '../actions/items'
 import {Link} from 'react-router-dom'
 
 const renderCategory = (category, key) => (
@@ -17,26 +16,25 @@ const renderCategory = (category, key) => (
   </div>
 )
 
-
 class Categories extends React.Component {
-  componentDidMount() {
+  componentDidMount () {
     this.props.dispatch(getCategories())
     // this.props.dispatch(getItems())
   }
 
-
-render() {
-  const {categories, dispatch} = this.props
-  return (
-    <div className='categories-container container'>
-      <div>
-        <h4 className="category-list-header">Categories</h4>
+  render () {
+    const {categories, dispatch} = this.props
+    return (
+      <div className='categories-container container'>
+        <div>
+          <h4 className="category-list-header">Categories</h4>
+        </div>
+        <div>
+          {categories.map((category, key) => renderCategory(category, key))}
+        </div>
       </div>
-      <div>
-        {categories.map((category, key) => renderCategory(category, key))}
-      </div>
-    </div>
-  )}
+    )
+  }
 }
 
 const mapStateToProps = (state) => {
