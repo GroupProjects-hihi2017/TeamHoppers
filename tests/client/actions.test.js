@@ -1,7 +1,6 @@
 import test from 'ava'
 import nock from 'nock'
 
-import * as action from '../../client/actions'
 import * as orgAction from '../../client/actions/orgs'
 import * as itemAction from '../../client/actions/items'
 import * as categoriesAction from '../../client/actions/categories'
