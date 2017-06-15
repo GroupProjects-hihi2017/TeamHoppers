@@ -1,5 +1,12 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  - box-sizing: border-box;
+}
 
-
+@-ms-viewport {
+  width: device-width;
+}
 
 /*** Navbar ***/
 
@@ -24,7 +31,8 @@
 /*** Categories Container ***/
 
 .categories-container {
-
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .category-list-header {
@@ -33,6 +41,8 @@
 
 .category-box {
   text-align: center;
+  flex-grow: 1;
+  max-width: 200px;
 }
 
 .category-box img {
@@ -53,7 +63,8 @@
 /*** ItemClass Container ***/
 
 .itemClass-container {
-
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .itemClass-list-header {
@@ -62,10 +73,12 @@
 
 .itemClass-box {
   text-align: center;
+  flex-grow: 1;
+  max-width: 200px;
 }
 
 .itemClass-box img {
-  height: 150px;
+  height: 120px;
   width: auto;
 }
 
