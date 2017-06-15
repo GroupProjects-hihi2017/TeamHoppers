@@ -1,22 +1,22 @@
 import request from 'superagent'
 
-export const receiveCategories = (categories) => {
+export const receiveOrgsByItem = (joinItemToOrgs) => {
   return {
-    type: 'RECEIVE_CATEGORIES',
-    categories
+    type: 'RECEIVE_ORGS_BY_ITEM',
+    joinItemToOrgs
   }
 }
 
-export function getCategories () {
+export function getOrgsByItem () {
   return (dispatch) => {
     request
-      .get(`/api/categories`)
+      .get(`/api/joins`)
       .end((err, res) => {
         if (err) {
           console.error(err.message)
           return
         }
-        dispatch(receiveCategories(res.body))
+        dispatch(receiveOrgsByItem(res.body))
       })
   }
 }
