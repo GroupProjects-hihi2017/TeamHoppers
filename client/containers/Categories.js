@@ -7,6 +7,7 @@ import {getItems} from '../actions/items'
 import {Link} from 'react-router-dom'
 
 const renderCategory = (category, key) => (
+
   <div key={key}>
     <Link to={`/categories/${category.category_id}`}>
       <img src={`${category.category_img}`}/>
@@ -15,6 +16,7 @@ const renderCategory = (category, key) => (
     <h4>{category.category_info}</h4>
   </div>
 )
+
 
 class Categories extends React.Component {
   componentDidMount() {

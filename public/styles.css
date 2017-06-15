@@ -1,0 +1,49 @@
+
+
+
+/*** Navbar ***/
+
+.navbar {
+  display: flex;
+}
+.navbar a {
+  flex-grow: 1;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align:center;
+  padding: 10px;
+  border:2px solid black;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  background-color: gray;
+}
+
+
+/*** Categories Container ***/
+
+.categories-container {
+
+}
+
+.category-list-header {
+
+}
+
+.category-box {
+  text-align: center;
+}
+
+.category-box img {
+  height: 150px;
+  width: auto;
+}
+
+.category-name {
+
+}
+
+.category-info {
+
+}
