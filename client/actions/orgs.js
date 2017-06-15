@@ -16,6 +16,7 @@ export function getOrgs () {
           console.error(err.message)
           return
         }
+        console.log({err, res});
         dispatch(receiveOrgs(res.body))
       })
   }
