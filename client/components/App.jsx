@@ -5,7 +5,7 @@ import Home from './Home'
 import About from './About'
 
 
-// import Orgs from './Orgs'
+import Orgs from '../containers/Orgs'
 import ItemClass from '../containers/ItemClass'
 import Categories from '../containers/Categories'
 
@@ -18,6 +18,9 @@ const App = () => {
         <Route exact path='/items' component={ItemClass} />
         <Route exact path='/categories' component={Categories} />
         <Route exact path='/categories/:category_id' component={ItemClass} />
+
+        ///Here is the route to where the orgs will list by item id ///
+        <Route exact path='/categories/:category_id/:itemClass_id' component={Orgs} />
       </div>
     </Router>
   )
