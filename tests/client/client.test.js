@@ -14,7 +14,7 @@ App.prototype.componentDidMount = () => {}
 
 test('Home is rendering', t => {
   const wrapper = shallow(<Home store={store}/>)
-  t.is(wrapper.find('.homepage').text(), 'Go Green!')
+  t.is(wrapper.find('.home').exists(), true)
 })
 
 test('About is rendering', t => {

@@ -43,3 +43,16 @@ test.cb('GET /items', t => {
       t.end()
     })
 })
+
+
+// testing join table routes
+
+test.cb('GET /joins', t => {
+  request(t.context.app)
+    .get('/api/joins')
+    .expect(200)
+    .end((err,res) => {
+      t.is(res.body[0].orgRelationships_id, 1)
+      t.end()
+    })
+})
