@@ -24,11 +24,11 @@ class ItemClass extends React.Component {
 render() {
   const {itemClass, dispatch} = this.props
   return (
-    <div className='itemClass-container container'>
+    <div className='container'>
       <div>
         <h4 className="itemClass-list-header">Items</h4>
       </div>
-      <div>
+      <div className='itemClass-container'>
         {itemClass.map((item, key) => renderItemClass(item, key))}
       </div>
     </div>
