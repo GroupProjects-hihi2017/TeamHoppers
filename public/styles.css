@@ -1,12 +1,4 @@
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  - box-sizing: border-box;
-}
 
-@-ms-viewport {
-  width: device-width;
-}
 
 /*** Navbar ***/
 
@@ -25,6 +17,13 @@
 .navbar a:hover {
   text-decoration: none;
   background-color: gray;
+}
+
+
+/*** Search Bar ***/
+.search-result li {
+  text-decoration: none;
+  list-style: none;
 }
 
 
