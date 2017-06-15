@@ -16,7 +16,8 @@ test.cb('GET /categories', t => {
     .get('/api/categories')
     .expect(200)
     .end((err,res) => {
-      t.deepEqual(res.body.length, 4)
+      t.deepEqual(res.body.length, 11)
+      t.is(res.body[0].category_id, 88001)
       t.end()
     })
 })
@@ -38,8 +39,8 @@ test.cb('GET /items', t => {
     .get('/api/items')
     .expect(200)
     .end((err,res) => {
-      t.is(res.body.length, 4)
-      // t.is(res.body.itemClass_id, 77003)
+      t.is(res.body.length, 27)
+      t.is(res.body[0].itemClass_id, 77001)
       t.end()
     })
 })
