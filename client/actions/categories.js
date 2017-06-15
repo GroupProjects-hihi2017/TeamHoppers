@@ -1,6 +1,7 @@
 import request from 'superagent'
 
 export const receiveCategories = (categories) => {
+  console.log(categories);
   return {
     type: 'RECEIVE_CATEGORIES',
     categories

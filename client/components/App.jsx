@@ -17,6 +17,7 @@ const App = () => {
         <Route exact path='/' component={Home} />
         <Route exact path='/items' component={ItemClass} />
         <Route exact path='/categories' component={Categories} />
+        <Route exact path='/categories/:category_id' component={ItemClass} />
       </div>
     </Router>
   )
