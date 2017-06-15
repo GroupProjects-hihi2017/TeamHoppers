@@ -8,12 +8,12 @@ import {Link} from 'react-router-dom'
 
 const renderCategory = (category, key) => (
 
-  <div key={key}>
+  <div className="category-box four columns" key={key}>
     <Link to={`/categories/${category.category_id}`}>
       <img src={`${category.category_img}`}/>
-      <h2>{category.category_name}</h2>
+      <h4 className="category-name">{category.category_name}</h4>
     </Link>
-    <h4>{category.category_info}</h4>
+    <p className="category-info">{category.category_info}</p>
   </div>
 )
 
@@ -29,7 +29,7 @@ render() {
   const {categories, dispatch} = this.props
     console.log(this.props);
   return (
-    <div className='categoriesContainer'>
+    <div className='categories-container container'>
       <div>
         <h4 className="category-list-header">Categories</h4>
       </div>

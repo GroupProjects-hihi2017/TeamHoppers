@@ -1,15 +1,17 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 
 import {getItems} from '../actions/items'
 
 const renderItemClass = (itemClass, key) => (
-  <div key={key}>
 
+  <div className='itemClass-box 3 columns' key={key}>
+    <Link to={`/categories/${itemClass.category_id}/${itemClass.itemClass_id}`}>
       <img src={`${itemClass.itemClass_img}`}/>
-      <h2>{itemClass.itemClass_name}</h2>
-  
-    <h4>{itemClass.itemClass_info}</h4>
+      <h4 className="itemClass-name">{itemClass.itemClass_name}</h4>
+    </Link>
+    <p className="itemClass-info">{itemClass.itemClass_info}</p>
   </div>
 )
 
@@ -22,7 +24,7 @@ class ItemClass extends React.Component {
 render() {
   const {itemClass, dispatch} = this.props
   return (
-    <div className='itemClassContainer'>
+    <div className='itemClass-container container'>
       <div>
         <h4 className="itemClass-list-header">Items</h4>
       </div>
