@@ -7,11 +7,8 @@ import {Link} from 'react-router-dom'
 
 
 const renderItemInfo = (item, key) => (
-
   <div className="category-box four columns" key={key}>
-    <ul>
-      <li>{item.itemClass_name}</li>
-    </ul>
+
   </div>
 )
 
@@ -28,8 +25,11 @@ render() {
   return (
     <div className='container'>
       <div>
-        <h4 className="category-list-header">Categories</h4>
+        <h4 className="search-bar-header">What would you like to recycle?</h4>
       </div>
+      <form>
+        <input placeholder='Search' type='text'></input>
+      </form>
       <div className='categories-container' >
         {joinItemToOrgs.map((item, key) => renderItemInfo(item, key))}
       </div>
@@ -38,7 +38,6 @@ render() {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {joinItemToOrgs: state.joinItemToOrgs}
 }
 
