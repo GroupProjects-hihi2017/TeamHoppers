@@ -7,7 +7,7 @@ export const receiveItems = (items) => {
   }
 }
 
-export function getItems () {
+export function getItems() {
   return (dispatch) => {
     request
       .get(`/api/items`)

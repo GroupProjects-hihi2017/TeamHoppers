@@ -1,54 +1,68 @@
 
 import React from 'react'
 import {connect} from 'react-redux'
-
-import {getOrgsByItem} from '../actions/joinItemToOrgs'
 import {Link} from 'react-router-dom'
 
+import SearchResults from './SearchResults'
+import {getItems} from '../actions/items'
+import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
-const renderItemInfo = (item, key) => (
-  <div className="search-result" key={key}>
-    <ul>
-      <li>{item.itemClass_name}</li>
-    </ul>
-  </div>
-)
 
 
 class SearchBar extends React.Component {
   constructor(props){
     super(props)
     this.state = {
+      items: props.items,
+      joinItemToOrgs: props.joinItemToOrgs,
       searchItem: '',
       searchResults: [],
-      showMoreItems: false
+      showOrgs: false,
+      sortedOrgs: []
     }
+  }
+  showOrg(selectedItem){
+    let sortedOrgs = this.state.joinItemToOrgs.filter((item) => {
+      return item.itemClass_id == selectedItem.itemClass_id
+    })
+    this.setState({sortedOrgs, showOrgs: true})
+  }
+  renderOrgs() {
+    return <SearchResults orgs={this.state.sortedOrgs}/>
   }
 
   componentDidMount() {
+    this.props.dispatch(getItems())
     this.props.dispatch(getOrgsByItem())
     this.searchHandler = this.searchHandler.bind(this)
   }
 
-  searchHandler(e){
-    this.setState({searchItem: e.target.value, searchResults: this.filterSearchItems(e.target.value, this.state.showMoreItems)})
-  }
-  showMoreItemsToggle(boolean) {
-    this.setState({showMoreItems: !boolean})
-    this.setState({searchResults: this.filterSearchItems(this.state.searchItem, !boolean)})
-  }
 
-  filterSearchItems(searchTerm, showMore){
+  searchHandler(e){
+    this.setState({
+      searchItem: e.target.value,
+      searchResults: this.filterSearchItems(e.target.value),
+      showOrgs: false,
+      sortedOrgs: []
+    })
+  }
+  componentWillReceiveProps({joinItemToOrgs, items}) {
+    this.setState({joinItemToOrgs, items})
+  }
+  filterSearchItems(searchTerm){
     if (searchTerm == '' || !searchTerm) return []
-    let searchResults = this.props.joinItemToOrgs.filter((item) => {
+    return this.state.items.filter((item) => {
       return item.itemClass_name.toLowerCase().includes(searchTerm.toLowerCase())
     })
-    if (showMore) return searchResults
-    else return searchResults.slice(0, 4)
+  }
+ renderItemInfo(item, key) {
+    return <div className="search-result" key={key}>
+      <button onClick={() => this.showOrg(item)}>{item.itemClass_name}</button>
+    </div>
   }
 
 render() {
-  const {joinItemToOrgs, dispatch} = this.props
+  const {itemClass, dispatch} = this.props
   return (
     <div className='container'>
       <div>
@@ -57,16 +71,16 @@ render() {
       <form>
         <input placeholder='Search' type='text' onChange={(e) => this.searchHandler(e)}></input>
       </form>
-      <div className='categories-container' >
-        <button onClick={() => this.showMoreItemsToggle(this.state.showMoreItems)}>{this.state.showMoreItems ? "Show Less" : "Show More"}</button>
-        {this.state.searchResults.map((item, key) => renderItemInfo(item, key))}
-      </div>
+        {this.state.searchResults.map((item, key) => this.renderItemInfo(item, key))}
+        {this.state.showOrgs && this.renderOrgs()}
     </div>
   )}
 }
 
-const mapStateToProps = (state) => {
-  return {joinItemToOrgs: state.joinItemToOrgs}
+const mapStateToProps = (state, other) => {
+  return {items: state.items,
+    joinItemToOrgs: state.joinItemToOrgs
+    }
 }
 
 export default connect(mapStateToProps)(SearchBar)
