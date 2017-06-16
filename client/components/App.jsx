@@ -3,6 +3,7 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 
 import Home from './Home'
 import About from './About'
+import GeneralInfo from './GeneralInfo'
 import Nav from './Nav'
 import Header from './Header'
 import ContactForm from './ContactForm'
@@ -18,6 +19,7 @@ const App = () => {
         <Header />
         <Nav />
         <Route exact path='/about' component={About} />
+        <Route exact path='/general-info' component={GeneralInfo} />
         <Route exact path='/' component={Home} />
         <Route exact path='/items' component={ItemClass} />
         <Route exact path='/categories' component={Categories} />
