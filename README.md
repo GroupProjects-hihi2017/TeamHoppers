@@ -1,3 +1,5 @@
+[![Build](https://travis-ci.org/GroupProjects-hihi2017/TeamHoppers.svg?branch=master)](https://travis-ci.org/GroupProjects-hihi2017/TeamHoppers)
+
 The Hoppers Present... Wellington Recycling Thing!
 
 TEAM ROLES
