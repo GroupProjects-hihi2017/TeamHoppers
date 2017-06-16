@@ -1,17 +1,16 @@
 import React from 'react'
-import {HashRouter as Router, Route} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 
 const Nav = () => {
   return (
-      <div className="navbar">
-          <Link to={'/'}>Home</Link>
-          <Link to={'#'}>Wellington Organizations</Link>
-          <Link to={'/general-info'}>General Info</Link>
-          <Link to={'/about'}>About</Link>
-          <Link to={'/contact'}>Contact</Link>
-      </div>
-)}
-
+    <div className="navbar">
+      <Link to={'/'}>Home</Link>
+      <Link to={'/organisations'}>Wellington Organisations</Link>
+      <Link to={'#'}>General Info</Link>
+      <Link to={'/about'}>About</Link>
+      <Link to={'/contact'}>Contact</Link>
+    </div>
+  )
+}
 
 export default Nav
