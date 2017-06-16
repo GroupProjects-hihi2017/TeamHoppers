@@ -36,7 +36,6 @@ class OrgClass extends React.Component {
   }
   render() {
     const dispatch = this.props.dispatch
-    console.log("orgs", this.state.joinItemToOrgs, this.props);
     return (
       <div className='itemClass-container container'>
         <div>
@@ -54,8 +53,6 @@ const mapStateToProps = (state, otherProps) => {
   const orgs = state.joinItemToOrgs.filter((org) => {
     return org.itemClass_id == otherProps.match.params.itemClass_id
   })
-  console.log({orgs});
-  console.log(otherProps);
   return {joinItemToOrgs: orgs}
 }
 
