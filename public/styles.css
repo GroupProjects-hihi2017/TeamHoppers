@@ -26,6 +26,12 @@
   list-style: none;
 }
 
+/*** Search Bar ***/
+
+.search-result {
+  display: inline-block;
+}
+
 
 /*** Categories Container ***/
 

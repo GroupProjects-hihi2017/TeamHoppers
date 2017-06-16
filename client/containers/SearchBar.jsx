@@ -1,16 +1,15 @@
 
 import React from 'react'
 import {connect} from 'react-redux'
-
-import {getItems} from '../actions/items'
 import {Link} from 'react-router-dom'
+
+import SearchResults from './SearchResults'
+import {getItems} from '../actions/items'
 
 
 const renderItemInfo = (item, key) => (
   <div className="search-result" key={key}>
-    <ul>
-      <li>{item.itemClass_name}</li>
-    </ul>
+    <button>{item.itemClass_name}</button>
   </div>
 )
 
@@ -20,8 +19,7 @@ class SearchBar extends React.Component {
     super(props)
     this.state = {
       searchItem: '',
-      searchResults: [],
-      showMoreItems: false
+      searchResults: []
     }
   }
 
@@ -31,20 +29,14 @@ class SearchBar extends React.Component {
   }
 
   searchHandler(e){
-    this.setState({searchItem: e.target.value, searchResults: this.filterSearchItems(e.target.value, this.state.showMoreItems)})
-  }
-  showMoreItemsToggle(boolean) {
-    this.setState({showMoreItems: !boolean})
-    this.setState({searchResults: this.filterSearchItems(this.state.searchItem, !boolean)})
+    this.setState({searchItem: e.target.value, searchResults: this.filterSearchItems(e.target.value)})
   }
 
-  filterSearchItems(searchTerm, showMore){
+  filterSearchItems(searchTerm){
     if (searchTerm == '' || !searchTerm) return []
-    let searchResults = this.props.items.filter((item) => {
+    return this.props.items.filter((item) => {
       return item.itemClass_name.toLowerCase().includes(searchTerm.toLowerCase())
     })
-    if (showMore) return searchResults
-    else return searchResults.slice(0, 4)
   }
 
 render() {
@@ -57,15 +49,12 @@ render() {
       <form>
         <input placeholder='Search' type='text' onChange={(e) => this.searchHandler(e)}></input>
       </form>
-      <div>
-        <button onClick={() => this.showMoreItemsToggle(this.state.showMoreItems)}>{this.state.showMoreItems ? "Show Less" : "Show More"}</button>
         {this.state.searchResults.map((item, key) => renderItemInfo(item, key))}
-      </div>
     </div>
   )}
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, other) => {
   return {items: state.items}
 }
 
