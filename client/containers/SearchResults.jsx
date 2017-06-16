@@ -12,6 +12,15 @@ const renderSearchResults = (result, key) => (
 )
 
 class SearchResults extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      orgs: props.orgs
+    }
+  }
+  componentWillReceiveProps(nextProps) {
+    this.setState({orgs: nextProps.orgs})
+  }
   componentDidMount () {
     this.props.dispatch(getOrgsByItem())
   }
@@ -21,7 +30,7 @@ class SearchResults extends React.Component {
     console.log(this.props);
     return (
         <div>
-          {this.props.joinItemToOrgs.map((result, key) => renderSearchResults(result, key))}
+          {this.state.orgs.map((result, key) => renderSearchResults(result, key))}
         </div>
     )
   }

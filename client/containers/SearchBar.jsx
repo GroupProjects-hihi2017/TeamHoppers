@@ -5,38 +5,60 @@ import {Link} from 'react-router-dom'
 
 import SearchResults from './SearchResults'
 import {getItems} from '../actions/items'
+import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
-
-const renderItemInfo = (item, key) => (
-  <div className="search-result" key={key}>
-    <button>{item.itemClass_name}</button>
-  </div>
-)
 
 
 class SearchBar extends React.Component {
   constructor(props){
     super(props)
     this.state = {
+      items: props.items,
+      joinItemToOrgs: props.joinItemToOrgs,
       searchItem: '',
-      searchResults: []
+      searchResults: [],
+      showOrgs: false,
+      sortedOrgs: []
     }
+  }
+  showOrg(selectedItem){
+    let sortedOrgs = this.state.joinItemToOrgs.filter((item) => {
+      return item.itemClass_id == selectedItem.itemClass_id
+    })
+    this.setState({sortedOrgs, showOrgs: true})
+  }
+  renderOrgs() {
+    return <SearchResults orgs={this.state.sortedOrgs}/>
   }
 
   componentDidMount() {
     this.props.dispatch(getItems())
+    this.props.dispatch(getOrgsByItem())
     this.searchHandler = this.searchHandler.bind(this)
   }
 
-  searchHandler(e){
-    this.setState({searchItem: e.target.value, searchResults: this.filterSearchItems(e.target.value)})
-  }
 
+  searchHandler(e){
+    this.setState({
+      searchItem: e.target.value,
+      searchResults: this.filterSearchItems(e.target.value),
+      showOrgs: false,
+      sortedOrgs: []
+    })
+  }
+  componentWillReceiveProps({joinItemToOrgs, items}) {
+    this.setState({joinItemToOrgs, items})
+  }
   filterSearchItems(searchTerm){
     if (searchTerm == '' || !searchTerm) return []
-    return this.props.items.filter((item) => {
+    return this.state.items.filter((item) => {
       return item.itemClass_name.toLowerCase().includes(searchTerm.toLowerCase())
     })
+  }
+ renderItemInfo(item, key) {
+    return <div className="search-result" key={key}>
+      <button onClick={() => this.showOrg(item)}>{item.itemClass_name}</button>
+    </div>
   }
 
 render() {
@@ -49,13 +71,16 @@ render() {
       <form>
         <input placeholder='Search' type='text' onChange={(e) => this.searchHandler(e)}></input>
       </form>
-        {this.state.searchResults.map((item, key) => renderItemInfo(item, key))}
+        {this.state.searchResults.map((item, key) => this.renderItemInfo(item, key))}
+        {this.state.showOrgs && this.renderOrgs()}
     </div>
   )}
 }
 
 const mapStateToProps = (state, other) => {
-  return {items: state.items}
+  return {items: state.items,
+    joinItemToOrgs: state.joinItemToOrgs
+    }
 }
 
 export default connect(mapStateToProps)(SearchBar)
