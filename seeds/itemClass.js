@@ -33,15 +33,15 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77005,
           category_id: 88002,
           itemClass_name: 'newspapers & magazines',
-          itemClass_info: 'Random fact, pollution is also reduced by 95 percent when used paper is made into new sheets. So please recycle those old newspapers'.
-          itemClass_img: "http://www.plavnica.sk/resources/App/large/201704241033520.vykup-papiera.jpg",
+          itemClass_info: 'Random fact, pollution is also reduced by 95 percent when used paper is made into new sheets. So please recycle those old newspapers.',
+          itemClass_img: 'http://www.plavnica.sk/resources/App/large/201704241033520.vykup-papiera.jpg'
         },
         {
           itemClass_id: 77006,
           category_id: 88002,
           itemClass_name: 'egg cartons',
           itemClass_info: 'More and more people are keeping chickens in their backyards for fresh eggs. Ask around your community and you may find people who are on the lookout for egg cartons.',
-          itemClass_img: "https://i.ebayimg.com/00/s/MjQzWDI4MA==/z/dZIAAOSw3ydVzp9m/"
+          itemClass_img: 'https://i.ebayimg.com/00/s/MjQzWDI4MA==/z/dZIAAOSw3ydVzp9m/'
         },
         {
           itemClass_id: 77007,
