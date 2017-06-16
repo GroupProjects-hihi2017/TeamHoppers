@@ -2,8 +2,10 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
+import jump from 'jump.js'
 
 import SearchResults from './SearchResults'
+import Categories from '../containers/Categories'
 import {getItems} from '../actions/items'
 import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
@@ -21,6 +23,15 @@ class SearchBar extends React.Component {
       sortedOrgs: []
     }
   }
+
+  scrollToCategories (e) {
+    jump('.Categories', {
+      offset: -16
+    })
+  }
+
+
+
   showOrg(selectedItem){
     let sortedOrgs = this.state.joinItemToOrgs.filter((item) => {
       return item.itemClass_id == selectedItem.itemClass_id
@@ -73,6 +84,9 @@ render() {
       </form>
         {this.state.searchResults.map((item, key) => this.renderItemInfo(item, key))}
         {this.state.showOrgs && this.renderOrgs()}
+        <div className='twelve columns'>
+            <h2 className='downArrow'><img src='images/arrow-down.png' width='70px' onClick={(e) => this.scrollToCategories(e)} /></h2>
+        </div>
     </div>
   )}
 }
