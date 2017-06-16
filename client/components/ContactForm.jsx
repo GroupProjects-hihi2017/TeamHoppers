@@ -10,16 +10,18 @@ class ContactForm extends React.Component {
       form: {}
     }
   }
+
   updateFormDetails (e) {
     let form = this.state.form
     form[e.target.name] = e.target.value
     this.setState({form})
-    console.log(this.state)
   }
+
   submitForm (e) {
     e.preventDefault()
     this.props.dispatch(postContactForm(this.state.form))
   }
+
   render () {
     return (
       <form className="contact-form" onSubmit={(e) => this.submitForm(e)}>
