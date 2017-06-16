@@ -45,30 +45,3 @@ Furniture: Tables, Desks, Couches, Bookshelves, Beds, Wardrobes...
 
   For disposal - Southern Landfill
   For donation - Salvation Army, St. Vincent dePaul's OpShop
-
-
-
-
-
-More Orgs to potentially add:
-
-GURGL!: Address, url, img, description
-
-Community Sharing App!
-
-Salvation Army:
-Address: '203 Willis St, Te Aro, Wellington 6011; 20 Rintoul St, Newtown, Wellington 6021; 63 Miramar Ave, Miramar, Wellington 6022; 33 Kaiwharawhara Rd, Kaiwharawhara, Wellington 6035; See Website for Full List of Locations in Your Area', url, img, description
-
-St. Vincent dePaul's OpShop:
-Address: '107 Aro Street, Wellington 6021; 153 Karori Road, Marsden Village Wellington 6012; 207-209 Riddiford Street, Newtown, Wellington; See Website for Full List of Locations in Your Area', url: 'http://www.svdp.org.nz/', img: 'http://www.svdp.org.nz/images/svdp-logo-150-yrs.png', description
-
-E-Cycle:
-Address, url: http://www.e-cycle.co.nz/, img: http://www.e-cycle.co.nz/wp-content/uploads/2014/10/EClogo141.jpg, description: 'E-Cycle specialises in responsible, environmentally friendly recycling of end of life electronic products.'
-
-Sustainability Trust:
-Address: '2 Forresters Lane, Te Aro, Wellington 6011', url: 'https://www.sustaintrust.org.nz/', img: 'https://www.sustaintrust.org.nz/wp-content/uploads/2014/10/logo-white1.png', description
-
-Resene:
-Address: '74 Cambridge Terrace,Basin Reserve, Wellington; 22 Tacy Street, Cnr Kemp and Tacy Streets,
-Kilbirnie, Wellington; 1/3 Moorefield Road, Cnr Helston and Moorefield Roads,
-Johnsonville, Wellington; See Website for Full List of Locations in Your Area', url:'http://www.resene.co.nz/', img: 'http://www.resene.co.nz/picts/Resene-Logo-Envt.png', description
