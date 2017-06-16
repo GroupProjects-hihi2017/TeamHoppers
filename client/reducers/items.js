@@ -1,4 +1,4 @@
-function items (state = [], action) {
+function items (state = [], action = {}) {
   switch (action.type) {
     case 'RECEIVE_ITEMS':
       return action.items
