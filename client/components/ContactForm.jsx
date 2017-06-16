@@ -1,25 +1,44 @@
 import React from 'react'
+import {connect} from 'react-redux'
 
-const ContactForm = () => {
-  return (
-    <div className='contact-form'>
-      <form>
+import {postContactForm} from '../actions/contactForm'
+
+class ContactForm extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      form: {}
+    }
+  }
+  updateFormDetails (e) {
+    let form = this.state.form
+    form[e.target.name] = e.target.value
+    this.setState({form})
+    console.log(this.state)
+  }
+  submitForm (e) {
+    e.preventDefault()
+    this.props.dispatch(postContactForm(this.state.form))
+  }
+  render () {
+    return (
+      <form className="contact-form" onSubmit={(e) => this.submitForm(e)}>
         <fieldset>
           <h4>Contact us</h4>
-          <label className="labelone" htmlFor="comments">Name: </label>
-          <input name="name" />
+          <label className="labelone" htmlFor="name">Name: </label>
+          <input name="name" onChange={(e) => this.updateFormDetails(e)}/>
           <label htmlFor="email">Email: </label>
-          <input name="email" />
+          <input name="email" onChange={(e) => this.updateFormDetails(e)} />
           <label htmlFor="comments">Comments: </label>
-          <textarea name="comments"></textarea>
+          <textarea name="comments" onChange={(e) => this.updateFormDetails(e)}></textarea>
         </fieldset>
         <fieldset>
           <input className="btn" type="submit" value="Send message" />
           <input className="btn" type="reset" value="Reset form" />
         </fieldset>
       </form>
-    </div>
-  )
+    )
+  }
 }
 
-export default ContactForm
+export default connect()(ContactForm)
