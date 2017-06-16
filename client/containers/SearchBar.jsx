@@ -85,7 +85,7 @@ render() {
         {this.state.searchResults.map((item, key) => this.renderItemInfo(item, key))}
         {this.state.showOrgs && this.renderOrgs()}
         <div className='twelve columns'>
-            <h2 className='downArrow'><img src='images/arrow-down.png' width='70px' onClick={(e) => this.scrollToCategories(e)} /></h2>
+          <h2 className='downArrow'><img src='images/arrow-down.png' width='70px' onClick={(e) => this.scrollToCategories(e)} /></h2>
         </div>
     </div>
   )}
