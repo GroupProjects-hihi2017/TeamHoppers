@@ -15,7 +15,7 @@ test('Home is rendering', t => {
   t.is(wrapper.find('.home').exists(), true)
 })
 
-skip.test('About is rendering', t => {
+test.skip('About is rendering', t => {
   const wrapper = shallow(<About store={store}/>)
   t.is(wrapper.find('.about').text(), 'Intorducing Team Hoppers!')
 })
