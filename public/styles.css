@@ -1,26 +1,38 @@
 body {
-  background-color: ;
+  background-color: #f6f7f8;
+  margin: 0px;
+  padding: 0px;
 }
 /*** Header ***/
 
 .header {
   background-color: #94a70d;
-  color: #fff;
-  height: 250px;
+  height: 25vh;
+  margin: 0px;
+
 }
 
 .header-text {
-  vertical-align: middle;
+  color: #fff;
   display: inline-block;
   text-align: left;
   margin-left: 40px;
-  width:40%;
-  margin-top: -130px;
+  margin-top: 70px;
+  height: 100%;
+  width: auto;
 }
 
 .header-img {
   display: inline-block;
-  width: 50%;
+  max-height: 25vh;
+  width: auto;
+  float: right;
+}
+
+@media (max-width: 500px) {
+  .header-img {
+    display: none;
+  }
 }
 
 /*** Navbar ***/
@@ -69,7 +81,6 @@ body {
 
 .search-results-list {
   width: 50%;
-  justify-content: center;
   text-align: center;
 }
 
@@ -122,26 +133,28 @@ align-content: flex-end;}
   margin: auto;
   text-align: center;
   display: inline-block;
+  border-radius: 25%;
   flex-grow: 1;
-  height: 400px;
-	width: 30vh;
+	width: 40vh;
   overflow: hidden;
 }
 
 .category-box img {
-  height: 400px;
-		width: 30vh;
+  border-radius: 25%;
+	width: 40vh;
 }
 
 .category-box figure {
 	overflow: hidden;
 	position: relative;
-  height: 30vh;
-  width: 30vh;
+  border-radius: 25%;
+  height: 40vh;
+  width: 40vh;
 }
 
 .category-box figcaption {
-	background: rgba(0, 0, 255, 0.8);
+	background: rgba(255, 55, 59, 0.8);
+  border-radius: 25%;
 	color: white;
 	height: 100%;
 	left: 0;
@@ -155,8 +168,8 @@ align-content: flex-end;}
 .category-box figcaption h4 p {
 	position: relative;
 	top: -40px;
-  height: 30vh;
-	width: 30vh;
+  height: 40vh;
+	width: 40vh;
 	vertical-align: middle;
 }
 
@@ -165,30 +178,30 @@ align-content: flex-end;}
 }
 
 .category-box:hover figcaption {
+  border-radius: 25%;
 	opacity: 1;
 }
 
 
 .category-box img {
 	height: auto;
+  border-radius: 25%;
 	-webkit-transition: all 300ms;
 	-moz-transition: all 300ms;
 	transition: all 300ms;
-  height: 30vh;
-	width: 30vh;
+  height: 40vh;
+	width: 40vh;
 }
 
 .category-box:hover img {
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	transform: scale(1.4);
+  border-radius: 25%;
 }
 
 .category-box figcaption p {
 	font-size: 1.5em;
 	position: relative;
 	top: -40px;
-	width: 25vh;
+	width: 35vh;
 	-webkit-transition: all 300ms ease-out;
 	-moz-transition: all 300ms ease-out;
 	transition: all 300ms ease-out;
@@ -196,6 +209,7 @@ align-content: flex-end;}
 }
 
 .category-box:hover figcaption p {
+  border-radius: 25%;
 	-moz-transform: translateY(40px);
 	-webkit-transform: translateY(40px);
 	transform: translateY(40px);
@@ -235,4 +249,43 @@ align-content: flex-end;}
 
 .itemClass-info {
 
+}
+
+
+/*** Organizations List ***/
+
+.org-link-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;}
+}
+
+.org-box {
+  text-align: center;
+  margin: 5px 5px;
+  padding: 10px;
+}
+
+.org-link-box a {
+  text-decoration: none;
+}
+
+.org-item-list ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.org-logo {
+  height: 20vh;
 }

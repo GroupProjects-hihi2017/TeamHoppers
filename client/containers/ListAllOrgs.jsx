@@ -6,8 +6,9 @@ import {getAllOrgs} from '../actions/listOrgs'
 
 const renderAllOrgs = (org, key) => {
   return (
-    <div className="" key={key}>
+    <div className='org-box' key={key}>
       <Link to={`/organisations/${org.org_id}`}>
+        <img className='org-logo' src={org.org_img} />
         <h4 className="org-name">{org.org_name}</h4>
       </Link>
     </div>
@@ -26,7 +27,7 @@ class ListAllOrgs extends React.Component {
         <div>
           <h4 className=''>Wellington Organisations</h4>
         </div>
-        <div>
+        <div className='org-link-list'>
           {listOrgs.map((org, key) => renderAllOrgs(org, key))}
         </div>
       </div>

@@ -19,8 +19,8 @@ class Home extends React.Component {
     return (
       <div className='home'>
         <SearchBar />
-        <div className='row'>
-          <div className='container'>
+        <div className='container'>
+          <div className='row'>
             <h2 className='downArrow'><img src='images/arrow-down.png' width='70px' onClick={(e) => this.scrollToEntries(e)} /></h2>
           </div>
         </div>
