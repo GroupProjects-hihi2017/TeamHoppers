@@ -2,7 +2,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
-import jump from 'jump.js'
+
 
 import SearchResults from './SearchResults'
 import Categories from '../containers/Categories'
@@ -23,13 +23,6 @@ class SearchBar extends React.Component {
       sortedOrgs: []
     }
   }
-
-  scrollToCategories (e) {
-    jump('.Categories', {
-      offset: -16
-    })
-  }
-
 
 
   showOrg(selectedItem){
@@ -80,7 +73,7 @@ class SearchBar extends React.Component {
 render() {
   const {itemClass, dispatch} = this.props
   return (
-    <div className='container'>
+    <div className='container search-bar-body'>
       <div>
         <h4 className="search-bar-header">What would you like to recycle?</h4>
       </div>
@@ -91,9 +84,7 @@ render() {
         {this.state.searchResults.map((item, key) => this.renderItemInfo(item, key))}
       </div>
         {this.state.showOrgs && this.renderOrgs()}
-        <div className='twelve columns'>
-          <h2 className='downArrow'><img src='images/arrow-down.png' width='70px' onClick={(e) => this.scrollToCategories(e)} /></h2>
-        </div>
+
     </div>
   )}
 }
