@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {browserHistory} from 'react-router'
 
 import {postContactForm} from '../actions/contactForm'
 
@@ -20,6 +21,7 @@ class ContactForm extends React.Component {
   submitForm (e) {
     e.preventDefault()
     this.props.dispatch(postContactForm(this.state.form))
+    this.props.history.push('/')
   }
 
   render () {
