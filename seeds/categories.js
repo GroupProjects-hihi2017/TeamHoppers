@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           category_id: 88004,
           category_name: 'chemicals',
-          category_img: 'https://www.riversideca.gov/publicworks/trash/images/HHW-main.jpg',
+          category_img: 'http://www.fairfaxva.gov/Home/ShowImage?id=4558&t=635732554814030000',
           category_info: "Separate from your regular rubbish to keep chemicals out of our waterways! Many commonly used chemicals and liquids such as pesticides, paints and solvents, coolants and motor oil are toxic if not disposed of properly. In landfill, these chemicals can leach into the environment and waterways causing contamination. Safe chemical disposal options exist for a large range of everyday chemicals. Commercial recycling services are also available for those chemicals that can be reused such as motor oil."
         },
         {

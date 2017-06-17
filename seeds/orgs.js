@@ -41,7 +41,7 @@ exports.seed = function(knex, Promise) {
           org_id: 66005,
           org_name: "GURGL",
           org_address: "",
-          org_url: "",
+          org_url: "http://www.gurgl.nz/",
           org_img: "/images/gurglLogo.svg",
           org_info: "GURGL is a community clothes sharing app, based in New Zealand, which allows users to donate or swap clothing items for children and adults.",
           org_location: ""
@@ -105,7 +105,7 @@ exports.seed = function(knex, Promise) {
           org_name: "Resene",
           org_address: "Wellington City: 74 Cambridge Terrace, Basin Reserve, Wellington (For full list of Resene locations in your area, visit their website.')",
           org_url: "http://www.resene.co.nz/",
-          org_img: "http://www.resene.co.nz/picts/Resene-Logo-Envt.png",
+          org_img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUDOFKhpHaX1oGPofyS781Ng_SozkbOYhHAgZ60bXx3saKBJ2Y",
           org_info: "Resene PaintWise collects unused paint to recycle, which would otherwise end up in a landfill. The paint is then donated to schools and other community groups.",
           org_location: ""
         },
@@ -114,7 +114,7 @@ exports.seed = function(knex, Promise) {
           org_name: "The Free Store",
           org_address: "211 Willis Street, Te Aro, Wellington",
           org_url: "https://www.thefreestore.org.nz/",
-          org_img: "",
+          org_img: "https://cdn.neighbourly.co.nz/images/cache/user_profile_page_picture/organisation/56971e03e507d7.47956427.jpeg?170410",
           org_info: "The Free Store collects surplus food from grocery stores and restaurants around Wellington, and redistributes it to people who need it most. Their efforts help to greatly reduce food waste in Wellington, and help make sure that no one needs to go hungry.",
           org_location: ""
         }
