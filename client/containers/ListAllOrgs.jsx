@@ -1,8 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 
 import {getAllOrgs} from '../actions/listOrgs'
-import {Link} from 'react-router-dom'
 
 const renderAllOrgs = (org, key) => {
   console.log(org);
@@ -19,15 +19,15 @@ class ListAllOrgs extends React.Component {
   }
 
   render () {
-    const {orgs} = this.props
-    console.log({orgs});
+    const {listOrgs, dispatch} = this.props
+    console.log(this.props.listOrgs);
     return (
       <div className=''>
         <div>
           <h4 className=''>Wellington Organisations</h4>
         </div>
         <div>
-          {orgs.map((org, key) => renderAllOrgs(org, key))}
+          {listOrgs.map((org, key) => renderAllOrgs(org, key))}
         </div>
       </div>
     )
@@ -36,7 +36,7 @@ class ListAllOrgs extends React.Component {
 
 const mapStateToProps = (state) => {
   console.log(state);
-  return {orgs: state.orgs}
+  return {listOrgs: state.listOrgs}
 }
 
 export default connect(mapStateToProps)(ListAllOrgs)

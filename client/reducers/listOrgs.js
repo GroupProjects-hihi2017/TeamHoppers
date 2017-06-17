@@ -1,4 +1,4 @@
-function orgs (state = [], action = {}) {
+function listOrgs (state = [], action = {}) {
   switch (action.type) {
     case 'LIST_ORGS':
       return action.orgs
@@ -7,4 +7,4 @@ function orgs (state = [], action = {}) {
   }
 }
 
-export default orgs
+export default listOrgs
