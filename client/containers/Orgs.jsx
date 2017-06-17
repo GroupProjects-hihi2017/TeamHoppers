@@ -34,12 +34,14 @@ class OrgClass extends React.Component {
   }
   render () {
     return (
-      <div className='itemClass-container container'>
+      <div className='container'>
         <div>
           <h4 className="itemClass-list-header">Organisations</h4>
         </div>
-        <div>
-          {this.state.joinItemToOrgs.map((orgs, key) => renderOrgClass(orgs, key))}
+        <div className='itemClass-container '>
+          <div>
+            {this.state.joinItemToOrgs.map((orgs, key) => renderOrgClass(orgs, key))}
+          </div>
         </div>
       </div>
     )

@@ -33,7 +33,7 @@ class SearchBar extends React.Component {
   }
   renderOrgs() {
     return (
-    <div>
+    <div className='search-results-orgs' >
       <h5>You can take this item to:</h5>
       <SearchResults orgs={this.state.sortedOrgs}/>
     </div>

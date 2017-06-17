@@ -5,12 +5,10 @@ import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
 const renderAllItemsByOrg = (joinItemToOrgs, key) => (
 
-  <div className='' key={key}>
-    <div>
+  <div className='org-item-list' key={key}>
       <ul>
         <li>{joinItemToOrgs.itemClass_name}</li>
       </ul>
-    </div>
   </div>
 )
 
@@ -28,13 +26,11 @@ class ItemsByOrg extends React.Component {
   componentWillReceiveProps (nextProps) {
     this.setState({joinItemToOrgs: nextProps.joinItemToOrgs})
   }
-  
+
   render () {
     return (
-      <div className='itemClass-container container'>
-        <div>
+      <div className='container'>
           {this.state.joinItemToOrgs.map((items, key) => renderAllItemsByOrg(items, key))}
-        </div>
       </div>
     )
   }

@@ -23,7 +23,7 @@ class ItemClass extends React.Component {
   render () {
     const {itemClass} = this.props
     return (
-      <div>
+      <div className='container'>
         <div className="itemClass-list-header">
           <h4>Items</h4>
         </div>
