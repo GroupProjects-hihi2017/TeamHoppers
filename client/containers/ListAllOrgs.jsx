@@ -4,11 +4,12 @@ import {Link} from 'react-router-dom'
 
 import {getAllOrgs} from '../actions/listOrgs'
 
-const renderAllOrgs = (org, key) => {
-  console.log(org);
+const renderAllOrgs = (org, joinItemToOrgs, key) => {
   return (
     <div className="" key={key}>
-      <h4 className="org-name">{org.org_name}</h4>
+      <Link to={`/organisations/${joinItemToOrgs.org_id}`}>
+        <h4 className="org-name">{org.org_name}</h4>
+      </Link>
     </div>
   )
 }
@@ -19,8 +20,7 @@ class ListAllOrgs extends React.Component {
   }
 
   render () {
-    const {listOrgs, dispatch} = this.props
-    console.log(this.props.listOrgs);
+    const {listOrgs} = this.props
     return (
       <div className=''>
         <div>
@@ -35,7 +35,6 @@ class ListAllOrgs extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {listOrgs: state.listOrgs}
 }
 

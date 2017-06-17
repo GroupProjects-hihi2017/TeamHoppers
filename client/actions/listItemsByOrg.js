@@ -1,22 +1,22 @@
 import request from 'superagent'
 
-export const listAllOrgs = (orgs) => {
+export const listItemsByOrg = (allItems) => {
   return {
-    type: 'LIST_ORGS',
-    orgs
+    type: 'LIST_ITEMS_BY_ORG',
+    allItems
   }
 }
 
-export function getAllOrgs () {
+export function getItemsByOrg () {
   return (dispatch) => {
     request
-      .get(`/api/orgs`)
+      .get(`/api/joins`)
       .end((err, res) => {
         if (err) {
           console.error(err.message)
           return
         }
-        dispatch(listAllOrgs(res.body))
+        dispatch(listItemsByOrg(res.body))
       })
   }
 }

@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom'
 
 import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
-
 const renderOrgClass = (joinItemToOrgs, key) => (
 
   <div className='itemClass-box 3 columns' key={key}>
@@ -20,22 +19,20 @@ const renderOrgClass = (joinItemToOrgs, key) => (
 )
 
 class OrgClass extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       joinItemToOrgs: props.joinItemToOrgs
     }
   }
-  componentDidMount() {
+  componentDidMount () {
     this.props.dispatch(getOrgsByItem())
   }
 
-  componentWillReceiveProps(nextProps) {
-    console.log({nextProps});
+  componentWillReceiveProps (nextProps) {
     this.setState({joinItemToOrgs: nextProps.joinItemToOrgs})
   }
-  render() {
-    const dispatch = this.props.dispatch
+  render () {
     return (
       <div className='itemClass-container container'>
         <div>
