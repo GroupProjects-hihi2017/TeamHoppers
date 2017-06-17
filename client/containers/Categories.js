@@ -24,12 +24,14 @@ class Categories extends React.Component {
   render () {
     const {categories, dispatch} = this.props
     return (
-      <div className='categories-container container'>
-        <div>
-          <h4 className="category-list-header">Categories</h4>
+      <div>
+        <div className="category-list-header">
+          <h4>Categories</h4>
         </div>
-        <div>
-          {categories.map((category, key) => renderCategory(category, key))}
+        <div className='categories-container container'>
+          <div>
+            {categories.map((category, key) => renderCategory(category, key))}
+          </div>
         </div>
       </div>
     )
