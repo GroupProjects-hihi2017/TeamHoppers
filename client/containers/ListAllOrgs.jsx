@@ -4,10 +4,10 @@ import {Link} from 'react-router-dom'
 
 import {getAllOrgs} from '../actions/listOrgs'
 
-const renderAllOrgs = (org, joinItemToOrgs, key) => {
+const renderAllOrgs = (org, key) => {
   return (
     <div className="" key={key}>
-      <Link to={`/organisations/${joinItemToOrgs.org_id}`}>
+      <Link to={`/organisations/${org.org_id}`}>
         <h4 className="org-name">{org.org_name}</h4>
       </Link>
     </div>

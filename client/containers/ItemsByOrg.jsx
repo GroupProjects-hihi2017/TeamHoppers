@@ -1,13 +1,12 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import {listItemsByOrg} from '../actions/listItemsByOrg'
+import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
 const renderAllItemsByOrg = (joinItemToOrgs, key) => (
 
   <div className='' key={key}>
     <div>
-      <h4>List of all items collected by this Organisation</h4>
       <ul>
         <li>{joinItemToOrgs.itemClass_name}</li>
       </ul>
@@ -23,18 +22,16 @@ class ItemsByOrg extends React.Component {
     }
   }
   componentDidMount () {
-    this.props.dispatch(listItemsByOrg())
+    this.props.dispatch(getOrgsByItem())
   }
 
   componentWillReceiveProps (nextProps) {
     this.setState({joinItemToOrgs: nextProps.joinItemToOrgs})
   }
+  
   render () {
     return (
       <div className='itemClass-container container'>
-        <div>
-          <h4 className="itemClass-list-header">Items collected by [insert name of Organisation]</h4>
-        </div>
         <div>
           {this.state.joinItemToOrgs.map((items, key) => renderAllItemsByOrg(items, key))}
         </div>
@@ -44,7 +41,6 @@ class ItemsByOrg extends React.Component {
 }
 
 const mapStateToProps = (state, otherProps) => {
-  console.log(otherProps);
   const items = state.joinItemToOrgs.filter((item) => {
     return item.org_id == otherProps.match.params.org_id
   })
