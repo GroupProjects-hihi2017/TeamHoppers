@@ -6,14 +6,32 @@ import {Link} from 'react-router-dom'
 
 const renderCategory = (category, key) => (
 
-  <div className="category-box four columns" key={key}>
-    <Link to={`/categories/${category.category_id}`}>
-      <img src={`${category.category_img}`}/>
-      <h4 className="category-name">{category.category_name}</h4>
-    </Link>
-    <p className="category-info">{category.category_info}</p>
+
+
+
+
+
+  <div className="category-box" key={key}>
+    <div className='grid'>
+      <Link to={`/categories/${category.category_id}`}>
+        <figure>
+          <img src={`${category.category_img}`}/>
+          <figcaption><h4 className="figcaption">{category.category_name}</h4>
+          <p>{category.category_info}</p></figcaption>
+        </figure>
+      </Link>
+    </div>
   </div>
 )
+
+
+
+
+
+
+
+
+
 
 class Categories extends React.Component {
   componentDidMount () {
