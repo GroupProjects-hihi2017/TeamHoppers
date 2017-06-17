@@ -2,7 +2,7 @@ import React from 'react'
 
 const GeneralInfo = () => {
   return (
-    <div>
+    <div className='container'>
       <h4>Wheelie bins, bags and crates</h4>
       <div>
         <p>Wellington city council issues free recycling bags from May-June.

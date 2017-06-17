@@ -58,22 +58,18 @@ body {
 }
 
 .search-bar-header {
-  width: 60%;
-  float: left;
   padding-top: 50px;
   text-align: center;
 }
 
 .search-box {
   padding: 25px 0px;
-  width: 60%;
-  float: left;
   text-align: center;
 }
 
 .search-results-list {
-  width: 60%;
-  float: left;
+  width: 50%;
+  justify-content: center;
   text-align: center;
 }
 
