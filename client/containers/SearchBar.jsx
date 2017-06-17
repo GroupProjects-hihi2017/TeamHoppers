@@ -39,7 +39,12 @@ class SearchBar extends React.Component {
     this.setState({sortedOrgs, showOrgs: true})
   }
   renderOrgs() {
-    return <SearchResults orgs={this.state.sortedOrgs}/>
+    return (
+    <div>
+      <h5>You can take this item to:</h5>
+      <SearchResults orgs={this.state.sortedOrgs}/>
+    </div>
+    )
   }
 
   componentDidMount() {
@@ -85,7 +90,6 @@ render() {
       <div className='search-results-list'>
         {this.state.searchResults.map((item, key) => this.renderItemInfo(item, key))}
       </div>
-
         {this.state.showOrgs && this.renderOrgs()}
         <div className='twelve columns'>
           <h2 className='downArrow'><img src='images/arrow-down.png' width='70px' onClick={(e) => this.scrollToCategories(e)} /></h2>

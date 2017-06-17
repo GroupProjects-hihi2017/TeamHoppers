@@ -1,4 +1,10 @@
+/*** Header ***/
 
+.header {
+  text-align: left;
+  padding: 20px 0px;
+  margin-left: 20px;
+}
 
 /*** Navbar ***/
 
@@ -50,6 +56,14 @@
 
 .search-result-info {
   padding: 20px;
+}
+
+.org-name {
+  font-style: bold;
+  font-size: 2rem;
+}
+
+.org-info {
 }
 
 

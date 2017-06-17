@@ -6,8 +6,8 @@ import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
 const renderSearchResults = (result, key) => (
   <div key={key}>
-      <p className="itemClass-name">{result.org_name}</p>
-      <p className="itemClass-info">{result.org_info}</p>
+      <p className="org-name">{result.org_name}</p>
+      <p className="org-info">{result.org_info}</p>
   </div>
 )
 
