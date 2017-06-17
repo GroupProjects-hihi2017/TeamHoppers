@@ -1,9 +1,26 @@
+body {
+  background-color: ;
+}
 /*** Header ***/
 
 .header {
+  background-color: #94a70d;
+  color: #fff;
+  height: 250px;
+}
+
+.header-text {
+  vertical-align: middle;
+  display: inline-block;
   text-align: left;
-  padding: 20px 0px;
-  margin-left: 20px;
+  margin-left: 40px;
+  width:40%;
+  margin-top: -130px;
+}
+
+.header-img {
+  display: inline-block;
+  width: 50%;
 }
 
 /*** Navbar ***/
@@ -27,6 +44,13 @@
 
 
 /*** Search Bar ***/
+
+.search-bar-body {
+  height: 35em;
+  width: 100%;
+
+}
+
 .search-container {
   height: 350px;
   text-align: center;
@@ -34,16 +58,22 @@
 }
 
 .search-bar-header {
+  width: 60%;
+  float: left;
   padding-top: 50px;
   text-align: center;
 }
 
 .search-box {
   padding: 25px 0px;
+  width: 60%;
+  float: left;
   text-align: center;
 }
 
 .search-results-list {
+  width: 60%;
+  float: left;
   text-align: center;
 }
 
@@ -51,7 +81,6 @@
   justify-content: center;
   display: inline-block;
   text-align: center;
-  padding: 15px;
 }
 
 .search-result-info {

@@ -73,7 +73,7 @@ class SearchBar extends React.Component {
 render() {
   const {itemClass, dispatch} = this.props
   return (
-    <div className='container'>
+    <div className='container search-bar-body'>
       <div>
         <h4 className="search-bar-header">What would you like to recycle?</h4>
       </div>

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
   return (
-      <div className='header'>
-        <h1>Go Green!</h1>
+      <div className='container header'>
+        <h1 className='header-text'>recycleHack</h1><img className='header-img' src='http://www.koehlerdramm.com/wp-content/uploads/2016/04/happy-earth-day-2016-1024x427.jpg'/>
       </div>
   )
 }

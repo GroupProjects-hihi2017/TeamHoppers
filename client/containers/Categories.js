@@ -5,12 +5,6 @@ import {getCategories} from '../actions/categories'
 import {Link} from 'react-router-dom'
 
 const renderCategory = (category, key) => (
-
-
-
-
-
-
   <div className="category-box" key={key}>
     <div className='grid'>
       <Link to={`/categories/${category.category_id}`}>
@@ -23,15 +17,6 @@ const renderCategory = (category, key) => (
     </div>
   </div>
 )
-
-
-
-
-
-
-
-
-
 
 class Categories extends React.Component {
   componentDidMount () {
