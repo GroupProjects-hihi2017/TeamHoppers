@@ -17,7 +17,6 @@ export function getAllOrgs () {
           return
         }
         dispatch(listAllOrgs(res.body))
-        console.log(res.body);
       })
   }
 }

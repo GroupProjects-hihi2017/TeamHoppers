@@ -12,6 +12,7 @@ import Orgs from '../containers/Orgs'
 import ItemClass from '../containers/ItemClass'
 import Categories from '../containers/Categories'
 import ListAllOrgs from '../containers/ListAllOrgs'
+import ItemsByOrg from '../containers/ItemsByOrg'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route exact path='/general-info' component={GeneralInfo} />
         <Route exact path='/' component={Home} />
         <Route exact path='/organisations' component={ListAllOrgs} />
+        <Route exact path='/organisations/:org_id' component={ItemsByOrg} />
         <Route exact path='/items' component={ItemClass} />
         <Route exact path='/categories' component={Categories} />
         <Route exact path='/categories/:category_id' component={ItemClass} />
