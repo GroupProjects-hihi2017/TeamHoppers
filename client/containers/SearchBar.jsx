@@ -79,10 +79,13 @@ render() {
       <div>
         <h4 className="search-bar-header">What would you like to recycle?</h4>
       </div>
-      <form>
+      <form className='search-box'>
         <input placeholder='Search' type='text' onChange={(e) => this.searchHandler(e)}></input>
       </form>
+      <div className='search-results-list'>
         {this.state.searchResults.map((item, key) => this.renderItemInfo(item, key))}
+      </div>
+
         {this.state.showOrgs && this.renderOrgs()}
         <div className='twelve columns'>
           <h2 className='downArrow'><img src='images/arrow-down.png' width='70px' onClick={(e) => this.scrollToCategories(e)} /></h2>
