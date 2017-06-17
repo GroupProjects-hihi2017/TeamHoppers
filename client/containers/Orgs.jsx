@@ -7,7 +7,7 @@ import {getOrgsByItem} from '../actions/joinItemToOrgs'
 const renderOrgClass = (joinItemToOrgs, key) => (
 
   <div className='itemClass-box 3 columns' key={key}>
-    <Link to={`/categories/${joinItemToOrgs.category_id}/${joinItemToOrgs.itemClass_id}/${joinItemToOrgs.org_id}`}>
+    <Link to={`/organisations/${joinItemToOrgs.org_id}`}>
       <img src={`${joinItemToOrgs.org_img}`}/>
       <h4 className="itemClass-name">{joinItemToOrgs.org_name}</h4>
     </Link>

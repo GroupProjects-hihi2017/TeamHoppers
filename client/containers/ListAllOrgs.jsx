@@ -22,7 +22,7 @@ class ListAllOrgs extends React.Component {
   render () {
     const {listOrgs} = this.props
     return (
-      <div className=''>
+      <div className='container'>
         <div>
           <h4 className=''>Wellington Organisations</h4>
         </div>

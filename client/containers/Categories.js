@@ -6,15 +6,13 @@ import {Link} from 'react-router-dom'
 
 const renderCategory = (category, key) => (
   <div className="category-box" key={key}>
-    <div className='grid'>
       <Link to={`/categories/${category.category_id}`}>
         <figure>
           <img src={`${category.category_img}`}/>
-          <figcaption><h4 className="figcaption">{category.category_name}</h4>
+          <figcaption><h4>{category.category_name}</h4>
           <p>{category.category_info}</p></figcaption>
         </figure>
       </Link>
-    </div>
   </div>
 )
 
@@ -27,14 +25,12 @@ class Categories extends React.Component {
   render () {
     const {categories, dispatch} = this.props
     return (
-      <div>
+      <div className='container'>
         <div className="category-list-header">
           <h4>Categories</h4>
         </div>
-        <div className='categories-container container'>
-          <div>
+        <div className='categories-container'>
             {categories.map((category, key) => renderCategory(category, key))}
-          </div>
         </div>
       </div>
     )

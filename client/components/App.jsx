@@ -23,7 +23,7 @@ const App = () => {
         <Route exact path='/about' component={About} />
         <Route exact path='/general-info' component={GeneralInfo} />
         <Route exact path='/' component={Home} />
-        <Route exact path='/organisations' component={ListAllOrgs} />
+        <Route path='/organisations' component={ListAllOrgs} />
         <Route exact path='/organisations/:org_id' component={ItemsByOrg} />
         <Route exact path='/items' component={ItemClass} />
         <Route exact path='/categories' component={Categories} />
