@@ -79,8 +79,8 @@ org_location |
 Tablename: joinItemToOrgs |
 --- |
 orgRelationships_id |
-itemClass_id |
-org_id |
+itemClass_id (join) |
+org_id (join) |
 isDonatable |
 
 ## USER STORIES
