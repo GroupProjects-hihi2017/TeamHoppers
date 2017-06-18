@@ -1,6 +1,6 @@
 const getOrgs = (db) => {
   return (db)('orgs')
-    .select('*')
+    .select('*').orderBy('org_name')
 }
 
 module.exports = {
