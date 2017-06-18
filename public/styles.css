@@ -365,9 +365,37 @@ align-content: flex-end;}
 
 /*** About Page ***/
 
+.about-page {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  background-image: url('http://cdn.shopify.com/s/files/1/0250/5422/files/ios_linen_texture___black_by_vegardhw-d3ddll5_copy.jpg?2614');
+
+}
+
+.about-header {
+  text-align: center;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  font-weight: bold;
+  color: white;
+
+}
+
+.about-text {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  color: white;
+
+
+}
 .hopper-img {
   border-radius: 15%;
-	width: 60vh;
+	width: 30%;
   display: block;
   margin: auto;
 
@@ -375,35 +403,9 @@ align-content: flex-end;}
 
 .mulledwine-img {
   border-radius: 15%;
-	width: 60vh;
-  length: 60vh;
+	width: 30%;
+  length: 30%;
   display: block;
   margin: auto;
-
-}
-
-.about-header {
-  text-align: center;
-  margin-top: 15vh;
-  height: 100%;
-  width: auto;
-
-}
-
-.about-text {
-  text-align: center;
-  height: 100%;
-  width: 60%;
-  margin: auto;
-
-
-}
-
-.about-closing-text {
-  text-align: center;
-  margin-top: 10vh;
-  height: 100%;
-  width: auto;
-
 
 }
