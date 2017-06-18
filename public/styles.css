@@ -362,3 +362,48 @@ align-content: flex-end;}
 .org-logo {
   height: 10vh;
 }
+
+/*** About Page ***/
+
+.hopper-img {
+  border-radius: 15%;
+	width: 60vh;
+  display: block;
+  margin: auto;
+
+}
+
+.mulledwine-img {
+  border-radius: 15%;
+	width: 60vh;
+  length: 60vh;
+  display: block;
+  margin: auto;
+
+}
+
+.about-header {
+  text-align: center;
+  margin-top: 15vh;
+  height: 100%;
+  width: auto;
+
+}
+
+.about-text {
+  text-align: center;
+  height: 100%;
+  width: 60%;
+  margin: auto;
+
+
+}
+
+.about-closing-text {
+  text-align: center;
+  margin-top: 10vh;
+  height: 100%;
+  width: auto;
+
+
+}
