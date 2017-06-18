@@ -1,13 +1,15 @@
-[![Build](https://travis-ci.org/GroupProjects-hihi2017/TeamHoppers.svg?branch=master)](https://travis-ci.org/GroupProjects-hihi2017/TeamHoppers)
+Team Hoppers Present..
 
-The Hoppers Present... Wellington Recycling Thing!
+# recycleHack [![Build](https://travis-ci.org/GroupProjects-hihi2017/TeamHoppers.svg?branch=master)](https://travis-ci.org/GroupProjects-hihi2017/TeamHoppers)
 
-TEAM ROLES
-Stakeholder Liason: Jess
-Scrum Master: Natalie
-Git Master: Alternating
+You'll find us online @ http://recyclehack.herokuapp.com/#/
+
+## TEAM ROLES
 Product Owner: Sarah
-FUN Master: Alternating
+Scrum Master: Natalie
+Stakeholder Liaison: Jess
+Git Master: ~ alternating
+FUN Master: ~ alternating
 
 
 USER STORIES:
