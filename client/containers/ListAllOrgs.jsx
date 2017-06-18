@@ -1,5 +1,4 @@
 import React from 'react'
-import ToggleDisplay from 'react-toggle-display'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
