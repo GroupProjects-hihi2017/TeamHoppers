@@ -6,10 +6,12 @@ import {Link} from 'react-router-dom'
 
 const renderCategory = (category, key) => (
   <div className="category-box" key={key}>
-    <Link to={`/categories/${category.category_id}`}>
-      <figure>
-        <img src={`${category.category_img}`}/>
-        <figcaption><h4>{category.category_name}</h4>
+
+      <Link to={`/categories/${category.category_id}`}>
+        <figure>
+          <img src={`${category.category_img}`}/>
+          <figcaption><h5>{category.category_name}</h5>
+
           <p>{category.category_info}</p></figcaption>
       </figure>
     </Link>
