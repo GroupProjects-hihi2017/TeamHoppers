@@ -1,6 +1,6 @@
-Team Hoppers Present..
+## Team Hoppers Present..
 
-insert logo
+![Alt text](http://www.koehlerdramm.com/wp-content/uploads/2016/04/happy-earth-day-2016-1024x427.jpg)
 
 # recycleHack [![Build](https://travis-ci.org/GroupProjects-hihi2017/TeamHoppers.svg?branch=master)](https://travis-ci.org/GroupProjects-hihi2017/TeamHoppers)
 
