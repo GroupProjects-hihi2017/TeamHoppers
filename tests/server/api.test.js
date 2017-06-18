@@ -15,7 +15,7 @@ test('getCategories gets all categories', (t) => {
     .then(function (result) {
       return new Promise((resolve, reject) => {
         var actual = result.length
-        t.is(actual, 11)
+        t.is(actual, 12)
         resolve()
       })
     })
