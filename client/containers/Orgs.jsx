@@ -7,13 +7,10 @@ import {getOrgsByItem} from '../actions/joinItemToOrgs'
 const renderOrgClass = (joinItemToOrgs, key) => (
 
   <div className='itemClass-box 3 columns' key={key}>
-    <Link to={`/organisations/${joinItemToOrgs.org_id}`}>
-      <img src={`${joinItemToOrgs.org_img}`}/>
-      <h4 className="itemClass-name">{joinItemToOrgs.org_name}</h4>
-    </Link>
+    <img src={`${joinItemToOrgs.org_img}`}/>
+    <p><a href={joinItemToOrgs.org_url} target="_blank">{joinItemToOrgs.org_name}</a></p>
     <p className="itemClass-info">{joinItemToOrgs.org_info}</p>
-    <p className="itemClass-info">{joinItemToOrgs.org_url}</p>
-    <p className="itemClass-info">{joinItemToOrgs.org_address}</p>
+    <p className="itemClass-info">Address: {joinItemToOrgs.org_address}</p>
     <p className="itemClass-info">{joinItemToOrgs.org_location}</p>
   </div>
 )
@@ -36,7 +33,7 @@ class OrgClass extends React.Component {
     return (
       <div className='container'>
         <div>
-          <h4 className="itemClass-list-header">Organisations</h4>
+          <h5 className="itemClass-list-header">The following organisations will take your items:</h5>
         </div>
         <div className='itemClass-container '>
           <div>
