@@ -11,8 +11,8 @@ class Home extends React.Component {
   }
 
   scrollToEntries (e) {
-    jump('.entries-list', {
-      offset: -16
+    jump('.category-list-header', {
+      offset: -50
     })
   }
   render() {
