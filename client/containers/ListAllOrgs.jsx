@@ -35,6 +35,7 @@ class ListAllOrgs extends React.Component {
 
 
 function mapStateToProps(state) {
+  console.log(state);
   return {
     listOrgs: state.listOrgs,
     joinItemToOrgs: state.joinItemToOrgs

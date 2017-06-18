@@ -11,7 +11,7 @@ class OrgSingle extends React.Component {
     }
   }
   filterItems(items) {
-    return items.filter(item => item.org_id == this.state.org.org_id)
+    return items.filter(item => item.org_id == this.props.org.org_id)
   }
   componentWillReceiveProps({org, joinItemToOrgs}) {
     this.setState({org, items: this.filterItems(joinItemToOrgs)})
