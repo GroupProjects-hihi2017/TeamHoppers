@@ -46,61 +46,146 @@ body {
 }
 
 /*** Navbar ***/
-.nav {
-    background-color: #f6f7f8;
-    border-bottom: 3px solid #FA824C;
+
+.mobile-menu {
+  display:block;
+  width:100%;
+  line-height: 1.6em;
+  font-weight: 400;
+  width:100%;
+  text-align:center;
+	position: relative;
+  margin:0 auto;
 }
-.nav ul {
-  background-color: #f6f7f8;
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-.nav li {
-  font-size: 1.2em;
-  line-height: 30px;
-  height: 30px;
-  border-bottom: 1px solid #888;
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+	list-style-type:none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:center;
+  width:100%;
+  position: absolute;
+  background-color: #342E37;
 }
 
-.nav a {
-  text-decoration: none;
-  color: black;
-  display: block;
-  transition: .3s background-color;
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+	display:inline-block;
+	margin: auto;
 }
 
-.nav a:hover {
-  text-decoration: underline;
-  text-decoration-color: orange;
+/*Style for menu links*/
+.mobile-menu li a {
+	display:block;
+  width: auto;
+	text-align: center;
+	color: #fff;
+  text-transform:uppercase;
+	 background-color: #342E37;
+	text-decoration: none;
+  margin-left:-5px;
+  padding: 10px 0;
+-webkit-transition: all 0.4s ease 0s;
+-moz-transition: all 0.4s ease 0s;
+-ms-transition: all 0.4s ease 0s;
+-o-transition: all 0.4s ease 0s;
+transition: all 0.4s ease 0s;
 }
 
-.nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+	color: #4db3ff;
+  background-color:#ccddee;
 }
 
-@media screen and (min-width: 600px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }
-
-  .nav li {
-    float: left;
-  }
-  .nav ul {
-    overflow: auto;
-    width: 600px;
-    margin: 0 auto;
-  }
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
 }
 
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+	color: #4db3ff;
+}
+
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #8aa8bd;
+	text-align: center;
+	padding: 10px 15px;
+	display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span{
+   padding-left: 35px;
+}
+
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 800px){
+  .mobile-menu .lines {
+    border-bottom: 15px double #f8f8f8;
+    border-top: 5px solid #f8f8f8;
+    content:"";
+    height: 5px;
+    width:20px;
+    padding-right:15px;
+  float: right;
+}
+	/*Make dropdown links appear inline*/
+	.mobile-menu ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.mobile-menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.mobile-menu ul li, .mobile-menu li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.mobile-menu .show-menu {
+		display:block;
+	}
+}
 
 
 /*** Search Bar ***/
