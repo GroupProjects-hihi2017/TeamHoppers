@@ -139,13 +139,12 @@ nav ul li a:hover {
 /*** Search Bar ***/
 
 .search-bar-body {
-  height: 50vh;
+  height: 100vh;
   width: 100%;
 
 }
 
 .search-container {
-  height: 350px;
   text-align: center;
   justify-content: center;
 }
@@ -168,9 +167,10 @@ nav ul li a:hover {
 }
 
 .search-results-list {
-  width: 50%;
+  height: 60vh;
+  width: 70%;
   text-align: center;
-  margin:auto;
+  margin: auto;
   padding: 20px 0px;
 }
 
@@ -179,7 +179,7 @@ nav ul li a:hover {
   color: #fff;
   border-color: #fff;
   margin: 5px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .search-results-list button:hover {
@@ -216,16 +216,12 @@ display: flex;
 align-items: center;
 -webkit-justify-content: center;
 justify-content: center;
-/* You can set flex-wrap and flex-direction individually */
 -webkit-flex-direction: row;
 flex-direction: row;
 -webkit-flex-wrap: wrap;
 flex-wrap: wrap;
-/* Or do it all in one line with flex flow */
 -webkit-flex-flow: row wrap;
 flex-flow: row wrap;
-/* tweak the where items line up on the row */
-/* valid values are: flex-start, flex-end, space-between, space-around, stretch */
 -webkit-align-content: flex-end;
 align-content: flex-end;}
 
