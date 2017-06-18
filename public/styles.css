@@ -193,6 +193,12 @@ nav ul li a:hover {
   font-size: 2rem;
 }
 
+/*** Jump Arrow ***/
+
+.downArrow {
+  text-align: center;
+  cursor:s-resize;
+}
 
 
 /*** Categories Container ***/
@@ -404,6 +410,17 @@ align-content: flex-end;}
 
 }
 
+.about-title {
+  text-align: center;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  font-weight: bold;
+  font-size: 160%;
+  font-weight: bold;
+  color:  #FA824C;
+
+}
+
 .about-header {
   text-align: center;
   height: 100%;
@@ -441,7 +458,56 @@ align-content: flex-end;}
 
 }
 
-.downArrow {
+/*** General Info  Page ***/
+
+
+.info-page {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  background-image: url('http://cdn.shopify.com/s/files/1/0250/5422/files/ios_linen_texture___black_by_vegardhw-d3ddll5_copy.jpg?2614');
+
+
+}
+
+.info-header {
   text-align: center;
-  cursor:s-resize;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 160%;
+  font-weight: bold;
+  color:  #FA824C;
+  margin-bottom: 2%;
+
+}
+
+
+.info-text {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 3%;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  color: white
+
+}
+
+.info-div {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+}
+
+.info-div-2 {
+  width: 60%;
+  margin-left: 40%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+}
+
+.info-pointers{
+  font-family: 'Spinnaker', sans-serif;
+  color: white;
 }
