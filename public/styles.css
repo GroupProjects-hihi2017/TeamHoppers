@@ -1,5 +1,5 @@
 body {
-  background-color: #f6f7f8;
+  background-color: #fff;
   margin: 0px;
   padding: 0px;
 }
@@ -16,20 +16,20 @@ body {
   display: inline-block;
   text-align: left;
   margin-left: 40px;
-  margin-top: 15vh;
+  margin-top: 10vh;
   height: 100%;
   width: auto;
 }
 .hack {
   font-family: 'Spinnaker', sans-serif;
   font-weight: bold;
-  font-size: 5vh;
+  font-size: 10vh;
 }
 
 .recycle {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
-  font-size: 5vh;
+  font-size: 10vh;
 }
 
 .header-img {
@@ -49,7 +49,7 @@ body {
 
 
 header {
-   background-color: #342E37;
+   background-color: #202020;
    width: 100%;
    height: 3.5em;
    position: fixed;
@@ -69,7 +69,7 @@ ul li {
 
 nav ul li a {
   font-family: 'Spinnaker', sans-serif;
-  font-size: 1.5vh;
+  font-size: 2vh;
   color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -77,6 +77,8 @@ nav ul li a {
   letter-spacing: 1.8px;
   margin-right: 12px;
   padding: 0vh 5vh;
+  padding-top: 3vh;
+  cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -85,7 +87,7 @@ nav ul li a:hover {
 
 
 .menu-icon {
-  color: #fff;
+   color: #fff;
    text-decoration: none;
    font-size: 1.5em;
    bottom: 15px;
@@ -109,7 +111,7 @@ nav ul li a:hover {
    display: none;
    position: absolute;
    padding: 10px;
-   background: #5a4d4c;
+   background: #202020;
    margin-top: 40px;
    right: 5px;
    width: 9em;
@@ -117,7 +119,7 @@ nav ul li a:hover {
 
  nav:hover ul {
    display: block;
-   background-color: #342E37;
+   background-color: #202020;
  }
 
  nav li {
@@ -160,7 +162,9 @@ nav ul li a:hover {
 
 .search-box input {
   height: 15vh;
-  width: 25vh;
+  width: 35vh;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 3vh;
 }
 
 .search-results-list {
@@ -173,8 +177,15 @@ nav ul li a:hover {
 .search-results-list button {
   background-color: #FA824C;
   color: #fff;
+  border-color: #fff;
   margin: 5px;
   font-size: 2rem;
+}
+
+.search-results-list button:hover {
+    background-color: #fff;
+    color: #FA824C;
+    border-color: #FA824C;
 }
 
 .search-result {
@@ -246,7 +257,7 @@ align-content: flex-end;}
 }
 
 .category-box figcaption {
-	background: rgba(255, 55, 59, 0.8);
+	background: rgba(250, 130, 76, 0.8);
   border-radius: 25%;
 	color: white;
 	height: 100%;
@@ -258,12 +269,16 @@ align-content: flex-end;}
 	z-index: 100;
 }
 
-.category-box figcaption h4 p {
+.category-box figcaption h5 p {
 	position: relative;
-	top: -40px;
+	top: -15vh;
   height: 35vh;
 	width: 40vh;
 	vertical-align: middle;
+}
+
+.category-box figcaption h5 {
+  top: 3vh;
 }
 
 .category-box figcaption p {
@@ -291,9 +306,9 @@ align-content: flex-end;}
 }
 
 .category-box figcaption p {
-	font-size: 1.5em;
+	font-size: 2.5vh;
 	position: relative;
-	top: -40px;
+	top: -10vh;
 	width: 35vh;
 	-webkit-transition: all 300ms ease-out;
 	-moz-transition: all 300ms ease-out;
@@ -364,14 +379,29 @@ align-content: flex-end;}
   align-content: flex-end;}
 
 .org-box {
+  font-family: 'Spinnaker', sans-serif;
   text-align: center;
   margin: 2vh 2vh;
+  max-width: 25vh;
 }
 
 
-.org-box h4 {
-  font-size: 1.5vh;
+.org-header h4 {
+  font-size: 3.5vh;
   margin: 1vh;
+}
+
+.org-header p {
+  padding-top: 5vh;
+  font-style: italic;
+  font-size: 2vh;
+}
+
+.org-header{
+  width: 70%;
+  margin: auto;
+  padding-top: 5vh;
+  text-align: center;
 }
 
 .org-box a {
@@ -391,7 +421,7 @@ align-content: flex-end;}
 }
 
 .org-logo {
-  height: 10vh;
+  max-height: 15vh;
 }
 
 /*** About Page ***/
@@ -409,7 +439,8 @@ align-content: flex-end;}
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
   font-weight: bold;
-  color: white;
+  color: #fff;
+  padding-top: 5vh;
 
 }
 
@@ -444,4 +475,27 @@ align-content: flex-end;}
 .downArrow {
   text-align: center;
   cursor:s-resize;
+}
+
+/*** Contact Form ***/
+
+.contact-form {
+  font-family: 'Spinnaker', sans-serif;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-form h4 {
+  text-align: center;
+}
+
+.contact-form input {
+  width: 100%;
+  height: 8vh;
+  font-size: 3vh;
+}
+
+.contact-form textarea{
+  width: 100%;
+  height: 25vh;
 }

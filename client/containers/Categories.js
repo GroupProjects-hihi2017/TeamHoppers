@@ -9,7 +9,7 @@ const renderCategory = (category, key) => (
       <Link to={`/categories/${category.category_id}`}>
         <figure>
           <img src={`${category.category_img}`}/>
-          <figcaption><h4>{category.category_name}</h4>
+          <figcaption><h5>{category.category_name}</h5>
           <p>{category.category_info}</p></figcaption>
         </figure>
       </Link>

@@ -31,8 +31,9 @@ class ListAllOrgs extends React.Component {
     const {listOrgs} = this.props
     return (
       <div className='container'>
-        <div>
-          <h4 className=''>Wellington Organisations</h4>
+        <div className='org-header'>
+          <h4>Consider recycling or donating your used items at any of these Wellington organisations:</h4>
+          <p>Want your organisation listed on our site? Get in touch with us <Link to='/contact'>here</Link>.</p>
         </div>
         <div className='org-link-list'>
           {listOrgs.map((org, key) => renderAllOrgs(org, key))}
