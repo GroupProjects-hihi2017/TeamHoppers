@@ -69,7 +69,7 @@ exports.seed = function(knex, Promise) {
           org_name: "Salvation Army Family Store",
           org_address: 'Wellington City Location: 203 Willis St, Te Aro, Wellington 6011 (For full list of locations in your area, visit the Salvation Army website).',
           org_url: "http://www.salvationarmy.org.nz/centres/nz/lower-north-island/wellington-city",
-          org_img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTejwFU2ZMYLdDyQCsNyuXF42Es2STcUFj4InRTICLWXugduPRrWw",
+          org_img: "http://waynetheatre.org/wp-content/uploads/2016/08/salvation-army.png",
           org_info: "The Salvation Army is a Protestant Church and international charity organization. Their stores sell pre-loved items to assist in their fundraising efforts for food distribution, disaster relief, rehabilitation centers, anti-human trafficking efforts, and a wealth of children's programs.",
           org_location: ""
         },
@@ -78,7 +78,7 @@ exports.seed = function(knex, Promise) {
           org_name: "St. Vincent dePaul's OpShop",
           org_address: "Wellington City Location: 107 Aro Street, Wellington 6021 (For full list of locations in your area, visit the St. Vincent dePaul's website).",
           org_url: "http://www.svdp.org.nz/'",
-          org_img: "http://www.svdp.org.nz/images/svdp-logo-150-yrs.png",
+          org_img: "http://svdppoc.com/wp-content/uploads/2015/03/St-vincent-de-Paul-logo2.gif",
           org_info: "The St Vincent de Paul OpShops sell second-hand clothes, furniture, and more, to assist in their fundraising efforts for local welfare programs. Their sustainability efforts also encourage used items to be recycled, which would otherwise be thrown away.",
           org_location: ""
         },
@@ -87,7 +87,7 @@ exports.seed = function(knex, Promise) {
           org_name: "Sustainability Trust",
           org_address: "2 Forresters Lane, Te Aro, Wellington 6011",
           org_url: "https://www.sustaintrust.org.nz/",
-          org_img: "https://www.sustaintrust.org.nz/wp-content/uploads/2014/10/logo-white1.png",
+          org_img: "https://2014.wellington.wordcamp.org/files/2014/03/sustainabilitytrust.jpg",
           org_info: "Sustainability Trust helps reduce E-Waste by giving people a place to recycle their old electronics. As the Wellington region's energy experts, they provide workshops and advice on living and working sustainably. They fund their work and our other award-winning community programmes with profits from the sale and installation and energy efficient heating, lighting, ventilation and insulation.",
           org_location: ""
         },
