@@ -30,6 +30,7 @@ const App = () => {
         <Route exact path='/categories/:category_id' component={ItemClass} />
         <Route exact path='/contact' component={ContactForm} />
         <Route exact path='/categories/:category_id/:itemClass_id' component={Orgs} />
+        <div className="symes"></div>
       </div>
     </Router>
   )

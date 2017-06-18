@@ -137,7 +137,7 @@ nav ul li a:hover {
 /*** Search Bar ***/
 
 .search-bar-body {
-  height: 70vh;
+  height: 50vh;
   width: 100%;
 
 }
@@ -439,4 +439,9 @@ align-content: flex-end;}
   display: block;
   margin: auto;
 
+}
+
+.downArrow {
+  text-align: center;
+  cursor:s-resize;
 }
