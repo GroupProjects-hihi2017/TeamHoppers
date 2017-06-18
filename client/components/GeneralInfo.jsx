@@ -10,7 +10,7 @@ const GeneralInfo = () => {
 
         <p className='info-header'>Wheelie bins, bags and crates.</p>
 
-        <p className='info-text'>Wellington city council issues free recycling bags from May-June. During alternative months you can perchase your recycling bags from the Council Service Centre, or Johnsonville, Kilbirnie, Newtown, Tawa libraries. If you live in the suburbs you can use a council wheelie bin or recycling bags for paper, metals and other household items. Make sure you sepperate any glassware. Glass bottles and jars can be recycled in the council issued 45-litre recycling crate.
+        <p className='info-text'>Wellington city council issues free recycling bags from May-June. During alternative months you can purchase your recycling bags from the Council Service Centre, or Johnsonville, Kilbirnie, Newtown, Tawa libraries. If you live in the suburbs you can use a council wheelie bin or recycling bags for paper, metals and other household items. Make sure you separate any glassware. Glass bottles and jars can be recycled in the council issued 45-litre recycling crate.
         </p>
 
       <hr></hr>
@@ -22,15 +22,15 @@ const GeneralInfo = () => {
         <div className='info-div'>
           <li className='info-pointers'>Close the lid of your wheelie bin so it doesn't fill with rain water and recycling materials won't blow away.</li>
           <li className='info-pointers'>If you live in the city an easy way to manage your recycling is by sorting materials into clear plastic bags (supermarket bags are fine).</li>
-          <li className='info-pointers'>Bundles of cardboard under 15kg may also be put out for collection - ensure they are flattened and securely tied with string or tape. Cardboard is collected on Tuesday night.</li>
-          <li className='info-pointers'>You can recycle paper of any kind, unless it is waxed or foil-backed or has plastic or food onit.</li>
+          <li className='info-pointers'>Bundles of cardboard under 15kg may also be put out for collection - ensure they are flattened and securely tied with string or tape.</li>
+          <li className='info-pointers'>You can recycle paper of any kind, unless it is waxed or foil-backed or has plastic or food on it.</li>
         </div>
 
       <hr></hr>
 
         <p className='info-header'>Compost for the love of earth!</p>
-        <p className='info-text'>Composting is one of the first step toward sustainable living. It significantly reduces the amount of amount of waste going to landfills around wellington</p>
-        <p className='info-text'>Here's a brief list of organic materials save to compost:</p>
+        <p className='info-text'>Composting is one of the first steps toward sustainable living. It significantly reduces the amount of waste going to landfills around Wellington.</p>
+        <p className='info-text'>Here's a brief list of organic materials safe to compost:</p>
         <div className='info-div-2'>
           <li className='info-pointers'>Vegetable scraps</li>
           <li className='info-pointers'>Coffee grounds and filters</li>
