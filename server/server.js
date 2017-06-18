@@ -37,7 +37,7 @@ server.post('/contact', function (req, res) {
     text: 'Name: ' + req.body.name + ' Email: ' + req.body.email + ' Comments: ' + req.body.comments
   }
   mailgun.messages().send(data, function (error, body) {
-    if(!error)
+    if (!error)
       res.send('Thank you for your comment.')
     else {
       res.send('Sorry, your comment has not been sent.')
