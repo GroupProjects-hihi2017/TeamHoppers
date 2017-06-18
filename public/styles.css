@@ -9,7 +9,6 @@ body {
   background-color: #94a70d;
   height: 25vh;
   margin: 0px;
-
 }
 
 .header-text {
@@ -21,6 +20,17 @@ body {
   height: 100%;
   width: auto;
 }
+.hack {
+  font-family: 'Spinnaker', sans-serif;
+  font-weight: bold;
+  font-size: 5vh;
+}
+
+.recycle {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 5vh;
+}
 
 .header-img {
   display: inline-block;
@@ -30,7 +40,7 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  .header img {
+  .header-img {
     display: none;
   }
 }
@@ -38,7 +48,7 @@ body {
 /*** Navbar ***/
 .nav {
     background-color: #f6f7f8;
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #FA824C;
 }
 .nav ul {
   background-color: #f6f7f8;
@@ -130,6 +140,8 @@ body {
 }
 
 .search-results-list button {
+  background-color: #FA824C;
+  color: #fff;
   margin: 5px;
   font-size: 2rem;
 }
@@ -150,13 +162,12 @@ body {
   font-size: 2rem;
 }
 
-.org-info {
-}
 
 
 /*** Categories Container ***/
 
 .categories-container {
+font-family: 'Spinnaker', sans-serif;
 display: -webkit-flex;
 display: flex;
 -webkit-align-items: center;
@@ -320,27 +331,34 @@ align-content: flex-end;}
   flex-flow: row wrap;
   -webkit-align-content: flex-end;
   align-content: flex-end;}
+
+.org-box {
+  text-align: center;
+  margin: 2vh 2vh;
 }
 
-.org-link-list div {
-  text-align: center;
-  flex-grow: 1;
-  max-width: 200px;;
-}
 
 .org-box h4 {
-  font-size: 24px;
+  font-size: 1.5vh;
+  margin: 1vh;
 }
 
 .org-box a {
   text-decoration: none;
 }
 
+.org-item-list {
+
+}
+
+
 .org-item-list ul li {
+  display: inline-block;
+  font-size: 1.5vh;
   list-style: none;
   text-decoration: none;
 }
 
 .org-logo {
-  height: 20vh;
+  height: 10vh;
 }

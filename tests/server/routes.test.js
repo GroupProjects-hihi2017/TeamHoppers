@@ -15,7 +15,7 @@ test.cb('GET /categories', t => {
     .get('/api/categories')
     .expect(200)
     .end((err,res) => {
-      t.deepEqual(res.body.length, 11)
+      t.deepEqual(res.body.length, 12)
       t.is(res.body[0].category_id, 88005)
       t.end()
     })
