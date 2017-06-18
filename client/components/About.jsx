@@ -25,7 +25,7 @@ const About = () => {
 
     <div>
       <p>Happy recycling</p>
-        <img src='/images/teamHoppers.jpg'></img>
+        <img src='/images/mulledwine.jpg'></img>
       <p>Love team Hoppers x</p>
     </div>
   </div>
