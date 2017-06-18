@@ -8,9 +8,13 @@ You'll find us online @ http://recyclehack.herokuapp.com/#/
 
 ## GETTING STARTED
 `git clone `
+
 `cd TeamHoppers`
+
 `npm install`
+
 `knex migrate:latest`
+
 `knex seed:run`
 
 To start the server, run `npm run dev` and go to http://localhost:3000/
@@ -41,7 +45,41 @@ add photo
 add photo
 
 ## DATABASE STRUCTURE
+### Database to divide items into categories
+Tablename: categories |
+--- |
+category_id |
+category_name |
+category_img |
+category_info |
 
+### Database of items to donate / recycle
+Tablename: itemClass |
+--- |
+itemClass_id |
+category_id (join) |
+itemClass_name |
+itemClass_info |
+itemClass_img |
+
+### Database of organisations to recycle / donate items
+Tablename: orgs |
+--- |
+org_id |
+org_name |
+org_address |
+org_url |
+org_img |
+org_info |
+org_location |
+
+### Database joining organisations with items that they take (and whether the item is to donate or to recyle)
+Tablename: joinItemToOrgs |
+--- |
+orgRelationships_id |
+itemClass_id |
+org_id |
+isDonatable |
 
 ## USER STORIES
 ### Minimum Viable Product (MVP)
@@ -70,5 +108,5 @@ Role | Name | Responsibility
 Product Owner | Sarah | Ensuring the product matches the users stories, ensuring the product has consistency
 Scrum Master | Natalie | Holding regular stand ups and checking whether tickets can be moved across
 Stakeholder Liaison | Jess | Getting in touch with interested stakeholders and ensuring the final product meets needs of relevant stakeholders
-Git Master | ~ alternating | Dealing with pull request by making sure its pushed to the right branch and fixing merge conflicts, helping out with git problems
-Fun Master | ~ alternating | Coming up with enjoyable games, and having comms making sure everyone's all good
+Git Master | ~alternating | Dealing with pull request by making sure its pushed to the right branch and fixing merge conflicts, helping out with git problems
+Fun Master | ~alternating | Coming up with enjoyable games, and having comms making sure everyone's all good
