@@ -6,9 +6,9 @@ import {getOrgsByItem} from '../actions/joinItemToOrgs'
 const renderAllItemsByOrg = (joinItemToOrgs, key) => (
 
   <div className='org-item-list' key={key}>
-      <ul>
-        <li>{joinItemToOrgs.itemClass_name}</li>
-      </ul>
+    <ul>
+      <li>{joinItemToOrgs.itemClass_name}</li>
+    </ul>
   </div>
 )
 
@@ -30,7 +30,7 @@ class ItemsByOrg extends React.Component {
   render () {
     return (
       <div className='container'>
-          {this.state.joinItemToOrgs.map((items, key) => renderAllItemsByOrg(items, key))}
+        {this.state.joinItemToOrgs.map((items, key) => renderAllItemsByOrg(items, key))}
       </div>
     )
   }
