@@ -7,7 +7,7 @@ insert logo
 You'll find us online @ http://recyclehack.herokuapp.com/#/
 
 ## GETTING STARTED
-`git clone `
+`git clone https://github.com/GroupProjects-hihi2017/TeamHoppers.git`
 
 `cd TeamHoppers`
 
@@ -17,7 +17,11 @@ You'll find us online @ http://recyclehack.herokuapp.com/#/
 
 `knex seed:run`
 
+`npm test`
+
 To start the server, run `npm run dev` and go to http://localhost:3000/
+
+Note about contact form: this requires an API key from Mailgun (https://www.mailgun.com/). Example provided in .env.example file.
 
 ## TECHNOLOGIES
 * HTML
