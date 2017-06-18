@@ -46,61 +46,92 @@ body {
 }
 
 /*** Navbar ***/
-.nav {
-    background-color: #f6f7f8;
-    border-bottom: 3px solid #FA824C;
+
+
+header {
+   background-color: #342E37;
+   width: 100%;
+   height: 3.5em;
+   position: fixed;
+   margin: 0;
+   padding: 0;
+   z-index: 100;
 }
-.nav ul {
-  background-color: #f6f7f8;
+
+ul {
   list-style: none;
   text-align: center;
-  padding: 0;
-  margin: 0;
-}
-.nav li {
-  font-size: 1.2em;
-  line-height: 30px;
-  height: 30px;
-  border-bottom: 1px solid #888;
 }
 
-.nav a {
+ul li {
+   display: inline;
+}
+
+nav ul li a {
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 1.5vh;
+  color: #fff;
+  display: inline-block;
   text-decoration: none;
-  color: black;
-  display: block;
-  transition: .3s background-color;
+  text-align: center;
+  letter-spacing: 1.8px;
+  margin-right: 12px;
+  padding: 0vh 5vh;
 }
 
-.nav a:hover {
+nav ul li a:hover {
   text-decoration: underline;
-  text-decoration-color: orange;
 }
 
-.nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
+
+.menu-icon {
+  color: #fff;
+   text-decoration: none;
+   font-size: 1.5em;
+   bottom: 15px;
+   margin: 7px 25px;
+   float: right;
+   display: none;
 }
 
-@media screen and (min-width: 600px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }
+/*MEDIA QUERY*/
+@media only screen and (max-width : 900px) {
 
-  .nav li {
-    float: left;
-  }
-  .nav ul {
-    overflow: auto;
-    width: 600px;
-    margin: 0 auto;
-  }
+ header {
+   position: absolute;
+ }
+
+ .menu-icon {
+   display:inline-block;
+ }
+
+ nav ul, nav:active ul {
+   display: none;
+   position: absolute;
+   padding: 10px;
+   background: #5a4d4c;
+   margin-top: 40px;
+   right: 5px;
+   width: 9em;
+ }
+
+ nav:hover ul {
+   display: block;
+   background-color: #342E37;
+ }
+
+ nav li {
+   text-align: center;
+   width: 100%;
+   padding: 5px 0px;
+   margin: 0;
+ }
+
+ nav ul li a {
+     margin-left: 8px;
+ }
+
 }
-
 
 
 /*** Search Bar ***/
@@ -361,4 +392,51 @@ align-content: flex-end;}
 
 .org-logo {
   height: 10vh;
+}
+
+/*** About Page ***/
+
+.about-page {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  background-image: url('http://cdn.shopify.com/s/files/1/0250/5422/files/ios_linen_texture___black_by_vegardhw-d3ddll5_copy.jpg?2614');
+
+}
+
+.about-header {
+  text-align: center;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  font-weight: bold;
+  color: white;
+
+}
+
+.about-text {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  color: white;
+
+
+}
+.hopper-img {
+  border-radius: 15%;
+	width: 30%;
+  display: block;
+  margin: auto;
+
+}
+
+.mulledwine-img {
+  border-radius: 15%;
+	width: 30%;
+  length: 30%;
+  display: block;
+  margin: auto;
+
 }
