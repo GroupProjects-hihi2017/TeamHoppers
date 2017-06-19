@@ -93,6 +93,11 @@ body {
 
 /*** Navbar ***/
 
+.nav-box {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
 .no-border {
   background-color: #202020;
   width: 100%;
@@ -297,7 +302,7 @@ nav ul li a:hover {
 }
 
 .org-name {
-  font-style: bold;
+  font-weight: bold;
   font-size: 2.5rem;
   text-align: center;
   margin:auto;
@@ -658,7 +663,15 @@ align-content: flex-end;}
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
   color: white
+}
 
+.info-text a {
+  color: white;
+  text-decoration: none;
+}
+
+.info-text a:hover {
+  text-decoration: underline;
 }
 
 .info-div {
