@@ -105,7 +105,7 @@ exports.seed = function(knex, Promise) {
           org_name: "Resene",
           org_address: "Wellington City: 74 Cambridge Terrace, Basin Reserve, Wellington (For full list of Resene locations in your area, visit their website.')",
           org_url: "http://www.resene.co.nz/",
-          org_img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUDOFKhpHaX1oGPofyS781Ng_SozkbOYhHAgZ60bXx3saKBJ2Y",
+          org_img: "http://www.aspectgroup.co.nz/public/db_images/section/section_image_175.png",
           org_info: "Resene PaintWise collects unused paint to recycle, which would otherwise end up in a landfill. The paint is then donated to schools and other community groups.",
           org_location: ""
         },

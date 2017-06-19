@@ -1,5 +1,6 @@
 body {
   background-color: #fff;
+  font-family: 'Spinnaker', sans-serif;
   margin: 0px;
   padding: 0px;
 }
@@ -482,14 +483,20 @@ align-content: flex-end;}
 
 
 .org-header h4 {
+  color: #FA824C;
   font-size: 3.5vh;
   margin: 1vh;
 }
 
 .org-header p {
+  color: #FA824C;
   padding-top: 5vh;
   font-style: italic;
   font-size: 2vh;
+}
+
+.org-header a {
+  text-decoration: none;
 }
 
 .org-header{
@@ -504,7 +511,24 @@ align-content: flex-end;}
 }
 
 .org-item-list {
+  width: 15%;
+  margin: 0px;
+}
 
+.org-single-box {
+  text-align: center;
+  margin: 10px;
+  color: #FA824C;
+}
+.org-details button {
+  margin: 10px 0px;
+  background-color: #fff;
+  color: #FA824C;
+  border-color: #FA824C;
+}
+
+.org-logo {
+  height: 20vh;
 }
 
 
@@ -515,9 +539,10 @@ align-content: flex-end;}
   text-decoration: none;
 }
 
-.org-logo {
-  max-height: 15vh;
-}
+
+
+
+
 
 /*** About Page ***/
 
