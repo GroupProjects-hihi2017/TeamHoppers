@@ -3,6 +3,7 @@ import React from 'react'
 
 const About = () => {
   return (
+    <div className = 'wallpaper-no-border'>
     <div className='about-container'>
 
     <div className='about-page'>
@@ -35,6 +36,7 @@ const About = () => {
     </div>
 
 
+</div>
 </div>
   )
 }
