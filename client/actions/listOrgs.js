@@ -39,7 +39,6 @@ export function addOrg(org) {
           console.error(err.message)
           return
         }
-        console.log('Posted!');
         org.org_id = res.body
         dispatch(addNewOrg(org))
       })

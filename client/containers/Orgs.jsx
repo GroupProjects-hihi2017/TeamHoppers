@@ -2,18 +2,28 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
+import GMapLocate from './GMapLocate'
+
+
 import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
-const renderOrgClass = (joinItemToOrgs, key) => (
+const renderOrgClass = (org, key) => (
 
   <div className='itemClass-box 3 columns' key={key}>
-    <img src={`${joinItemToOrgs.org_img}`}/>
-    <p><a href={joinItemToOrgs.org_url} target="_blank">{joinItemToOrgs.org_name}</a></p>
-    <p className="itemClass-info">{joinItemToOrgs.org_info}</p>
-    <p className="itemClass-info">Address: {joinItemToOrgs.org_address}</p>
-    <p className="itemClass-info">{joinItemToOrgs.org_location}</p>
+    <img src={`${org.org_img}`}/>
+    <p><a href={org.org_url} target="_blank">{org.org_name}</a></p>
+    {renderMap(org)}
+    <p className="itemClass-info">{org.org_info}</p>
+    <p className="itemClass-info">Address: {org.org_address}</p>
+    <p className="itemClass-info">{org.org_location}</p>
   </div>
 )
+
+const renderMap = (org) => {
+  return <div className='map'>
+    <GMapLocate address={org.org_address}/>
+  </div>
+}
 
 class OrgClass extends React.Component {
   constructor (props) {
