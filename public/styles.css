@@ -335,6 +335,14 @@ nav ul li a:hover {
    column-count: 3;
 }
 
+.items-by-org a {
+  text-decoration: none;
+  color: inherit;
+}
+.items-by-org a:hover {
+  text-decoration: underline;
+}
+
 /*** Jump Arrow ***/
 
 .downArrow {
