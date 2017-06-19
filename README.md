@@ -33,16 +33,12 @@ Note about contact form: this requires an API key from Mailgun (https://www.mail
 ## UI / WIREFRAMES
 ### Homepage (with Navbar and Search Box)
 ![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/wireframes/homepage.jpg)
-### About
-add photo
-### General Information
-add photo
-### Categories
-add photo
-### Items
-add photo
-### Organisations
-add photo
+### List of Organisations
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/wireframes/itemsbyorgs.jpg)
+### Items displayed by Categories
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/wireframes/items%20by%20category.jpg)
+### Items displayed by Organisation
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/wireframes/wgtnorgs.jpg)
 ### Contact
 ![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/wireframes/contact.jpg)
 
