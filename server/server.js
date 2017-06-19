@@ -2,6 +2,7 @@ var path = require('path')
 var express = require('express')
 var bodyParser = require('body-parser')
 const cors = require('cors')
+var mailgunjs = require('mailgun-js')
 
 var categories = require('./routes/categories')
 var items = require('./routes/itemClass')
@@ -17,6 +18,7 @@ const corsOptions = {
 
 var server = express()
 server.use(cors(corsOptions))
+server.set('mailgunjs', mailgunjs)
 
 server.use(bodyParser.json())
 server.use(express.static(path.join(__dirname, '../public')))
@@ -27,9 +29,9 @@ server.use('/api/orgs', orgs)
 server.use('/api/joins', joinItemToOrgs)
 
 server.post('/contact', function (req, res) {
-  var api_key = process.env.MAILGUN_API_KEY
+  var apiKey = process.env.MAILGUN_API_KEY
   var domain = process.env.MAILGUN_DOMAIN
-  var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain})
+  var mailgun = server.get('mailgunjs')({apiKey: apiKey, domain: domain})
   var data = {
     from: 'green-wgtn <postmaster@sandbox0a4e694b934b4216950e110a444c5b62.mailgun.org>',
     to: 'team.hoppers.nz@gmail.com',
@@ -37,10 +39,10 @@ server.post('/contact', function (req, res) {
     text: 'Name: ' + req.body.name + ' Email: ' + req.body.email + ' Comments: ' + req.body.comments
   }
   mailgun.messages().send(data, function (error, body) {
-    if (!error)
-      res.send('Thank you for your comment.')
-    else {
-      res.send('Sorry, your comment has not been sent.')
+    if (!error) {
+      res.sendStatus(200)
+    } else {
+      res.sendStatus(500)
     }
   })
 })
