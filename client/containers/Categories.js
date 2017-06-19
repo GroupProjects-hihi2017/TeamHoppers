@@ -27,7 +27,7 @@ class Categories extends React.Component {
   render () {
     const {categories} = this.props
     return (
-      <div className='container'>
+      <div className='container category-grid-container'>
         <div className="category-list-header">
           <h4>Categories</h4>
         </div>

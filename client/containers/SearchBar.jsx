@@ -77,7 +77,7 @@ render() {
       <div>
         <h4 className="search-bar-header">What would you like to recycle?</h4>
       </div>
-      <form className='search-box'>
+      <form className={this.state.searchItem.length == 0 ? 'search-box-ready':'search-box'}>
         <input placeholder='Search' type='text' onChange={(e) => this.searchHandler(e)}></input>
       </form>
       <div className='search-results-list'>
