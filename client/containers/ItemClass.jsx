@@ -22,11 +22,10 @@ class ItemClass extends React.Component {
 
   render () {
     const {itemClass} = this.props
-    console.log(this.props);
     return (
       <div className='container'>
         <div className="itemClass-list-header">
-          <h4>{this.props.category_name}</h4>
+          <h4>{itemClass.length > 0 ? itemClass[0].category_name : ''}</h4>
         </div>
         <div className='container'>
           <div className= 'itemClass-container'>
