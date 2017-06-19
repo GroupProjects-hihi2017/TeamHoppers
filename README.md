@@ -32,7 +32,7 @@ Note about contact form: this requires an API key from Mailgun (https://www.mail
 
 ## UI / WIREFRAMES
 ### Homepage (with Navbar and Search Box)
-add photo
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/wireframes/homepage.jpg)
 ### About
 add photo
 ### General Information
