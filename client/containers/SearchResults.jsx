@@ -27,7 +27,6 @@ class SearchResults extends React.Component {
 
   render () {
     const {joinItemToOrgs, dispatch} = this.props
-    console.log(this.props);
     return (
         <div>
           {this.state.orgs.map((result, key) => renderSearchResults(result, key))}
