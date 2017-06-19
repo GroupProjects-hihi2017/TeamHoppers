@@ -96,7 +96,7 @@ test.cb('POST /contact', t => {
     })
 })
 
-test.cb('POST /contact with error message', t => {
+test.cb.skip('POST /contact with error message', t => {
   var messagesStub = sinon.stub().callsFake((data, callback) => {
     callback('fake error message')
   })
