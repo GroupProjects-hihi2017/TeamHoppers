@@ -11,4 +11,13 @@ router.get('/', (req, res) => {
     })
 })
 
+router.post('/', (req,res) => {
+  let db = req.app.get('db')
+  let org = req.body
+  orgsDb.addOrg(org, db)
+    .then(response => {
+      res.json(response[0])
+    })
+})
+
 module.exports = router

@@ -3,6 +3,12 @@ const getOrgs = (db) => {
     .select('*').orderBy('org_name')
 }
 
+const addOrg = (org, db) => {
+  return db('orgs').insert(org)
+}
+
+
 module.exports = {
-  getOrgs
+  getOrgs,
+  addOrg
 }
