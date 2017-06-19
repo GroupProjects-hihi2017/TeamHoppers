@@ -8,7 +8,7 @@ class ContactForm extends React.Component {
     super(props)
     this.state = {
       form: {},
-      confirmationVisible: false
+      successMessage: ''
     }
   }
 
@@ -21,7 +21,7 @@ class ContactForm extends React.Component {
   submitForm (e) {
     e.preventDefault()
     this.props.dispatch(postContactForm(this.state.form))
-    
+
   }
 
   render () {
