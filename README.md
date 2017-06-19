@@ -44,7 +44,7 @@ add photo
 ### Organisations
 add photo
 ### Contact
-add photo
+![Alt text](https://github.com/GroupProjects-hihi2017/TeamHoppers/blob/master/wireframes/contact.jpg)
 
 ## DATABASE STRUCTURE
 ### Database to divide items into categories
