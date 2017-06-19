@@ -23,15 +23,14 @@ class OrgSingle extends React.Component {
   render() {
     let {org, items, showItems} = this.state
     return (
-      <div className="org-single">
+      <div className="org-single-box">
         <div className="org-details">
           <img className='org-logo' src={org.org_img}/>
-            {items.length != 0 && <button onClick={ () => this.handleClick(!showItems) }>{org.org_name}</button>}
+            <div><button onClick={ () => this.handleClick(!showItems) }>{org.org_name}</button></div>
         </div>
         {this.state.showItems && (
           <div className="ItemsByOrg">
             {items.map((item, key) => {
-              console.log({item});
               return (
                 <div className="ItemsByOrg" key={key}>
                   <p>{item.itemClass_name}</p>
