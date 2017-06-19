@@ -623,19 +623,61 @@ align-content: flex-end;}
   font-family: 'Spinnaker', sans-serif;
   width: 50%;
   margin: auto;
+  font-weight: bold;
+  color:  #fff
+
 }
 
 .contact-form h4 {
   text-align: center;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 160%;
+  font-weight: bold;
+  color:  #FA824C;
+  margin-bottom: 2%;
 }
 
 .contact-form input {
   width: 100%;
   height: 8vh;
   font-size: 3vh;
+  border-radius: 4px;
+
 }
 
 .contact-form textarea{
   width: 100%;
   height: 25vh;
+}
+
+/*.send button{
+  background-color: #FA824C;
+  color: #fff;
+  border-color: #fff;
+  margin: 5px;
+  font-size: 1.5rem;
+}*/
+
+.send {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
+.send button {
+  text align: center;
+  background-color: #FA824C;
+  color: #fff;
+  border-color: #fff;
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
+
+.send button:hover {
+    text align: center;
+    background-color: #fff;
+    color: #FA824C;
+    border-color: #FA824C;
 }
