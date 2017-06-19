@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 
 class OrgSingle extends React.Component {
   constructor(props) {
@@ -29,11 +30,11 @@ class OrgSingle extends React.Component {
             <div><button onClick={ () => this.handleClick(!showItems) }>{org.org_name}</button></div>
         </div>
         {this.state.showItems && (
-          <div className="ItemsByOrg">
+          <div>
             {items.map((item, key) => {
               return (
-                <div className="ItemsByOrg" key={key}>
-                  <p>{item.itemClass_name}</p>
+                <div className="items-by-org" key={key}>
+                  <Link to={`/categories/${item.category_id}/${item.itemClass_id}`}>{item.itemClass_name}</Link>
                 </div>
               )
             })}
