@@ -48,8 +48,6 @@ const GeneralInfo = () => {
           <a href='http://www.thenappylady.co.nz/Workshop-Wellington.html'> The Nappy Ladies</a>.
         </p>
 
-
-
         </div>
       </div>
     </div>

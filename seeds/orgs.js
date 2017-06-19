@@ -43,7 +43,7 @@ exports.seed = function(knex, Promise) {
           org_address: "",
           org_url: "http://www.gurgl.nz/",
           org_img: "/images/gurglLogo.svg",
-          org_info: "GURGL is a community clothes sharing app, based in New Zealand, which allows users to donate or swap clothing items for children and adults.",
+          org_info: "Kids grow. Clothes don't. Gurgl's mission is to save resources, save our planet, and save you money by repurposing clothes for ever-growing infants.",
           org_location: ""
         },
         {
