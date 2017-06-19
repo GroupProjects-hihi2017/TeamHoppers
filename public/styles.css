@@ -138,9 +138,8 @@ nav ul li a:hover {
 /*** Search Bar ***/
 
 .search-bar-body {
-  min-height: 60vh;
+  min-height: 50vh;
   width: 100%;
-
 }
 
 .search-container {
@@ -148,8 +147,19 @@ nav ul li a:hover {
   justify-content: center;
 }
 
+.search-box-ready {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.search-box-ready input {
+  width: 20%;
+}
+
 .search-bar-header {
-  padding-top: 50px;
+  color: #33C3F0;
+  font-weight: bold;
+  padding-top: 5vh;
   text-align: center;
 }
 
@@ -158,15 +168,21 @@ nav ul li a:hover {
   text-align: center;
 }
 
+
 .search-box input {
+  color: #33C3F0;
+  text-align: center;
   height: 15vh;
-  width: 35vh;
+  width: 30%;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
   font-family: 'Spinnaker', sans-serif;
   font-size: 3vh;
 }
 
 .search-results-list {
-  height: 20vh;
+  min-height: 20vh;
   width: 70%;
   text-align: center;
   margin: auto;
@@ -195,7 +211,7 @@ nav ul li a:hover {
 
 .search-results-orgs {
   width: 100vh;
-  height: 20vh;
+  min-height: 20vh;
   margin: auto;
 }
 
@@ -209,10 +225,19 @@ nav ul li a:hover {
 .downArrow {
   text-align: center;
   cursor:s-resize;
+  margin: 5vh 0vh;
 }
 
 
+
 /*** Categories Container ***/
+
+.category-grid-container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-image: url('http://cdn.shopify.com/s/files/1/0250/5422/files/ios_linen_texture___black_by_vegardhw-d3ddll5_copy.jpg?2614');
+}
 
 .categories-container {
 font-family: 'Spinnaker', sans-serif;
