@@ -3,6 +3,8 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
 import {getItems} from '../actions/items'
+import {getOrgsByItem} from '../actions/joinItemToOrgs'
+import GMap from './GMap'
 
 const renderItemClass = (itemClass, key) => (
 
