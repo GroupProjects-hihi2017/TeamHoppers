@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 
 const Nav = () => {
   return (
+    <div className='no-border'>
       <header className = 'container'>
         <nav>
           <Link to="#" className="menu-icon">&#9776;</Link>
@@ -15,6 +16,7 @@ const Nav = () => {
           </ul>
         </nav>
       </header>
+    </div>
   )
 }
 

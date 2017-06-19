@@ -3,6 +3,19 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+.wallpaper-no-border {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('http://cdn.shopify.com/s/files/1/0250/5422/files/ios_linen_texture___black_by_vegardhw-d3ddll5_copy.jpg?2614');
+}
+
+.orange-hr {
+  border-top: 3px solid #FA824C;
+}
+
 /*** Header ***/
 
 .header {
@@ -51,6 +64,7 @@ body {
   background-color: #94a70d;
   height: 25vh;
   margin: 0px;
+  line-height: 0;
 }
 
 .footer-text {
@@ -89,10 +103,12 @@ body {
 
 /*** Navbar ***/
 
+.no-border {
+  background-color: #202020;
+  width: 100%;
+}
 
 header {
-   background-color: #202020;
-   width: 100%;
    height: 5vh;
    position: fixed;
    margin: 0;
@@ -179,7 +195,7 @@ nav ul li a:hover {
 /*** Search Bar ***/
 
 .search-bar-body {
-  min-height: 50vh;
+  min-height: 35vh;
   width: 100%;
 }
 
@@ -223,7 +239,7 @@ nav ul li a:hover {
 }
 
 .search-results-list {
-  min-height: 20vh;
+  min-height: 5vh;
   width: 70%;
   text-align: center;
   margin: auto;
@@ -277,12 +293,6 @@ nav ul li a:hover {
 
 }
 
-.category-grid-container {
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  background-image: url('http://cdn.shopify.com/s/files/1/0250/5422/files/ios_linen_texture___black_by_vegardhw-d3ddll5_copy.jpg?2614');
-}
 
 .categories-container {
 font-family: 'Spinnaker', sans-serif;
@@ -302,7 +312,10 @@ flex-flow: row wrap;
 align-content: flex-end;}
 
 .category-list-header {
- text-align: center;
+  color: #FA824C;
+  padding: 2%;
+  font-weight: bold;
+  text-align: center;
 }
 
 .category-box {
@@ -330,7 +343,7 @@ align-content: flex-end;}
 
 .category-box figcaption {
     background: rgba(250, 130, 76, 0.8);
- border-radius: 25%;
+    border-radius: 25%;
     color: white;
     height: 100%;
     left: 0;
@@ -343,22 +356,19 @@ align-content: flex-end;}
 
 .category-box figcaption h5 p {
     position: relative;
-    top: -15vh;
- height: 35vh;
+    top: 15vh;
+    height: 40vh;
     width: 40vh;
     vertical-align: middle;
 }
 
 .category-box figcaption h5 {
- top: 3vh;
-}
-
-.category-box figcaption p {
- margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
 }
 
 .category-box:hover figcaption {
- border-radius: 25%;
+    border-radius: 25%;
     opacity: 1;
 }
 
@@ -379,8 +389,9 @@ align-content: flex-end;}
 
 .category-box figcaption p {
     font-size: 2.5vh;
+    margin: auto;
     position: relative;
-    top: -10vh;
+    top: -5vh;
     width: 35vh;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
@@ -498,13 +509,7 @@ align-content: flex-end;}
 
 /*** About Page ***/
 
-.about-page {
-  height: 100%;
-  width: 80%;
-  margin: auto;
-  background-image: url('http://cdn.shopify.com/s/files/1/0250/5422/files/ios_linen_texture___black_by_vegardhw-d3ddll5_copy.jpg?2614');
 
-}
 
 .about-title {
   text-align: center;
@@ -557,15 +562,6 @@ align-content: flex-end;}
 
 /*** General Info  Page ***/
 
-
-.info-page {
-  height: 100%;
-  width: 80%;
-  margin: auto;
-  background-image: url('http://cdn.shopify.com/s/files/1/0250/5422/files/ios_linen_texture___black_by_vegardhw-d3ddll5_copy.jpg?2614');
-
-
-}
 
 .info-header {
   text-align: center;
