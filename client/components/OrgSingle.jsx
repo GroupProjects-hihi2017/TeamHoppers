@@ -29,11 +29,11 @@ class OrgSingle extends React.Component {
             <div><button onClick={ () => this.handleClick(!showItems) }>{org.org_name}</button></div>
         </div>
         {this.state.showItems && (
-          <div className="ItemsByOrg">
+          <div>
             {items.map((item, key) => {
               return (
                 <div className="ItemsByOrg" key={key}>
-                  <p>{item.itemClass_name}</p>
+                  {item.itemClass_name}
                 </div>
               )
             })}
