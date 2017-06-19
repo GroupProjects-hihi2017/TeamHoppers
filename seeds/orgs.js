@@ -87,7 +87,7 @@ exports.seed = function(knex, Promise) {
           org_name: "Sustainability Trust",
           org_address: "2 Forresters Lane, Te Aro, Wellington 6011",
           org_url: "https://www.sustaintrust.org.nz/",
-          org_img: "https://2014.wellington.wordcamp.org/files/2014/03/sustainabilitytrust.jpg",
+          org_img: "https://pbs.twimg.com/profile_images/686334266079227905/oiCVacan.jpg",
           org_info: "Sustainability Trust helps reduce E-Waste by giving people a place to recycle their old electronics. As the Wellington region's energy experts, they provide workshops and advice on living and working sustainably. They fund their work and our other award-winning community programmes with profits from the sale and installation and energy efficient heating, lighting, ventilation and insulation.",
           org_location: ""
         },
@@ -96,7 +96,7 @@ exports.seed = function(knex, Promise) {
           org_name: "E-Cycle",
           org_address: "Web-Based",
           org_url: "http://www.e-cycle.co.nz/",
-          org_img: "http://www.e-cycle.co.nz/wp-content/uploads/2014/10/EClogo141.jpg",
+          org_img: "./images/EClogo141.jpg",
           org_info: "E-Cycle specialises in responsible, environmentally friendly recycling of end of life electronic products.",
           org_location: ""
         },

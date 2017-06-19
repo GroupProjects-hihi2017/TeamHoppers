@@ -27,14 +27,16 @@ class Categories extends React.Component {
   render () {
     const {categories} = this.props
     return (
+    <div className='wallpaper-no-border'>
       <div className='container category-grid-container'>
         <div className="category-list-header">
-          <h4>Categories</h4>
+          <h4>Can It Be Recycled?</h4>
         </div>
         <div className='categories-container'>
           {categories.map((category, key) => renderCategory(category, key))}
         </div>
       </div>
+    </div>
     )
   }
 }

@@ -25,7 +25,7 @@ class ItemClass extends React.Component {
     return (
       <div className='container'>
         <div className="itemClass-list-header">
-          <h4>Items</h4>
+          <h4>{itemClass.length > 0 ? itemClass[0].category_name : ''}</h4>
         </div>
         <div className='container'>
           <div className= 'itemClass-container'>
