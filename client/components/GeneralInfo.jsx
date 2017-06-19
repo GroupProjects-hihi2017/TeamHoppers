@@ -44,8 +44,8 @@ const GeneralInfo = () => {
 
         <p className='info-header'>To pee or not to pee! How to make nappie waste more sustainable:</p>
         <p className='info-text'>Cloth nappies provide a zero waste alternative to disposable nappies, and modern versions are a lot easier and simpler to use than traditional cloth nappies.</p>
-        <p className='info-text'>For more information on waste-free parenting check out
-          <a href='http://www.thenappylady.co.nz/Workshop-Wellington.html'> The Nappy Ladies</a>
+        <p className='info-text'>For more information on waste-free parenting, check out
+          <a href='http://www.thenappylady.co.nz/Workshop-Wellington.html'> The Nappy Ladies</a>.
         </p>
 
 
