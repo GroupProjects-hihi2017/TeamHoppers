@@ -19,7 +19,8 @@ class OrgClass extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      joinItemToOrgs: props.joinItemToOrgs
+      donateAble: this.filterDonate(props.joinItemToOrgs, true),
+      recycleAble: this.filterDonate(props.joinItemToOrgs, false)
     }
   }
   componentDidMount () {
@@ -27,7 +28,13 @@ class OrgClass extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    this.setState({joinItemToOrgs: nextProps.joinItemToOrgs})
+    this.setState({
+      donateAble: this.filterDonate(nextProps.joinItemToOrgs, true),
+      recycleAble: this.filterDonate(nextProps.joinItemToOrgs, false)
+    })
+  }
+  filterDonate(orgs, isDonatable) {
+    return orgs.filter(org => org.isDonatable == isDonatable)
   }
   render () {
     return (
@@ -36,9 +43,22 @@ class OrgClass extends React.Component {
           <h5 className="itemClass-list-header">The following organisations will take your items:</h5>
         </div>
         <div className='itemClass-container '>
-          <div>
-            {this.state.joinItemToOrgs.map((orgs, key) => renderOrgClass(orgs, key))}
-          </div>
+          {this.state.donateAble.length != 0 &&
+            <div className="donate-able">
+              <h1>Donate</h1>
+              {this.state.donateAble
+                .map((orgs, key) => renderOrgClass(orgs, key))
+              }
+            </div>
+          }
+          {this.state.recycleAble.length != 0 &&
+            <div className="recycle-able">
+              <h1>Recycle</h1>
+              {this.state.recycleAble
+                .map((orgs, key) => renderOrgClass(orgs, key))
+              }
+            </div>
+          }
         </div>
       </div>
     )
