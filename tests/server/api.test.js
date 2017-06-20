@@ -41,7 +41,7 @@ test('getOrgs gets all organizations', (t) => {
     .then(function (result) {
       return new Promise((resolve, reject) => {
         var actual = result.length
-        t.is(actual, 13)
+        t.is(actual, 14)
         resolve()
       })
     })
