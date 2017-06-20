@@ -10,6 +10,7 @@ class AdminForm extends React.Component {
   constructor(props) {
      super(props)
      this.state = {
+       updateOn: false,
        org: {},
        submitted: false,
        message: ''
@@ -31,6 +32,15 @@ class AdminForm extends React.Component {
      this.props.dispatch(addOrg(this.state.org))
      this.setState({submitted: true, message: 'Your organisation has been submitted.'})
    }
+
+   handleClick() {
+     return this.state.updateOn ? this.setState({updateOn: false}) : this.setState({updateOn: true})
+   }
+
+   renderButton() {
+     return this.state.updateOn ? 'Select an Organisation to Update' : 'Add a New Organisation'
+   }
+
    refreshForm() {
      this.setState({submitted: false, message: '', org: {}})
    }
@@ -43,7 +53,16 @@ class AdminForm extends React.Component {
    renderForm() {
      return (
        <form className='admin-form'>
-        <h4>Please enter the information of the organisation you would like to add to the database:</h4>
+          <h4>Please enter the information of the organisation you would like to add to the database:</h4>
+
+          <button onClick={() => this.handleClick()}>{this.renderButton()}</button>
+
+          <div>
+            {this.props.updateOn && <select className="drop-menu" name="org_name" value={this.state.category_name} onChange={(e =>this.handleChange(e))}>
+            {this.props.listOrgs.map((org, key) => <option value="Choose an organisation to update">{org.org_name}</option>)}
+            </select>}
+        </div>
+
         <input type='text' id='org_name' name='org_name' placeholder='Organisation Name' onChange={(e) => this.handleChange(e)} />
         <input type='text' id='org_address' name='org_address' placeholder='Organisation Address' onChange={(e) => this.handleChange(e)} />
         <input type='text' id='org_url' name='org_url' placeholder='Organisation Homepage URL' onChange={(e) => this.handleChange(e)} />
