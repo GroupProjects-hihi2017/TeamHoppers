@@ -4,7 +4,7 @@ function listOrgs (state = [], action = {}) {
       return action.orgs
 
     case 'ADD_ORG':
-      return action.org
+      return [...state, action.org]
 
     case 'INIT':
       return state

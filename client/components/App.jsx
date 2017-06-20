@@ -27,6 +27,7 @@ const App = () => {
         <Route exact path='/categories/:category_id' component={ItemClass} />
         <Route exact path='/categories/:category_id/:itemClass_id' component={Orgs} />
         <Route exact path='/admin' component={AdminForm} />
+
         <Footer />
       </div>
     </Router>

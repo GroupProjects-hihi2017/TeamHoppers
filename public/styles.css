@@ -594,14 +594,7 @@ align-content: flex-end;}
   text-decoration: none;
 }
 
-
-
-
-
-
 /*** About Page ***/
-
-
 
 .about-title {
   text-align: center;
@@ -663,9 +656,7 @@ align-content: flex-end;}
   font-weight: bold;
   color:  #FA824C;
   margin-bottom: 2%;
-
 }
-
 
 .info-text {
   text-align: center;
@@ -713,7 +704,6 @@ align-content: flex-end;}
   margin: auto;
   font-weight: bold;
   color:  #fff
-
 }
 
 .contact-form h4 {
@@ -731,7 +721,6 @@ align-content: flex-end;}
   height: 8vh;
   font-size: 3vh;
   border-radius: 4px;
-
 }
 
 .contact-form textarea{
@@ -752,7 +741,6 @@ align-content: flex-end;}
   margin-bottom: 5%;
 }
 
-
 .send button {
   text align: center;
   background-color: #FA824C;
@@ -762,10 +750,23 @@ align-content: flex-end;}
   font-size: 1.5rem;
 }
 
-
 .send button:hover {
     text align: center;
     background-color: #fff;
     color: #FA824C;
     border-color: #FA824C;
+}
+
+/*** Admin Form ***/
+
+.admin-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+}
+
+.admin-form input, h4 {
+  width: 40%;
+  margin: 1vh auto;
 }

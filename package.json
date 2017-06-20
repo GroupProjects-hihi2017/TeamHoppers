@@ -60,6 +60,7 @@
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
+    "basic-authentication": "^1.9.0",
     "body-parser": "^1.15.2",
     "cors": "^2.8.3",
     "dotenv": "^4.0.0",
