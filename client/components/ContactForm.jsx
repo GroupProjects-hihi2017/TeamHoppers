@@ -63,7 +63,6 @@ class ContactForm extends React.Component {
             ? this.renderMessage()
             : this.renderForm()
           }
-
         </div>
       </div>
     )
