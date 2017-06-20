@@ -740,6 +740,7 @@ align-content: flex-end;}
   font-weight: bold;
   color:  #FA824C;
   margin-bottom: 2%;
+  margin-top: 5%;
 }
 
 .contact-form input {
@@ -749,18 +750,26 @@ align-content: flex-end;}
   border-radius: 4px;
 }
 
-.contact-form textarea{
+.contact-form textarea {
   width: 100%;
   height: 25vh;
+  font-size: 3vh;
 }
 
-/*.send button{
-  background-color: #FA824C;
-  color: #fff;
-  border-color: #fff;
-  margin: 5px;
-  font-size: 1.5rem;
-}*/
+.contact-submit-message {
+  text-align: center;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 160%;
+  font-weight: bold;
+  color:  #FA824C;
+  width: 100%;
+  padding: 25% 0 25% 0;
+}
+
+.contact-error-message {
+  color: #FA824C;
+}
 
 .send {
   text-align: center;
