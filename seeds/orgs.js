@@ -67,10 +67,10 @@ exports.seed = function(knex, Promise) {
         {
           org_id: 66008,
           org_name: "Salvation Army Family Store",
-          org_address: 'Wellington City Location: 203 Willis St, Te Aro, Wellington 6011 (For full list of locations in your area, visit the Salvation Army website).',
+          org_address: '203 Willis St, Te Aro, Wellington 6011',
           org_url: "http://www.salvationarmy.org.nz/centres/nz/lower-north-island/wellington-city",
           org_img: "http://waynetheatre.org/wp-content/uploads/2016/08/salvation-army.png",
-          org_info: "The Salvation Army is a Protestant Church and international charity organization. Their stores sell pre-loved items to assist in their fundraising efforts for food distribution, disaster relief, rehabilitation centers, anti-human trafficking efforts, and a wealth of children's programs.",
+          org_info: "The Salvation Army is a Protestant Church and international charity organization. Their stores sell pre-loved items to assist in their fundraising efforts for food distribution, disaster relief, rehabilitation centers, anti-human trafficking efforts, and a wealth of children's programs (for full list of locations in your area, visit the Salvation Army website).",
           org_isDonatable: true
         },
         {
