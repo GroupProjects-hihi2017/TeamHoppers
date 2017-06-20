@@ -1,6 +1,5 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
 import {postContactForm} from '../actions/contactForm'
 
 class ContactForm extends React.Component {
@@ -25,14 +24,14 @@ class ContactForm extends React.Component {
   submitForm (e) {
     e.preventDefault()
     if (this.validateForm(this.state.form)) postContactForm(this.state.form, this.callbackResponse.bind(this))
-    else this.setState({errorMessage: 'Please fill in all fields'})
+    else this.setState({errorMessage: '* Please fill in all fields'})
   }
   callbackResponse (err, message) {
     if (err) this.setState({errorMessage: message || err.message})
     else this.setState({message, submitted: true, errorMessage: ''})
   }
   renderMessage () {
-    return <h1><Link to={'/'}>{this.state.message}</Link></h1>
+    return <p className='contact-submit-message'>{this.state.message}</p>
   }
   renderForm () {
     return (
@@ -48,7 +47,7 @@ class ContactForm extends React.Component {
           <textarea name="comments" onChange={(e) => this.updateFormDetails(e)}></textarea>
         </fieldset>
         <div className="send">
-          <h2 className="error-message">{this.state.errorMessage}</h2>
+          <p className="contact-error-message">{this.state.errorMessage}</p>
           <button className="btn" type="submit" >Send Message</button><br/>
           <button className="btn" type="reset">Reset form</button>
         </div>
@@ -63,7 +62,6 @@ class ContactForm extends React.Component {
             ? this.renderMessage()
             : this.renderForm()
           }
-
         </div>
       </div>
     )
