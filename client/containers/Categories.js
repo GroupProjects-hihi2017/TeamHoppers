@@ -13,6 +13,7 @@ const renderCategory = (category, key) => (
           <p>{category.category_info}</p>
         </figcaption>
       </figure>
+      <p className='category-title-media'>{category.category_name}</p>
     </Link>
   </div>
 )
