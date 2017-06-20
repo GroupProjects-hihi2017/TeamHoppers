@@ -4,21 +4,22 @@ import {browserHistory} from 'react-router'
 import {Link} from 'react-router-dom'
 
 import {addOrg} from '../actions/listOrgs'
-import {getAllOrgs} from '../actions/listOrgs'
 
 class AdminForm extends React.Component {
   constructor(props) {
      super(props)
      this.state = {
-       updateOn: false,
-       org: {},
+       dispatch: props.dispatch,
+       org: {org_isDonatable: true},
        submitted: false,
        message: ''
      }
    }
 
-   componentDidMount () {
-     this.props.dispatch(getAllOrgs())
+   toggleDonatable(e) {
+     let org = this.state.org
+     org.org_isDonatable = !org.org_isDonatable
+     this.setState({org})
    }
 
    handleChange(e) {
@@ -29,47 +30,35 @@ class AdminForm extends React.Component {
 
    handleSubmit(e) {
      e.preventDefault()
-     this.props.dispatch(addOrg(this.state.org))
+     this.state.dispatch(addOrg(this.state.org))
      this.setState({submitted: true, message: 'Your organisation has been submitted.'})
    }
 
-   handleClick() {
-     return this.state.updateOn ? this.setState({updateOn: false}) : this.setState({updateOn: true})
-   }
-
-   renderButton() {
-     return this.state.updateOn ? 'Select an Organisation to Update' : 'Add a New Organisation'
-   }
-
    refreshForm() {
-     this.setState({submitted: false, message: '', org: {}})
+     this.setState({submitted: false, message: '', org: {org_isDonatable: true}})
    }
+
    renderMessage() {
      return <div>
        <Link to={`/organisations`}><h4 className="submit-message">{this.state.message}</h4></Link>
        <button onClick={(e) => this.refreshForm()}>Start New Form</button>
      </div>
    }
+
    renderForm() {
      return (
-       <form className='admin-form'>
+       <form className='admin-form' onSubmit={(e)=>this.handleSubmit(e)}>
           <h4>Please enter the information of the organisation you would like to add to the database:</h4>
-
-          <button onClick={() => this.handleClick()}>{this.renderButton()}</button>
-
-          <div>
-            {this.props.updateOn && <select className="drop-menu" name="org_name" value={this.state.category_name} onChange={(e =>this.handleChange(e))}>
-            {this.props.listOrgs.map((org, key) => <option value="Choose an organisation to update">{org.org_name}</option>)}
-            </select>}
-        </div>
-
         <input type='text' id='org_name' name='org_name' placeholder='Organisation Name' onChange={(e) => this.handleChange(e)} />
         <input type='text' id='org_address' name='org_address' placeholder='Organisation Address' onChange={(e) => this.handleChange(e)} />
         <input type='text' id='org_url' name='org_url' placeholder='Organisation Homepage URL' onChange={(e) => this.handleChange(e)} />
         <input type='text' id='org_img' name='org_img' placeholder="Link to Organisation's Logo" onChange={(e) => this.handleChange(e)} />
         <input type='text' name='org_info' placeholder="Description of Organisation" onChange={(e) => this.handleChange(e)} />
-        <input type='text' name='org_location' placeholder="Organisation's Google Coordinates" onChange={(e) => this.handleChange(e)} />
-        <input className="submit" type='submit' id='submit' value='Submit New Organisation' onClick={(e) => this.handleSubmit(e)} />
+        <div>
+          <p>{this.state.org.org_isDonatable ? "This organisation takes donations." : "This organisation recycles."}</p>
+          <input type="button" onClick={(e) => this.toggleDonatable(e)} value="Click to Choose Donate or Recycle" />
+        </div>
+        <input className="submit" type='submit' id='submit' value='Submit New Organisation' />
        </form>
      )
    }
@@ -81,8 +70,4 @@ class AdminForm extends React.Component {
      )}
  }
 
-const mapStateToProps = (state) => {
-return {org: state.org, listOrgs: state.listOrgs}
-}
-
-export default connect(mapStateToProps)(AdminForm)
+export default connect()(AdminForm)
