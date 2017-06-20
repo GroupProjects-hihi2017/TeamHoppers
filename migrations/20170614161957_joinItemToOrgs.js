@@ -4,8 +4,6 @@ exports.up = function(knex, Promise) {
     table.increments('orgRelationships_id').primary()
     table.integer('itemClass_id')
     table.integer('org_id')
-    table.boolean('isDonatable')
-
   })
 }
 

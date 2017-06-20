@@ -6,7 +6,7 @@ exports.up = function (knex, Promise) {
     table.string('org_url')
     table.string('org_img')
     table.text('org_info')
-    table.string('org_location')
+    table.boolean('org_isDonatable')
   })
 }
 
