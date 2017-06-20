@@ -11,6 +11,7 @@ import ContactForm from './ContactForm'
 import Orgs from '../containers/Orgs'
 import ItemClass from '../containers/ItemClass'
 import ListAllOrgs from '../containers/ListAllOrgs'
+import AdminForm from '../containers/AdminForm'
 
 const App = () => {
   return (
@@ -25,6 +26,8 @@ const App = () => {
         <Route exact path='/contact' component={ContactForm} />
         <Route exact path='/categories/:category_id' component={ItemClass} />
         <Route exact path='/categories/:category_id/:itemClass_id' component={Orgs} />
+        <Route exact path='/admin' component={AdminForm} />
+
         <Footer />
       </div>
     </Router>

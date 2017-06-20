@@ -5,10 +5,12 @@ import {Link} from 'react-router-dom'
 import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
 const renderSearchResults = (result, key) => (
-  <div key={key}>
-      <p className="org-name">{result.org_name}</p>
-      <p className="org-info">{result.org_info}</p>
-  </div>
+
+    <div key={key} className='search-results-orgs-box'>
+        <a href={result.org_url} target="_blank"><img className="results-org-logo" src={result.org_img} /></a>
+        <p className="org-name">{result.org_name}</p>
+        <p className="org-info">{result.org_info}</p>
+    </div>
 )
 
 class SearchResults extends React.Component {

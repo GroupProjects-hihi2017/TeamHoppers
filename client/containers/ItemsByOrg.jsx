@@ -4,11 +4,8 @@ import {connect} from 'react-redux'
 import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
 const renderAllItemsByOrg = (joinItemToOrgs, key) => (
-
   <div className='org-item-list' key={key}>
-    <ul>
-      <li>{joinItemToOrgs.itemClass_name}</li>
-    </ul>
+      <div>{joinItemToOrgs.itemClass_name}</div>
   </div>
 )
 

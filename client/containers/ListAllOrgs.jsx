@@ -16,8 +16,8 @@ class ListAllOrgs extends React.Component {
   render () {
     const {listOrgs, joinItemToOrgs} = this.props
     return (
-      <div className=' container'>
-        <div className='org-container'>
+      <div className='wallpaper-no-border'>
+        <div className='container'>
           <div className='org-header'>
             <h4>Consider recycling or donating your used items at any of these Wellington organisations:</h4>
             <p>Want your organisation listed on our site? Get in touch with us <Link to='/contact'>here</Link>.</p>
@@ -34,7 +34,6 @@ class ListAllOrgs extends React.Component {
 
 
 function mapStateToProps(state) {
-  console.log(state);
   return {
     listOrgs: state.listOrgs,
     joinItemToOrgs: state.joinItemToOrgs

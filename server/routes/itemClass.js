@@ -9,6 +9,9 @@ router.get('/', (req, res) => {
     .then(items => {
       res.json(items)
     })
+    .catch((err) => {
+      res.status(500).send('DATABASE ERROR: ' + err.message)
+    })
 })
 
 module.exports = router
