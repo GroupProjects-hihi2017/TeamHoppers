@@ -59,11 +59,12 @@ class OrgClass extends React.Component {
   }
   render () {
     let {recycleAble, donateAble} = this.state
+    let itemClass_name = this.state.item ? this.state.item.itemClass_name : ''
     return (
     <div className = 'wallpaper-no-border'>
       <div className='container'>
         <div>
-          <h5 className="itemClass-list-header">The following organisations will take your {this.state.item.itemClass_name}:</h5>
+          <h5 className="itemClass-list-header">The following organisations will take your {itemClass_name}:</h5>
         </div>
         <div className='itemClass-container '>
           {this.renderOrgList(recycleAble)}
