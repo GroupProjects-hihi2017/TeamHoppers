@@ -5,7 +5,7 @@ import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
 const renderAllItemsByOrg = (joinItemToOrgs, key) => (
   <div className='org-item-list' key={key}>
-      <div>{joinItemToOrgs.itemClass_name}</div>
+    <div>{joinItemToOrgs.itemClass_name}</div>
   </div>
 )
 
