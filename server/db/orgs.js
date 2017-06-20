@@ -7,9 +7,9 @@ const addOrg = (org, db) => {
   return db('orgs').insert(org)
 }
 
-const getOrgById = (org_id, db) => {
+const getOrgById = (orgId, db) => {
   return db('orgs')
-    .where('org_id', org_id)
+    .where('org_id', orgId)
     .first()
 }
 
