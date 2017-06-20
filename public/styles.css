@@ -78,6 +78,13 @@ body {
   width: auto;
 }
 
+.footer-slogan {
+  font-family: 'Spinnaker', sans-serif;
+  font-weight: bold;
+  font-size: 2vh;
+  padding: 3vh;
+}
+
 .footer-img {
   display: inline-block;
   max-height: 25vh;
