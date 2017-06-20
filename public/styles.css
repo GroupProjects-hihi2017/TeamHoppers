@@ -25,6 +25,10 @@ body {
   margin: 0px;
 }
 
+.header a {
+  text-decoration: none;
+}
+
 .header-text {
   color: #fff;
   display: inline-block;
@@ -757,7 +761,7 @@ align-content: flex-end;}
     border-color: #FA824C;
 }
 
-/*** Admin Form ***/
+/*** Admin Forms ***/
 
 .admin-form {
   text-align: center;
@@ -767,6 +771,18 @@ align-content: flex-end;}
 }
 
 .admin-form input, h4 {
+  width: 40%;
+  margin: 1vh auto;
+}
+
+.items-to-org-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+}
+
+.items-to-org-form select, input {
   width: 40%;
   margin: 1vh auto;
 }
