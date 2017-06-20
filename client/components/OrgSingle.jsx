@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
 class OrgSingle extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       org: props.org,
@@ -11,17 +11,17 @@ class OrgSingle extends React.Component {
       showItems: false
     }
   }
-  filterItems(items) {
+  filterItems (items) {
     return items.filter(item => item.org_id == this.props.org.org_id)
   }
-  componentWillReceiveProps({org, joinItemToOrgs}) {
+  componentWillReceiveProps ({org, joinItemToOrgs}) {
     this.setState({org, items: this.filterItems(joinItemToOrgs)})
   }
-  handleClick(showItems) {
+  handleClick (showItems) {
     this.setState({showItems})
     this.props.dispatch({type: 'INIT'})
   }
-  render() {
+  render () {
     let {org, items, showItems} = this.state
     return (
       <div className="org-single-box">
@@ -51,4 +51,4 @@ const mapStateToProps = (state, nextProps) => {
   }
 }
 
-export default connect (mapStateToProps)(OrgSingle)
+export default connect(mapStateToProps)(OrgSingle)

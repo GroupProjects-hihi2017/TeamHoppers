@@ -1,12 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
 
 import GMapLocate from './GMapLocate'
-
-
 import {getOrgsByItem} from '../actions/joinItemToOrgs'
-import {getAllOrgs} from '../actions/listOrgs'
 
 const renderOrgClass = (org, key) => (
 
@@ -40,7 +36,6 @@ class OrgClass extends React.Component {
     this.props.dispatch(getOrgsByItem())
   }
 
-
   componentWillReceiveProps ({item, recycleAble, donateAble}) {
     this.setState({
       item,
@@ -48,7 +43,7 @@ class OrgClass extends React.Component {
       recycleAble
     })
   }
-  renderOrgList(orgs) {
+  renderOrgList (orgs) {
     if (orgs != 0) {
       return (
         <div className="donate-able">
@@ -62,21 +57,21 @@ class OrgClass extends React.Component {
     let {recycleAble, donateAble} = this.state
     let itemClass_name = this.state.item ? this.state.item.itemClass_name : ''
     return (
-    <div className = 'wallpaper-no-border'>
-      <div className='container'>
-        <div>
-          <h5 className="itemClass-list-header">The following organisations will take your {itemClass_name}:</h5>
-        </div>
-        <div className='itemClass-container '>
-          <div className='recycleAble'>
-          {this.renderOrgList(recycleAble)}
+      <div className = 'wallpaper-no-border'>
+        <div className='container'>
+          <div>
+            <h5 className="itemClass-list-header">The following organisations will take your {itemClass_name}:</h5>
           </div>
-          <div className='donateAble'>
-          {this.renderOrgList(donateAble)}
+          <div className='itemClass-container '>
+            <div className='recycleAble'>
+              {this.renderOrgList(recycleAble)}
+            </div>
+            <div className='donateAble'>
+              {this.renderOrgList(donateAble)}
+            </div>
           </div>
         </div>
       </div>
-    </div>
     )
   }
 }
@@ -92,7 +87,6 @@ const mapStateToProps = ({joinItemToOrgs}, {match}) => {
   const recycleAble = filterDonate(orgs, false)
   const item = joinItemToOrgs.find(item => item.itemClass_id == itemClass_id)
   return {joinItemToOrgs: orgs, item, donateAble, recycleAble}
-
 }
 
 export default connect(mapStateToProps)(OrgClass)
