@@ -88,23 +88,25 @@ isDonatable |
 * I can submit a donation/recycle location or update to the administrator using a contact form.
 
 ### Stretch user stories
-* I can be directed to other organizations' websites to learn more about them
+* I can be directed to other organizations' websites to learn more about them.
 * I can find a recycling/donation spot based on my location, or view spots on a map.
+* Admin can add or update an organisation and the items it receives.
 
 ## LEARNING OBJECTIVES
 ### Our team learning objectives include:
 * Database planning
 * Stakeholder consultation
 * Creating a search bar
-* Creating a contact forms
+* Creating a contact form
 * Auto-fill search bar
+* Add and update forms with Admin access
 * Build our confidence and HAVE FUN!
 
 ## TEAM ROLES
 Role | Name | Responsibility
 --- | --- | ---
-Product Owner | Sarah | Ensuring the product matches the users stories, ensuring the product has consistency
-Scrum Master | Natalie | Holding regular stand ups and checking whether tickets can be moved across
-Stakeholder Liaison | Jess | Getting in touch with interested stakeholders and ensuring the final product meets needs of relevant stakeholders
-Git Master | ~alternating | Dealing with pull request by making sure its pushed to the right branch and fixing merge conflicts, helping out with git problems
-Fun Master | ~alternating | Coming up with enjoyable games, and having comms making sure everyone's all good
+Product Owner | Sarah | Ensuring the product matches the users stories, ensuring the product has consistency.
+Scrum Master | Natalie | Holding regular stand ups and checking whether tickets can be moved across. Also responsible for deploying to Heroku.
+Stakeholder Liaison | Jess | Getting in touch with interested stakeholders and ensuring the final product meets needs of relevant stakeholders.
+Git Master | ~alternating | Dealing with pull requests by making sure they are pushed to the right branch, fixing any merge conflicts, and helping out with git problems.
+Fun Master | ~alternating | Coming up with enjoyable games, and checking in with team members to make sure everyone is having fun (chocolate optional but welcome).
