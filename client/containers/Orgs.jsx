@@ -6,6 +6,7 @@ import GMapLocate from './GMapLocate'
 
 
 import {getOrgsByItem} from '../actions/joinItemToOrgs'
+import {getAllOrgs} from '../actions/listOrgs'
 
 const renderOrgClass = (org, key) => (
 
@@ -51,7 +52,7 @@ class OrgClass extends React.Component {
     if (orgs != 0) {
       return (
         <div className="donate-able">
-          <h5>You can {orgs[0].isDonatable ? 'Donate' : 'Recycle'} here:</h5>
+          <h5>You can {orgs[0].org_isDonatable ? 'Donate' : 'Recycle'} here:</h5>
           {orgs.map((org, key) => renderOrgClass(org, key))}
         </div>
       )
@@ -67,8 +68,12 @@ class OrgClass extends React.Component {
           <h5 className="itemClass-list-header">The following organisations will take your {itemClass_name}:</h5>
         </div>
         <div className='itemClass-container '>
+          <div className='recycleAble'>
           {this.renderOrgList(recycleAble)}
+          </div>
+          <div className='donateAble'>
           {this.renderOrgList(donateAble)}
+          </div>
         </div>
       </div>
     </div>
@@ -77,7 +82,7 @@ class OrgClass extends React.Component {
 }
 
 const filterDonate = (orgs, isDonatable) => {
-  return orgs.filter(org => org.isDonatable == isDonatable)
+  return orgs.filter(org => org.org_isDonatable == isDonatable)
 }
 
 const mapStateToProps = ({joinItemToOrgs}, {match}) => {
@@ -87,6 +92,7 @@ const mapStateToProps = ({joinItemToOrgs}, {match}) => {
   const recycleAble = filterDonate(orgs, false)
   const item = joinItemToOrgs.find(item => item.itemClass_id == itemClass_id)
   return {joinItemToOrgs: orgs, item, donateAble, recycleAble}
+
 }
 
 export default connect(mapStateToProps)(OrgClass)
