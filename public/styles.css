@@ -330,7 +330,7 @@ nav ul li a:hover {
 
 }
 
-.items-by-org {
+.items-by-org-grid {
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
    -moz-column-count: 3; /* Firefox */
    column-count: 3;
