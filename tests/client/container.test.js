@@ -9,10 +9,12 @@ import Categories from '../../client/containers/Categories'
 import ItemClass from '../../client/containers/ItemClass'
 import OrgClass from '../../client/containers/Orgs'
 import store from '../../client/store'
+import {receiveOrgsByItem } from '../../client/actions/joinItemToOrgs'
+
 
 nock('http://localhost:80')
   .get('/api/categories').reply(200, [])
-  .get('/api/joins').reply(200, [])
+  .get('/api/joins').reply(200, [{itemClass_name: 'memes', itemClass_id: 77001}])
   .get('/api/items').reply(200, [])
 
 test('categories page exists', t => {
@@ -26,6 +28,6 @@ test('items page exists', t => {
 })
 
 test('orgs page exists', t => {
-  const wrapper = mount(<OrgClass store={store}/>)
+  const wrapper = mount(<OrgClass store={store} match={{params: {itemClass_id:77001}}}/>)
   t.is(wrapper.find('OrgClass').exists(), true)
 })
