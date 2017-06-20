@@ -434,6 +434,7 @@ align-content: flex-end;}
 }
 
 .category-box figcaption h5 {
+  font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 0rem;
 }
@@ -445,8 +446,8 @@ align-content: flex-end;}
 
 
 .category-box img {
-    height: auto;
- border-radius: 25%;
+  height: auto;
+   border-radius: 25%;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     transition: all 300ms;
@@ -543,7 +544,7 @@ align-content: flex-end;}
 .org-header h4 {
   color: #FA824C;
   font-size: 3.5vh;
-  margin: 1vh;
+  margin: 1vh auto;
 }
 
 .org-header p {
@@ -770,7 +771,7 @@ align-content: flex-end;}
   margin: 5% 0;
 }
 
-.admin-form input, h4 {
+.admin-form input h4 {
   width: 40%;
   margin: 1vh auto;
 }
