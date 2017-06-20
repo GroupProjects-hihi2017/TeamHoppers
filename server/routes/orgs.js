@@ -1,5 +1,6 @@
 var express = require('express')
 var router = express.Router()
+var authentication = require('basic-authentication')
 
 var orgsDb = require('../db/orgs')
 
@@ -14,12 +15,17 @@ router.get('/', (req, res) => {
     })
 })
 
-router.post('/', (req,res) => {
+var auth = authentication({user: 'admin', password: 'admin'})
+
+router.post('/', auth, (req,res) => {
   let db = req.app.get('db')
   let org = req.body
   orgsDb.addOrg(org, db)
     .then(response => {
-      res.json(response[0])
+      orgsDb.getOrgById(response[0], db)
+        .then(org => {
+          res.json(response[0])
+        })
     })
 })
 

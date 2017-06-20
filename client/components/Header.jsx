@@ -11,7 +11,7 @@ const Header = () => {
           <span className='hack'>hack</span>
           </a>
         </div>
-          <Link to={'/general-info'}>
+          <Link to={'/admin'}>
             <img className='header-img' src='http://www.koehlerdramm.com/wp-content/uploads/2016/04/happy-earth-day-2016-1024x427.jpg'/>
           </Link>
       </div>

@@ -39,8 +39,7 @@ export function addOrg(org) {
           console.error(err.message)
           return
         }
-        org.org_id = res.body
-        dispatch(addNewOrg(org))
+        dispatch(addNewOrg(res.body))
       })
   }
 }
