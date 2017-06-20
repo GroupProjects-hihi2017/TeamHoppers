@@ -63,18 +63,20 @@ class SearchBar extends React.Component {
     </div>
   }
 
-  render () {
-    return (
-      <div className='container search-bar-body'>
-        <div>
-          <h4 className={this.state.searchItem.length == 0 ? 'search-bar-header-ready':"search-bar-header"}>What would you like to recycle?</h4>
-        </div>
-        <form className={this.state.searchItem.length == 0 ? 'search-box-ready':'search-box'}>
-          <input placeholder='Search' type='text' onChange={(e) => this.searchHandler(e)}></input>
-        </form>
-        <div className='search-results-list'>
-          {this.state.searchResults.map((item, key) => this.renderItemInfo(item, key))}
-        </div>
+render() {
+  const {itemClass, dispatch} = this.props
+  return (
+    <div className='container search-bar-body'>
+      <div>
+        <h4 className={this.state.searchItem.length == 0 ? 'search-bar-header-ready animated bounceIn':"search-bar-header"}>What would you like to recycle?</h4>
+      </div>
+      <form className={this.state.searchItem.length == 0 ? 'search-box-ready':'search-box'}>
+        <input placeholder='Search' type='text' onChange={(e) => this.searchHandler(e)}></input>
+      </form>
+      <div className='search-results-list'>
+        {this.state.searchResults.map((item, key) => this.renderItemInfo(item, key))}
+      </div>
+
         {this.state.showOrgs && this.renderOrgs()}
       </div>
     )
