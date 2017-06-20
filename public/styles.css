@@ -82,6 +82,10 @@ body {
   width: auto;
 }
 
+.footer a {
+  text-decoration: none;
+}
+
 .footer-slogan {
   font-family: 'Spinnaker', sans-serif;
   font-weight: bold;
