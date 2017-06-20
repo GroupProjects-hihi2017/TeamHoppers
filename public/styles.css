@@ -132,7 +132,7 @@ ul li {
 }
 
 nav ul li a {
-  font-family: 'Spinnaker', sans-serif;
+font-family: 'Roboto', sans-serif;
   font-size: 2vh;
   color: #fff;
   display: inline-block;
@@ -203,6 +203,7 @@ nav ul li a:hover {
 .search-bar-body {
   min-height: 35vh;
   width: 100%;
+  margin: 0px;
 }
 
 .search-container {
@@ -398,10 +399,14 @@ flex-flow: row wrap;
 -webkit-align-content: flex-end;
 align-content: flex-end;}
 
-.category-list-header {
-  color: #FA824C;
-  padding: 2%;
+.category-list-header h4 {
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  font-size: 4em;
+  letter-spacing: 4px;
+  color: #FA824C;
+  padding: 4%;
+  padding-top: 10%;
   text-align: center;
 }
 
