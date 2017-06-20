@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom'
 
 import {getAllOrgs} from '../actions/listOrgs'
 import {getOrgsByItem} from '../actions/joinItemToOrgs'
-import ItemsByOrg from './ItemsByOrg'
 import OrgSingle from '../components/OrgSingle'
 
 class ListAllOrgs extends React.Component {
@@ -14,7 +13,7 @@ class ListAllOrgs extends React.Component {
   }
 
   render () {
-    const {listOrgs, joinItemToOrgs} = this.props
+    const {listOrgs} = this.props
     return (
       <div className='wallpaper-no-border'>
         <div className='container'>
@@ -31,9 +30,7 @@ class ListAllOrgs extends React.Component {
   }
 }
 
-
-
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return {
     listOrgs: state.listOrgs,
     joinItemToOrgs: state.joinItemToOrgs
