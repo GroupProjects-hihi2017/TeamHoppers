@@ -418,21 +418,21 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77060,
           category_id: 88001,
           itemClass_name: 'Drinking Glasses',
-          itemClass_info: "",
+          itemClass_info: "Unfortunately we can't recycle these items because they are made from a toughened glass which contains certain chemicals, it is best to donate them.",
           itemClass_img: 'http://thesweethome.com/wp-content/uploads/sites/3/2015/11/01-widget-our-pick-drinking-glasses-6301.jpg'
         },
         {
           itemClass_id: 77061,
           category_id: 88001,
           itemClass_name: 'Windows',
-          itemClass_info: "",
+          itemClass_info: "Don't throughout your old windows. Most buliding recyclers will take them to be reused on other projects. ",
           itemClass_img: 'http://colorado.momentumrecycling.com/wp-content/uploads/2016/04/Old-Windows1-1000x430.jpg'
         },
         {
           itemClass_id: 77062,
           category_id: 88005,
           itemClass_name: 'Aluminium Foil & Baking Trays',
-          itemClass_info: "",
+          itemClass_info: "Although aluminum foil is 100 percent recyclable, used foil isn’t often accepted by recycling centers.",
           itemClass_img: 'http://img.chineseea.com/nimg/99/8f/4b1a3e1acadc0ac4e0855bfa24dc-300x300-0/custom_food_packaging_aluminium_foil_baking_trays_disposable_aluminum_pans.jpg'
         },
         {
