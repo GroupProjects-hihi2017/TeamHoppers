@@ -376,7 +376,6 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77054,
           category_id: 88008,
           itemClass_name: 'Pot Plants',
-          itemClass_info: "",
           itemClass_info: "Try your local garden shop to see whether they might be interested in taking your pot plants.",
           itemClass_img: 'https://us.123rf.com/450wm/firina/firina1205/firina120500032/13724067-flower-pot-with-fresh-thyme-thymus-citriodorus-on-white-background.jpg?ver=6'
         },
