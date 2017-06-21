@@ -194,49 +194,49 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77028,
           category_id: 88004,
           itemClass_name: 'Batteries',
-          itemClass_info: "",
+          itemClass_info: "You can't put batteries out with your household recycling as some contain hazardous materials like lead and lithium.",
           itemClass_img: 'http://www.ecotechservices.co.nz/wp-content/uploads/2014/01/Battery-Recycling.jpg'
         },
         {
           itemClass_id: 77029,
           category_id: 88004,
           itemClass_name: 'Light Bulbs',
-          itemClass_info: "",
+          itemClass_info: "Energy saver light bulbs contain mercury, which is hazardous, so they need to be disposed of properly. ",
           itemClass_img: 'https://goodguideblog.files.wordpress.com/2011/02/lightbulbs.jpg'
         },
         {
           itemClass_id: 77030,
           category_id: 88004,
           itemClass_name: 'Smoke Alarms',
-          itemClass_info: "",
+          itemClass_info: "You can't put smoke alarms out with your household recycling and they shouldn’t go out in your rubbish either, as they can contain radioactive materials.",
           itemClass_img: 'http://www.stalbansvt.com/vertical/Sites/%7B6057F00C-4FBC-4942-B5A5-C142459B1038%7D/uploads/%7B30D695A3-04D3-4239-9033-ED7B2B9BA64A%7D.JPG'
         },
         {
           itemClass_id: 77031,
           category_id: 88004,
           itemClass_name: 'Household Chemicals',
-          itemClass_info: "",
+          itemClass_info: "You can't put chemicals out with your household recycling or rubbish as they are hazardous waste.",
           itemClass_img: 'http://greencleanmaidsweb.com/wp-content/uploads/2015/02/DSC_2422_blog_ready.jpg'
         },
         {
           itemClass_id: 77032,
           category_id: 88007,
           itemClass_name: 'Chopsticks',
-          itemClass_info: "",
+          itemClass_info: "Wooded chopsticks are treated like green waste.",
           itemClass_img: 'http://919seafm.com.au/wp-content/uploads/2017/03/chopsticks-628.png'
         },
         {
           itemClass_id: 77033,
           category_id: 88007,
           itemClass_name: 'Corks',
-          itemClass_info: "",
+          itemClass_info: "Cork is a 100 percent natural, biodegradable and renewable resource.",
           itemClass_img: 'https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/corkssealawi.jpg'
         },
         {
           itemClass_id: 77034,
           category_id: 88003,
           itemClass_name: 'Video Cassettes',
-          itemClass_info: "",
+          itemClass_info: "If the tapes are still usable, you could also donate them, otherwise they will need to go in your yellow rubbish bag if they’re no longer usable.",
           itemClass_img: 'https://s-media-cache-ak0.pinimg.com/originals/77/15/7b/77157bc0a9985f9dca6fe6ddd7d44093.jpg'
         },
         {
@@ -264,35 +264,35 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77038,
           category_id: 88006,
           itemClass_name: 'Supermarket Bags',
-          itemClass_info: "",
+          itemClass_info: "You can't put plastic bags in your recycling bag or wheelie bin.",
           itemClass_img: 'http://media.gizmodo.co.uk/wp-content/uploads/2015/10/plastic-bag-620x349.jpg'
         },
         {
           itemClass_id: 77039,
           category_id: 88006,
           itemClass_name: 'Coathangers',
-          itemClass_info: "",
+          itemClass_info: "Everyone needs coathangers, so if you have some you don't need, consider donating them.",
           itemClass_img: 'https://cdn.shopify.com/s/files/1/2029/9329/products/24_57_22efc8b0-bdb8-483a-bf79-8657d907ecd6_530x@2x.jpg?v=1495675249'
         },
         {
           itemClass_id: 77040,
           category_id: 88006,
-          itemClass_name: 'Bubblewrap',
-          itemClass_info: "",
-          itemClass_img: 'http://www.tigerpak.co.uk/wp-content/uploads/2013/11/foto-bubble-wrap.jpg'
+          itemClass_name: 'Bubble wrap',
+          itemClass_info: "You can't put bubble wrap out with your household recycling. Instead of throwing it away, you could give it to someone who is moving house.",
+           itemClass_img: 'http://www.tigerpak.co.uk/wp-content/uploads/2013/11/foto-bubble-wrap.jpg'
         },
         {
           itemClass_id: 77041,
           category_id: 88007,
           itemClass_name: 'Polystyrene',
-          itemClass_info: "",
+          itemClass_info: "You can't put polystyrene out with your household recycling.",
           itemClass_img: 'https://www.plasticstoday.com/sites/default/files/images/polystyrene.jpg'
         },
         {
           itemClass_id: 77042,
           category_id: 88011,
           itemClass_name: 'Mattresses',
-          itemClass_info: "",
+          itemClass_info: "Please don’t just leave them on the side of the road – they get wet, heavy and then they are no use to anybody.",
           itemClass_img: 'http://www.mattressdepartmentutah.com/wp-content/uploads/2012/12/Old_Mattresses-448x2671.jpg'
         },
         {
@@ -313,35 +313,35 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77045,
           category_id: 88002,
           itemClass_name: 'Phone Books',
-          itemClass_info: "",
+          itemClass_info: "Did you know you can opt out getting the White and Yellow Pages.",
           itemClass_img: 'https://media.licdn.com/mpr/mpr/p/7/005/084/1f1/2d8701c.jpg'
         },
         {
           itemClass_id: 77046,
           category_id: 88002,
           itemClass_name: 'Hardback & Paperback Books',
-          itemClass_info: "",
+          itemClass_info: "You can't put books out with your household recycling. There are lots of places that accept second-hand books.",
           itemClass_img: 'http://faithandheritage.com/wp-content/uploads/2016/12/Best-of-2016-books-Tim-Challies-Al-Mohler-Russell-Moore-John-Piper-The-Gospel-Coalition-J.D.-Vance-Hillbilly-Elegy-Yuval-Levin-The-Fractured-Republic-anti-white.jpg'
         },
         {
           itemClass_id: 77047,
           category_id: 88002,
           itemClass_name: 'Shredded Paper',
-          itemClass_info: "",
+          itemClass_info: "When you shred paper, it is much more difficult to get recycling centers to accept it.",
           itemClass_img: 'http://movers.pulseight.com/wp-content/uploads/sites/16/2013/05/packingpaper.jpg'
         },
         {
           itemClass_id: 77048,
           category_id: 88012,
           itemClass_name: 'Household Perishable Food',
-          itemClass_info: "",
+          itemClass_info: "New Zealanders throw away about $872 million worth of food each year ($560 per household).",
           itemClass_img: 'http://food.fnr.sndimg.com/content/dam/images/food/fullset/FN_Leftovers-Thanksgiving-Opener_s4x3.jpg.rend.hgtvcom.966.725.jpeg'
         },
         {
           itemClass_id: 77049,
           category_id: 88012,
           itemClass_name: 'Household Non-Perishable Food',
-          itemClass_info: "",
+          itemClass_info: "Non-perishable foods have a long shelf life and don’t require refrigeration.",
           itemClass_img: 'http://i.ebayimg.com/00/s/MjgyWDQyNQ==/z/T20AAOxyF0pThiGK/$_1.JPG?set_id=2'
         },
         {
@@ -355,7 +355,7 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77051,
           category_id: 88008,
           itemClass_name: 'Flower Bouquets',
-          itemClass_info: "",
+          itemClass_info: "Once they’re dried, flowers make for ah-mazing aromatherapy. Consider making potpourri with.",
           itemClass_img: 'https://s-media-cache-ak0.pinimg.com/736x/14/1d/32/141d32a41797f63edb9658be13202d96.jpg'
         },
         {

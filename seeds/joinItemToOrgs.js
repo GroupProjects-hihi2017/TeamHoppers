@@ -429,12 +429,12 @@ exports.seed = function (knex, Promise) {
       {
         orgRelationships_id: 86,
         itemClass_id: 77038,
-        org_id: 66006
+        org_id: 66001
       },
       {
         orgRelationships_id: 87,
-        itemClass_id: 77038,
-        org_id: 66007
+        itemClass_id: 77060,
+        org_id: 66020
       },
       {
         orgRelationships_id: 88,
