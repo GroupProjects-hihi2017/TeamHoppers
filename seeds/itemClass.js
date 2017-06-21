@@ -439,14 +439,14 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77063,
           category_id: 88005,
           itemClass_name: 'Aerosol Cans',
-          itemClass_info: "",
+          itemClass_info: "If empty, aerosol cans are recyclable. If partially full, they are treated as household hazardous waste. ",
           itemClass_img: 'http://www.wastenet.org.nz/~/media/WasteNet/Images/Common/Aerosol%20cansShutterstock83991775%20Small.ashx'
         },
         {
           itemClass_id: 77064,
           category_id: 88005,
           itemClass_name: 'Metal Pots, Pans & Lids',
-          itemClass_info: "",
+          itemClass_info: "Most landfills that accept metal will be happy to take your old nonstick pans, which they will recycle along with other scrap metal.",
           itemClass_img: 'http://static3.olympus-ims.com/data/Image/appnotes/clad_cookware.jpg?rev=3219'
         }
       ]);
