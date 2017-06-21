@@ -19,11 +19,12 @@ class ListAllOrgs extends React.Component {
         <div className='container'>
           <div className='org-header'>
             <h4>Consider recycling or donating your used items at any of these Wellington organisations:</h4>
-            <p>Want your organisation listed on our site? Get in touch with us <Link to='/contact'>here</Link>.</p>
+            <p>Click on a button to find out which items these organisations take.</p>
           </div>
           <div className='org-link-list'>
             {listOrgs.map((org, key) => <OrgSingle org={org} key={key}/>)}
           </div>
+          <p className='closing-tag'>Want your organisation listed on our site? Get in touch with us <Link to='/contact'>here</Link>.</p>
         </div>
       </div>
     )
