@@ -23,7 +23,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88004,
           category_name: 'Hazardous Waste & Chemicals',
           category_img: 'http://www.fairfaxva.gov/Home/ShowImage?id=4558&t=635732554814030000',
-          category_info: "The average home can accumulate as much as 100 pounds of household wastes in storage areas, garages and sheds"
+          category_info: "Average homes can accumulate household wastes in storage areas, garages and sheds"
         },
         {
           category_id: 88005,
@@ -40,7 +40,7 @@ exports.seed = function(knex, Promise) {
         {
           category_id: 88007,
           category_name: 'Miscellaneous',
-          category_img: 'https://www.recyclenow.com/sites/files/recyclenow/styles/custom_main/public/images/main/paint_cans.jpg?itok=X2z332_K',
+          category_img: 'http://i1.wp.com/thedailybrunch.com/wp-content/uploads/2016/05/Use-up-discarded-items-to-create-an-impressive-home.jpg?fit=1322%2C881',
           category_info: "Recycling reduces the need for more landfills and no one wants to live next to a landfill"
         },
         {
@@ -71,7 +71,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88012,
           category_name: 'Food',
           category_img: 'http://challengeforsustainability.org/wp-content/uploads/2014/07/food-donation.jpg',
-          category_info: "By donating rather than throwing out quality surplus food, you can cut down your environmental footprint"
+          category_info: "Cut your environmental footprint by donating rather than throwing out quality surplus food"
         }
       ]);
     });

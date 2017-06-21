@@ -180,6 +180,15 @@ exports.seed = function(knex, Promise) {
           org_img: "https://upload.wikimedia.org/wikipedia/commons/3/32/New_Zealand_Red_Cross_Logo.gif",
           org_info: "Families from refugee backgrounds often arrive with little more than a suitcase or two. The New Zealand Red Cross relies on the generosity of the community to help them set up their homes.",
           org_isDonatable: true
+        },
+        {
+          org_id: 66021,
+          org_name: "New Zealand Pharmacy Network",
+          org_address: "",
+          org_url: "https://nzpharmacy.wordpress.com/2009/06/09/disposal-of-unwanted-medicines/",
+          org_img: "http://directadmissiononline.com/direct/wp-content/uploads/2017/01/pharmacy_small.jpg",
+          org_info: "Members of the public should be encouraged to return unused and expired medicines to their local pharmacy for disposal.",
+          org_isDonatable: false
         }
       ]);
     });
