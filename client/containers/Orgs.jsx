@@ -31,6 +31,7 @@ class OrgClass extends React.Component {
     }
   }
   componentDidMount () {
+    window.scrollTo(0, 0)
     this.props.dispatch(getOrgsByItem())
   }
 
@@ -60,17 +61,15 @@ render() {
     ? this.state.item.itemClass_name
     : ''
   return (
-    <div className='wallpaper-no-border'>
-      <div className='container'>
-        <div className="itemClass-list-header">
-          <h4>The Following Organisations Will Take Your {itemClass_name}:</h4>
-        </div>
-        <div className='itemClass-container'>
-            {this.renderOrgList(recycleAble)}
-            <br/>
-            {this.renderOrgList(donateAble)}
-          </div>
+    <div className='container'>
+      <div className="itemClass-list-header">
+        <h4>The Following Organisations Will Take Your {itemClass_name}:</h4>
       </div>
+      <div className='itemClass-container'>
+          {this.renderOrgList(recycleAble)}
+          <br/>
+          {this.renderOrgList(donateAble)}
+        </div>
     </div>
   )
 }
