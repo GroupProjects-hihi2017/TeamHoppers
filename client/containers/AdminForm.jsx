@@ -16,6 +16,7 @@ class AdminForm extends React.Component {
   }
 
   toggleDonatable (e) {
+    e.preventDefault()
     let org = this.state.org
     org.org_isDonatable = !org.org_isDonatable
     this.setState({org})
