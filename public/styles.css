@@ -1052,6 +1052,43 @@ color: #fff;
   font-weight: bold;
 }
 
+.container-form {
+  margin: 0;
+}
+
+.submit-message {
+  margin: 0;
+  text-align: center;
+  padding: 10%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.admin-submit-box {
+  text-align: center;
+}
+
+.admin-submit-box a {
+  text-decoration: none;
+}
+
+.admin-button {
+  text align: center;
+  background-color: #FA824C;
+  color: #fff;
+  border-color: #fff;
+  margin: 0 auto 10% auto;
+  font-size: 1.5rem;
+}
+
+.admin-button:hover {
+  text align: center;
+  background-color: #fff;
+  color: #FA824C;
+  border-color: #FA824C;
+}
+
+
 /*** Org Update Form ***/
 
 .add-org {

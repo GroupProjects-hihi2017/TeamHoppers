@@ -30,18 +30,20 @@ class AdminForm extends React.Component {
 
   handleSubmit (e) {
     e.preventDefault()
-    this.state.dispatch(addOrg(this.state.org))
+    addOrg(this.state.org, this.submitted.bind(this))
+  }
+  submitted ()  {
+
     this.setState({submitted: true, message: 'Your organisation has been submitted.'})
   }
-
   refreshForm () {
     this.setState({submitted: false, message: '', org: {org_isDonatable: true}})
   }
 
   renderMessage () {
-    return <div>
+    return <div className='admin-submit-box'>
       <Link to={`/organisations`}><h4 className="submit-message">{this.state.message}</h4></Link>
-      <button onClick={(e) => this.refreshForm()}>Start New Form</button>
+      <button className='admin-button' onClick={(e) => this.refreshForm()}>Start New Form</button>
     </div>
   }
 
