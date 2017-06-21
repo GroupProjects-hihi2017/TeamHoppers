@@ -2,6 +2,7 @@ import test from 'ava'
 import nock from 'nock'
 
 import * as orgAction from '../../client/actions/listOrgs'
+import * as contactAction from '../../client/actions/contactForm'
 import * as itemAction from '../../client/actions/items'
 import * as categoriesAction from '../../client/actions/categories'
 import * as joinsAction from '../../client/actions/joinItemToOrgs'
@@ -13,6 +14,17 @@ test.cb('getAllOrgs', t => {
 
   orgAction.getAllOrgs()((actual) => {
     t.is(actual.type, 'LIST_ORGS')
+    t.end()
+  })
+})
+
+test.cb('addOrg', t => {
+  const scope = nock('http://localhost:80')
+    .post('/api/orgs')
+    .reply(200)
+
+  orgAction.addOrg({})((actual) => {
+    t.is(actual.type, 'ADD_ORG')
     t.end()
   })
 })
@@ -46,6 +58,18 @@ test.cb('getOrgsByItem', t => {
 
   joinsAction.getOrgsByItem()((actual) => {
     t.is(actual.type, 'RECEIVE_ORGS_BY_ITEM')
+    t.end()
+  })
+})
+
+test.cb('post contact form', t => {
+  const scope = nock('http://localhost:80')
+    .post('/contact')
+    .reply(200)
+
+  contactAction.postContactForm({}, (err, body) => {
+    scope.done()
+    t.pass()
     t.end()
   })
 })
