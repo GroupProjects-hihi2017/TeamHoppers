@@ -546,7 +546,7 @@ align-content: flex-end;
   flex-flow: row wrap;
   -webkit-align-content: flex-end;
   align-content: flex-end;
-  margin-bottom: 5vh;
+  margin: 5vh 0vh;
 }
 
 .itemClass-list-container h6 {
@@ -554,6 +554,7 @@ align-content: flex-end;
   text-align: center;
   color:  #FA824C;
   margin-bottom: 5%;
+  margin-top: 1%;
   width: 100%;
 }
 
