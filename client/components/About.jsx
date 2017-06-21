@@ -5,7 +5,6 @@ const About = () => {
     <div className = 'wallpaper-no-border'>
       <div className='container'>
         <div className='about-page'>
-          <hr></hr>
           <p className='about-title'>Introducing Team Hoppers!</p>
           <p className='about-text'>We are a coding team of three junior developers who decided to take a risk, quit our day jobs, and learn computer coding.
             We are a diverse bunch, our team comprises of a lawyer, a pastry chef and a social-scientist.
