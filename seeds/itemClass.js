@@ -200,7 +200,7 @@ exports.seed = function(knex, Promise) {
         {
           itemClass_id: 77029,
           category_id: 88004,
-          itemClass_name: 'Lightbulbs',
+          itemClass_name: 'Light Bulbs',
           itemClass_info: "",
           itemClass_img: 'https://goodguideblog.files.wordpress.com/2011/02/lightbulbs.jpg'
         },
