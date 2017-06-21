@@ -22,7 +22,7 @@ const GeneralInfo = () => {
           <p className='info-text'>Composting is one of the first steps toward sustainable living. It significantly reduces the amount of waste going to landfills around Wellington.</p>
           <p className='info-text'>Here's a brief list of organic materials safe to compost:</p>
           <div className='info-div-2'>
-            <li className='info-pointers'> &#127810; Vegetable scraps</li>
+            <li className='info-pointers'>Vegetable scraps</li>
             <li className='info-pointers'>Coffee grounds and filters</li>
             <li className='info-pointers'>Lawn clippings</li>
             <li className='info-pointers'>Tree clippings (only small twigs and branches)</li>

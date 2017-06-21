@@ -774,10 +774,6 @@ align-content: flex-end;
   color: white
 }
 
-.info-pointers li {
-  	content: "\01F342";
-    color: green;
-}
 
 .info-text a {
   color: white;
