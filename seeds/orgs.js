@@ -51,7 +51,7 @@ exports.seed = function(knex, Promise) {
           org_name: "Green Council Bags or Wheelie Bin",
           org_address: "101 Wakefield Street, Wellington 6011",
           org_url: "http://wellington.govt.nz/services/environment-and-waste/rubbish-and-recycling/recycling/wheelie-bins-bags-and-crates",
-          org_img: "http://wellington.govt.nz/~/media/services/environment-and-waste/rubbish-and-recycling/images/84983_0069_recycling_bin.jpg?mh=320&mw=320",
+          org_img: "https://www.bindoctor.com/bin-cleaning/wp-content/themes/bindoctor/images/organicbin.png",
           org_info: "Contact Wellington City Council to get your own Wheelie Recycle Bin, or council-approved green recycling bags.",
           org_isDonatable: false
         },
@@ -60,7 +60,7 @@ exports.seed = function(knex, Promise) {
           org_name: "Council Recycling Bin",
           org_address: "101 Wakefield Street, Wellington 6011",
           org_url: "http://wellington.govt.nz/~/media/services/environment-and-waste/rubbish-and-recycling/images/84983_0069_recycling_bin.jpg?mh=320&mw=320",
-          org_img: "http://wellington.govt.nz/~/media/your-council/news/images/2011/06/recycling-lg.jpg?mw=320&mh=320",
+          org_img: "/images/recycling-bin.png",
           org_info: "Contact Wellington City Council to get your own Green Glass Recycle Bin.",
           org_isDonatable: false
         },
@@ -93,11 +93,11 @@ exports.seed = function(knex, Promise) {
         },
         {
           org_id: 66011,
-          org_name: "Recycling Electronics E-Cycle",
-          org_address: "Web-Based",
-          org_url: "http://www.e-cycle.co.nz/",
-          org_img: "./images/EClogo141.jpg",
-          org_info: "E-Cycle specialises in responsible, environmentally friendly recycling of end of life electronic products.",
+          org_name: "ITRecycla",
+          org_address: "Unit 2, 101 Gracefield Road Seaview, Wellington, New Zealand",
+          org_url: "http://www.itrecycler.co.nz/",
+          org_img: "http://www.itrecycler.co.nz/img/itrecycla_logo.png?v=2",
+          org_info: "ITRecycla supports environmental and social responsibility initiatives by recycling computer and electronic waste, surplus computer equipment and redundant IT peripherals, minimising the impact on the environment, reusing 99% of materials and keeping hazardous substances out of New Zealand’s (and the world’s) environment.",
           org_isDonatable: false
         },
         {
