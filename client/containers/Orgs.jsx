@@ -1,12 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
 
 import GMapLocate from './GMapLocate'
-
-
 import {getOrgsByItem} from '../actions/joinItemToOrgs'
-import {getAllOrgs} from '../actions/listOrgs'
 
 const renderOrgClass = (org, key) => (
 
@@ -39,7 +35,6 @@ class OrgClass extends React.Component {
     this.props.dispatch(getOrgsByItem())
   }
 
-
   componentWillReceiveProps ({item, recycleAble, donateAble}) {
     this.setState({
       item,
@@ -47,7 +42,7 @@ class OrgClass extends React.Component {
       recycleAble
     })
   }
-  renderOrgList(orgs) {
+  renderOrgList (orgs) {
     if (orgs != 0) {
       return (
         <div className="donate-able">
@@ -57,6 +52,7 @@ class OrgClass extends React.Component {
       )
     }
   }
+
 render() {
   let {recycleAble, donateAble} = this.state
   let itemClass_name = this.state.item
@@ -72,12 +68,15 @@ render() {
           <div className='itemClass-content'>
             {this.renderOrgList(recycleAble)}
             {this.renderOrgList(donateAble)}
+
           </div>
 
         </div>
+
     </div>
   )
 }
+
 }
 
 const filterDonate = (orgs, isDonatable) => {
@@ -91,7 +90,6 @@ const mapStateToProps = ({joinItemToOrgs}, {match}) => {
   const recycleAble = filterDonate(orgs, false)
   const item = joinItemToOrgs.find(item => item.itemClass_id == itemClass_id)
   return {joinItemToOrgs: orgs, item, donateAble, recycleAble}
-
 }
 
 export default connect(mapStateToProps)(OrgClass)

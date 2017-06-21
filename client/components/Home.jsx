@@ -4,18 +4,14 @@ import jump from 'jump.js'
 import Categories from '../containers/Categories'
 import SearchBar from '../containers/SearchBar'
 
-
 class Home extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   scrollToEntries (e) {
     jump('.category-list-header', {
       offset: -50
     })
   }
-  render() {
+
+  render () {
     return (
       <div className='home'>
         <SearchBar />

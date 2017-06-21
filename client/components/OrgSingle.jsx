@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
 class OrgSingle extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       org: props.org,
@@ -11,23 +11,23 @@ class OrgSingle extends React.Component {
       showItems: false
     }
   }
-  filterItems(items) {
+  filterItems (items) {
     return items.filter(item => item.org_id == this.props.org.org_id)
   }
-  componentWillReceiveProps({org, joinItemToOrgs}) {
+  componentWillReceiveProps ({org, joinItemToOrgs}) {
     this.setState({org, items: this.filterItems(joinItemToOrgs)})
   }
-  handleClick(showItems) {
+  handleClick (showItems) {
     this.setState({showItems})
     this.props.dispatch({type: 'INIT'})
   }
-  render() {
+  render () {
     let {org, items, showItems} = this.state
     return (
       <div className="org-single-box">
         <div className="org-details">
-          <img className='org-logo' src={org.org_img}/>
-            <div><button onClick={ () => this.handleClick(!showItems) }>{org.org_name}</button></div>
+          <a href={org.org_url} target="_blank"><img className='org-logo' src={org.org_img}/></a>
+            <div className='org-button'><button onClick={ () => this.handleClick(!showItems) }>{org.org_name}</button></div>
         </div>
         {this.state.showItems && (
           <div className='items-by-org-grid'>
@@ -51,4 +51,4 @@ const mapStateToProps = (state, nextProps) => {
   }
 }
 
-export default connect (mapStateToProps)(OrgSingle)
+export default connect(mapStateToProps)(OrgSingle)

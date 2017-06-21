@@ -25,6 +25,10 @@ body {
   margin: 0px;
 }
 
+.header a {
+  text-decoration: none;
+}
+
 .header-text {
   color: #fff;
   display: inline-block;
@@ -76,6 +80,10 @@ body {
   margin-top: 10vh;
   height: 100%;
   width: auto;
+}
+
+.footer a {
+  text-decoration: none;
 }
 
 .footer-slogan {
@@ -306,7 +314,6 @@ nav ul li a:hover {
   padding: 3vh 0vh;
 }
 
-
 .search-results-orgs-box a {
   vertical-align: middle;
   text-decoration: none;
@@ -319,7 +326,6 @@ nav ul li a:hover {
   text-align: center;
   margin:auto;
   max-width: 50%;
-
 }
 
 .org-info {
@@ -331,14 +337,22 @@ nav ul li a:hover {
 }
 
 .items-by-org-grid {
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-   -moz-column-count: 3; /* Firefox */
-   column-count: 3;
+  width: 80%;
+  margin: auto;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+   -moz-column-count: 2; /* Firefox */
+   column-count: 2;
+}
+
+.items-by-org {
+  padding: 0px;
+  margin: 0px;
 }
 
 .items-by-org a {
   text-decoration: none;
   color: inherit;
+  font-size: 1.2em;
 }
 .items-by-org a:hover {
   text-decoration: underline;
@@ -430,6 +444,7 @@ align-content: flex-end;}
 }
 
 .category-box figcaption h5 {
+  font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 0rem;
 }
@@ -441,8 +456,8 @@ align-content: flex-end;}
 
 
 .category-box img {
-    height: auto;
- border-radius: 25%;
+  height: auto;
+   border-radius: 25%;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     transition: all 300ms;
@@ -582,7 +597,7 @@ align-content: flex-end;}
 .org-header h4 {
   color: #FA824C;
   font-size: 3.5vh;
-  margin: 1vh;
+  margin: 1vh auto;
 }
 
 .org-header p {
@@ -616,13 +631,28 @@ align-content: flex-end;}
 .org-single-box {
   text-align: center;
   margin: 10px;
-  color: #FA824C;
+  color: #fff;
 }
+
+.org-details {
+  margin: auto;
+}
+
 .org-details button {
-  margin: 10px 0px;
-  background-color: #fff;
-  color: #FA824C;
-  border-color: #FA824C;
+  margin: 1em 0px;
+  padding: 0.5em;
+  height: auto;
+  background-color: #FA824C;
+  color: #fff;
+  border-color: #fff;
+  white-space: normal;
+  line-height: 1.5em;
+}
+
+.org-button {
+  max-width: 80%;
+  height: auto;
+  margin: auto;
 }
 
 .org-logo {
@@ -757,6 +787,7 @@ align-content: flex-end;}
   font-weight: bold;
   color:  #FA824C;
   margin-bottom: 2%;
+  margin-top: 5%;
 }
 
 .contact-form input {
@@ -766,18 +797,26 @@ align-content: flex-end;}
   border-radius: 4px;
 }
 
-.contact-form textarea{
+.contact-form textarea {
   width: 100%;
   height: 25vh;
+  font-size: 3vh;
 }
 
-/*.send button{
-  background-color: #FA824C;
-  color: #fff;
-  border-color: #fff;
-  margin: 5px;
-  font-size: 1.5rem;
-}*/
+.contact-submit-message {
+  text-align: center;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 160%;
+  font-weight: bold;
+  color:  #FA824C;
+  width: 100%;
+  padding: 25% 0 25% 0;
+}
+
+.contact-error-message {
+  color: #FA824C;
+}
 
 .send {
   text-align: center;
@@ -800,7 +839,7 @@ align-content: flex-end;}
     border-color: #FA824C;
 }
 
-/*** Admin Form ***/
+/*** Admin Forms ***/
 
 .admin-form {
   text-align: center;
@@ -809,7 +848,19 @@ align-content: flex-end;}
   margin: 5% 0;
 }
 
-.admin-form input, h4 {
+.admin-form input h4 {
+  width: 40%;
+  margin: 1vh auto;
+}
+
+.items-to-org-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+}
+
+.items-to-org-form select, input {
   width: 40%;
   margin: 1vh auto;
 }

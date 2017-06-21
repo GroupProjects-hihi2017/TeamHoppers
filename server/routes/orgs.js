@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
 var auth = authentication({user: 'admin', password: 'admin'})
 
-router.post('/', auth, (req,res) => {
+router.post('/', auth, (req, res) => {
   let db = req.app.get('db')
   let org = req.body
   orgsDb.addOrg(org, db)
