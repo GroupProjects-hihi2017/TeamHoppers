@@ -28,19 +28,17 @@ export const addNewOrg = (org) => {
   }
 }
 
-
 export function addOrg (org, callback) {
-  console.log({org, callback});
-    request
-      .post(`/api/orgs`)
-      .send(org)
-      .end((err, res) => {
-        if (err) {
-          console.error(err.message)
-          return
-        }
-        callback()
-      })
+  request
+    .post(`/api/orgs`)
+    .send(org)
+    .end((err, res) => {
+      if (err) {
+        console.error(err.message)
+        return
+      }
+      callback()
+    })
 }
 //
 // export function addOrg (org, callback) {
