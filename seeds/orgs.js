@@ -186,7 +186,7 @@ exports.seed = function(knex, Promise) {
           org_name: "New Zealand Pharmacy Network",
           org_address: "",
           org_url: "https://nzpharmacy.wordpress.com/2009/06/09/disposal-of-unwanted-medicines/",
-          org_img: "http://directadmissiononline.com/direct/wp-content/uploads/2017/01/pharmacy_small.jpg",
+          org_img: "http://itsrecycled.com/wp-includes/SimplePie/Decode/tmp/images/logo.png",
           org_info: "Members of the public should be encouraged to return unused and expired medicines to their local pharmacy for disposal.",
           org_isDonatable: false
         }
