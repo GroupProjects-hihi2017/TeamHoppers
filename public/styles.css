@@ -576,6 +576,7 @@ align-content: flex-end;
 
 .itemClass-list-box a:hover {
   text-decoration: underline;
+  color: #FA824C;
 }
 
 .itemClass-list-box img {
