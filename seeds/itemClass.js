@@ -20,14 +20,14 @@ exports.seed = function(knex, Promise) {
           category_id: 88003,
           itemClass_name: 'Laptops',
           itemClass_info: "Recycle your old laptop. Don't trash it. According to the EPA recycling 1 million laptops saves the energy equivalent to the electricity used by more than 3,500 homes in a year.",
-          itemClass_img: 'http://www.cjdecycling.com/wp-content/uploads/2013/08/laptop_recycling.png'
+          itemClass_img: 'http://www.guide-to-laptops.com/images/laptop-wide-screen.jpg'
         },
         {
           itemClass_id: 77004,
           category_id: 88004,
           itemClass_name: 'Paint',
           itemClass_info: "On average New Zealander's dump 10 percent of the paint they purchase, which could be recycled",
-          itemClass_img: 'http://hq.recyclist.co/wp-content/uploads/2015/02/oil-paint-300x300.jpg'
+          itemClass_img: 'http://www.keepcarrollbeautiful.org/wp-content/uploads/2012/07/3-Coloured-paint-cans.jpg'
         },
         {
           itemClass_id: 77005,
@@ -118,14 +118,14 @@ exports.seed = function(knex, Promise) {
           category_id: 88003,
           itemClass_name: 'Cellphones',
           itemClass_info: "For every one million cell phones that are recycled, the EPA states that 35,274 lbs of copper, 772 lbs of silver, 75 lbs of gold, and 33 lbs of palladium can be recovered.",
-          itemClass_img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpTFty_2zaUa3iGvUuUD-lCVuUMS7JkIhvxQzTTXFMkWNHicbL'
+          itemClass_img: 'https://whatcanyoudowithanthropology.files.wordpress.com/2015/05/cell-phones.jpg'
         },
         {
           itemClass_id: 77018,
           category_id: 88003,
           itemClass_name: 'Computer Accessories',
           itemClass_info: "This can include keyboards, speakers, mice, cords.",
-          itemClass_img: 'http://img.olx.com.br/images/87/8796904223.jpg'
+          itemClass_img: 'https://computeraccessoriessydney.files.wordpress.com/2015/04/cropped-computer-accessories-sydney1.png'
         },
         {
           itemClass_id: 77019,
@@ -139,7 +139,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88003,
           itemClass_name: 'Cameras',
           itemClass_info: "E-waste also contains toxic and hazardous materials including mercury, lead, cadmium, beryllium, chromium, and chemical flame retardants, which have the potential to leach into our soil and water ways.",
-          itemClass_img: 'http://ewasterecyclingindia.com/wp-content/uploads/2015/09/camera.png'
+          itemClass_img: 'https://img.newatlas.com/canon-powershot-n-4.jpeg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=ba686d58aaf3a5f40b7495040b4a3e5a'
         },
         {
           itemClass_id: 77021,
@@ -174,7 +174,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88011,
           itemClass_name: 'Couches',
           itemClass_info: "There are plenty of ways to find or get rid of second-hand furniture, charity Stores, second-hand furniture shops, antique store and trademe to name a few.",
-          itemClass_img: 'https://thumbs.dreamstime.com/t/antique-old-vintage-brown-leather-studded-cushioned-couch-sofa-61505949.jpg'
+          itemClass_img: 'http://www.ikea.com/PIAimages/0376655_PE558933_S5.JPG'
         },
         {
           itemClass_id: 77026,
@@ -195,7 +195,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88004,
           itemClass_name: 'Batteries',
           itemClass_info: "You can't put batteries out with your household recycling as some contain hazardous materials like lead and lithium.",
-          itemClass_img: 'http://www.ecotechservices.co.nz/wp-content/uploads/2014/01/Battery-Recycling.jpg'
+          itemClass_img: 'http://www.securrtrashcans.com/wp-content/uploads/2014/03/shutterstock_164995049.jpg'
         },
         {
           itemClass_id: 77029,
@@ -216,7 +216,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88004,
           itemClass_name: 'Household Chemicals',
           itemClass_info: "You can't put chemicals out with your household recycling or rubbish as they are hazardous waste.",
-          itemClass_img: 'http://greencleanmaidsweb.com/wp-content/uploads/2015/02/DSC_2422_blog_ready.jpg'
+          itemClass_img: 'https://www.planetnatural.com/wp-content/uploads/2013/04/household-chemicals.jpg'
         },
         {
           itemClass_id: 77032,
@@ -230,7 +230,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88007,
           itemClass_name: 'Corks',
           itemClass_info: "Cork is a 100 percent natural, biodegradable and renewable resource.",
-          itemClass_img: 'https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2015/corkssealawi.jpg'
+          itemClass_img: 'https://t4.ftcdn.net/jpg/01/07/13/19/240_F_107131939_nfKZATDUMe2ZAHOzzyfEtnQEZIiDRjV5.jpg'
         },
         {
           itemClass_id: 77034,
@@ -244,7 +244,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88007,
           itemClass_name: 'Medicine',
           itemClass_info: "Return any unused medicines (including medicines that are past their expiry date) to your pharmacist for safe disposal.",
-          itemClass_img: 'http://www.roberthowells.com.au/wp-content/uploads/2016/05/medication1.jpg'
+          itemClass_img: 'http://static.dnaindia.com/sites/default/files/styles/half/public/2016/03/21/440269-drugs-dnaedited.jpg?itok=HYgMUYWx'
         },
         {
           itemClass_id: 77036,
@@ -299,14 +299,14 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77043,
           category_id: 88011,
           itemClass_name: 'Office Chairs',
-          itemClass_info: "",
+          itemClass_info: "No longer need your office chair? Consider donating these to an op shop or to a not for profit organisation that might need furniture for their offices.",
           itemClass_img: 'https://sits-pod43.demandware.net/dw/image/v2/AAWO_PRD/on/demandware.static/-/Sites-wsl-master-catalog/default/dw9cf3da82/d4/b1/B79657_00.jpg?sw=232&sh=232&sm=fit'
         },
         {
           itemClass_id: 77044,
           category_id: 88011,
           itemClass_name: 'Chest of Drawers',
-          itemClass_info: "",
+          itemClass_info: "Spare set of drawers taking up space in your home? Consider donating them to an organisation that will ensure they are given to someone in need.",
           itemClass_img: 'http://www.ikea.com/au/en/images/products/koppang-chest-of-drawers-white__0430428_PE584633_S4.JPG'
         },
         {
@@ -348,7 +348,7 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77050,
           category_id: 88012,
           itemClass_name: 'Retail Food',
-          itemClass_info: "",
+          itemClass_info: "There are lots of organisations that rescue surplus food from retailers and ensure that this food is redistributed to those in need.",
           itemClass_img: 'https://s-media-cache-ak0.pinimg.com/originals/51/a1/e9/51a1e94f26adcd2af4597b1cf2669ec3.jpg'
         },
         {
@@ -369,49 +369,49 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77053,
           category_id: 88008,
           itemClass_name: 'Christmas Trees',
-          itemClass_info: "",
+          itemClass_info: "Consider an artificial tree and use a pine scented candle to imitate the smell!",
           itemClass_img: 'https://jerrymabbott.files.wordpress.com/2014/12/wpid-screenshot_2014-12-16-08-56-18-1.png'
         },
         {
           itemClass_id: 77054,
           category_id: 88008,
           itemClass_name: 'Pot Plants',
-          itemClass_info: "",
+          itemClass_info: "Try your local garden shop to see whether they might be interested in taking your pot plants.",
           itemClass_img: 'http://www.ikea.com/PIAimages/67453_PE181294_S5.JPG'
         },
         {
           itemClass_id: 77055,
           category_id: 88009,
           itemClass_name: 'Curtains',
-          itemClass_info: "",
+          itemClass_info: "Curtains provide insulation from the cold. Donate yours so that they can help make someone else's house warmer.",
           itemClass_img: 'http://www.ikea.com/gb/en/images/products/teresia-sheer-curtains-1-pair-white__0191200_pe345233_s5.jpg'
         },
         {
           itemClass_id: 77056,
           category_id: 88009,
           itemClass_name: 'Shoes',
-          itemClass_info: "",
+          itemClass_info: "You can't put shoes out with your household recycling. There are lots of places that accept second-hand shoes in good condition.",
           itemClass_img: 'https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=146587788'
         },
         {
           itemClass_id: 77057,
           category_id: 88009,
           itemClass_name: 'Blankets',
-          itemClass_info: "",
+          itemClass_info: "If you have piles of blankets taking up space in your cupboards, consider donating these.",
           itemClass_img: 'http://www.everythingsummercamp.com/common/images/products/large/Bunkhouse%20Plaid%20Wool%20Blanket-grey-blue.jpg'
         },
         {
           itemClass_id: 77058,
           category_id: 88001,
           itemClass_name: 'Broken Glass',
-          itemClass_info: "",
+          itemClass_info: "You can't put broken glass out in your green recycling crate. Glass crates are sorted by hand at the kerbside and broken glass is a major safety risk.",
           itemClass_img: 'http://examinetheglass.com/wp-content/uploads/2011/11/broken_glass1.jpg'
         },
         {
           itemClass_id: 77059,
           category_id: 88001,
           itemClass_name: 'Pyrex',
-          itemClass_info: "",
+          itemClass_info: "You can't put Pyrex glass out in your green recycling crate. This kind of glass can't be recycled with other glass because it is chemically treated to withstand high temperatures, which changes the composition of the glass.",
           itemClass_img: 'http://www.pyrexuk.com/media/catalog/product/cache/9/thumbnail/9df78eab33525d08d6e5fb8d27136e95/r/e/rectangular_-_three-quarters_view_1.jpg'
         },
         {
