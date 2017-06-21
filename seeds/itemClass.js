@@ -97,7 +97,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88009,
           itemClass_name: 'Baby & Child Clothing',
           itemClass_info: "There a plenty of non-profit organisations willing to take your unwanted baby clothes for families in need.",
-          itemClass_img: 'https://t4.ftcdn.net/jpg/00/72/77/37/240_F_72773780_C2fAOtqEL48etWvn61GMaY7ZopeRG37I.jpg'
+          itemClass_img: 'https://ae01.alicdn.com/kf/HTB1MHppOpXXXXbxXFXXq6xXFXXXl/-font-b-Newborn-b-font-font-b-Baby-b-font-Boy-Clothes-Sleeveless-Square-Collar.jpg'
         },
         {
           itemClass_id: 77015,
@@ -356,7 +356,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88008,
           itemClass_name: 'Flower Bouquets',
           itemClass_info: "Once they’re dried, flowers make for ah-mazing aromatherapy. Consider making potpourri with.",
-          itemClass_img: 'https://s-media-cache-ak0.pinimg.com/736x/14/1d/32/141d32a41797f63edb9658be13202d96.jpg'
+          itemClass_img: 'https://cdn.shopify.com/s/files/1/1478/2480/products/The_Hamptons_-_square4_1200x.png?v=1494304116'
         },
         {
           itemClass_id: 77052,
@@ -376,7 +376,7 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77054,
           category_id: 88008,
           itemClass_name: 'Pot Plants',
-          itemClass_info: "",
+          itemClass_info: "https://us.123rf.com/450wm/firina/firina1205/firina120500032/13724067-flower-pot-with-fresh-thyme-thymus-citriodorus-on-white-background.jpg?ver=6",
           itemClass_img: 'http://www.ikea.com/PIAimages/67453_PE181294_S5.JPG'
         },
         {
@@ -447,7 +447,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88005,
           itemClass_name: 'Metal Pots, Pans & Lids',
           itemClass_info: "Most landfills that accept metal will be happy to take your old nonstick pans, which they will recycle along with other scrap metal.",
-          itemClass_img: 'https://us.123rf.com/450wm/firina/firina1205/firina120500032/13724067-flower-pot-with-fresh-thyme-thymus-citriodorus-on-white-background.jpg?ver=6'
+          itemClass_img: 'http://static3.olympus-ims.com/data/Image/appnotes/clad_cookware.jpg?rev=3219'
         }
       ]);
     });
