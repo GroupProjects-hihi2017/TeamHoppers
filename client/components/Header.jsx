@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='header'>
+    <div className='header' id="header">
       <div className='container'>
         <div className='header-text'>
           <a href='/' style={{color: '#fff'}}>

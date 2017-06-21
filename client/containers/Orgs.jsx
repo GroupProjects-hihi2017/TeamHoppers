@@ -63,7 +63,7 @@ render() {
     <div className='wallpaper-no-border'>
       <div className='container'>
         <div className="itemClass-list-header">
-          <h1>The Following Organisations Will Take Your {itemClass_name}:</h1>
+          <h4>The Following Organisations Will Take Your {itemClass_name}:</h4>
         </div>
         <div className='itemClass-container'>
             {this.renderOrgList(recycleAble)}
