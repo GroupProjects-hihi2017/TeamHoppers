@@ -21,7 +21,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           category_id: 88004,
-          category_name: 'Hazardous Waste & Chemicals',
+          category_name: 'Hazardous Waste',
           category_img: 'http://www.fairfaxva.gov/Home/ShowImage?id=4558&t=635732554814030000',
           category_info: "Average homes can accumulate household wastes in storage areas, garages and sheds"
         },
