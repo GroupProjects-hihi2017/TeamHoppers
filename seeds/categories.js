@@ -5,73 +5,73 @@ exports.seed = function(knex, Promise) {
           category_id: 88001,
           category_name: 'Glass',
           category_img: 'http://www.countrystylerecycling.co.uk/wp-content/uploads/2014/11/Istock-glass-bottles.jpg',
-          category_info: "Glass is 100% recyclable and can be recycled endlessly without loss in quality or purity."
+          category_info: "Glass is 100% recyclable and can be recycled endlessly"
         },
         {
           category_id: 88002,
           category_name: 'Paper & Cardboard',
           category_img: 'http://www.thewordonline.org/wp-content/uploads/2010/07/newspapers.jpg',
-          category_info: "Each ton of recycled paper can save 17 trees, 380 gallons of oil, three cubic yards of landfill space."
+          category_info: "Each ton of recycled paper can save 17 trees and 380 gallons of oil"
         },
         {
           category_id: 88003,
-          category_name: 'Electronics',
+          category_name: 'Electronics & eWaste',
           category_img: 'https://correcycling.com/wp-content/uploads/sites/3/2016/08/Large-and-small-TVs-are-recycled-at-CORRecycling-Inc..jpg',
-          category_info: "E-waste comprises 70% of our overall toxic waste. This signifcantly impacts our waterways and soils"
+          category_info: "eWaste comprises 70% of our overall toxic waste and signifcantly impacts our waterways"
         },
         {
           category_id: 88004,
-          category_name: 'Chemicals',
+          category_name: 'Hazardous Waste & Chemicals',
           category_img: 'http://www.fairfaxva.gov/Home/ShowImage?id=4558&t=635732554814030000',
           category_info: "The average home can accumulate as much as 100 pounds of household wastes in storage areas, garages and sheds"
         },
         {
           category_id: 88005,
-          category_name: 'Aluminium',
+          category_name: 'Aluminium & Metals',
           category_img: 'http://www.alupro.org.uk/wp-content/uploads/2013/12/ALU-CANS-cropped.jpg',
-          category_info: "When we don't recycle aluminum, we pay a big price. Every year, we create 1.5 million tons of waste by discarding aluminum cans"
+          category_info: "Aluminium is considered a sustainable metal, which means it can be recycled again and again"
         },
         {
           category_id: 88006,
           category_name: 'Plastic',
           category_img: 'http://environment.columbia.edu/files/environmental/content/plastic_metal_glass%20recycling.jpg',
-          category_info: "The majority of plastics going to landfill are consumer-based products which aren’t or cannot be recycled."
+          category_info: "When one ton of plastic bottles is recycled, almost four barrels of oil are saved"
         },
         {
           category_id: 88007,
-          category_name: 'Paint',
+          category_name: 'Miscellaneous',
           category_img: 'https://www.recyclenow.com/sites/files/recyclenow/styles/custom_main/public/images/main/paint_cans.jpg?itok=X2z332_K',
-          category_info: "Unused household paint is often left sitting in paint containers and ends up in landfills."
+          category_info: "Recycling reduces the need for more landfills and no one wants to live next to a landfill"
         },
         {
           category_id: 88008,
           category_name: 'Green Waste',
           category_img: 'http://www.citrusheights.net/ImageRepository/Document?documentID=572',
-          category_info: "Up to 30% of materials put into the rubbish bin can be composted "
+          category_info: "Up to 30% of materials put into the rubbish bin can be composted"
         },
         {
           category_id: 88009,
           category_name: 'Clothes & Textiles',
           category_img: 'https://sfenvironment.org/sites/default/files/editor-uploads/zero_waste/image/sfe_th_textiles_graphic_clothes_pile.jpg',
-          category_info: "Nearly 100 percent of textiles and clothing are recyclable."
+          category_info: "Nearly 100 percent of textiles and clothing are recyclable"
         },
         {
           category_id: 88010,
           category_name: 'Appliances',
           category_img: 'http://www.gorecyclenow.com/Images/services_appliances.jpg',
-          category_info: "If disposed of improperly, appliances can become environmentally harmful and poison ecosystems."
+          category_info: "If disposed of improperly, appliances can become environmentally harmful and poison ecosystems"
         },
         {
           category_id: 88011,
           category_name: 'Furniture',
           category_img: 'http://furniture.inlandempire-junkremoval.com/images/junk-furniture-removal.jpg',
-          category_info: "Furniture that cannot be re-used by someone else can often be recycled, especially items made from wood and metal."
+          category_info: "Furniture that cannot be re-used by someone else can often be recycled"
         },
         {
           category_id: 88012,
           category_name: 'Food',
           category_img: 'http://challengeforsustainability.org/wp-content/uploads/2014/07/food-donation.jpg',
-          category_info: "By donating rather than throwing out quality surplus food, you can cut down your environmental footprint."
+          category_info: "By donating rather than throwing out quality surplus food, you can cut down your environmental footprint"
         }
       ]);
     });
