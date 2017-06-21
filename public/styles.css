@@ -508,6 +508,10 @@ align-content: flex-end;
 }
 
 @media screen and (max-width: 1000px) {
+  .category-list-header h4 {
+  font-size: 2em;
+  }
+
   .category-title-media {
     color: #fff;
     text-align: center;
@@ -519,7 +523,87 @@ align-content: flex-end;
   }
 }
 
-/*** ItemClass Container ***/
+/*** Item List Page ***/
+
+.itemClass-list-header {
+  color: #FA824C;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.itemClass-list-container {
+  font-family: 'Spinnaker', sans-serif;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+  margin-bottom: 5vh;
+}
+
+.itemClass-list-container h4 {
+  font-size: 2.4em;
+  text-align: center;
+  font-weight: bold;
+  color:  #FA824C;
+  padding-top: 5%;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.itemClass-list-container h6 {
+  font-size: 1em;
+  text-align: center;
+  color:  #FA824C;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.itemClass-list-box {
+  display: inline-block;
+  flex-grow: 1;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 25%;
+  max-height: 50%;
+  margin: auto 1.5rem;
+  overflow: hidden;
+}
+
+.itemClass-list-box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.itemClass-list-box a:hover {
+  text-decoration: underline;
+}
+
+.itemClass-list-box img {
+  max-width: 100%;
+  max-height: 15vh;
+}
+
+.itemClass-list-name {
+font-size: 1.2em;
+}
+
+.itemClass-list-info {
+  color: black;
+  font-size: 1.3em;
+}
+
+
+
+/*** isDonatable Page ***/
 
 
 .itemClass-container {
@@ -545,16 +629,6 @@ width: 50%;
   width: 60%;
 }
 
-.itemClass-list-header h1{
-  font-size: 2em;
-  text-align: center;
-  font-family: 'Spinnaker', sans-serif;
-  font-weight: bold;
-  color:  #FA824C;
-  padding-top: 5%;
-  margin: 0%;
-  width: 100%;
-}
 
 .itemClass-box {
   text-align: center;
