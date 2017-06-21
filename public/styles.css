@@ -136,7 +136,7 @@ ul li {
 }
 
 nav ul li a {
-  font-family: 'Spinnaker', sans-serif;
+font-family: 'Roboto', sans-serif;
   font-size: 2vh;
   color: #fff;
   display: inline-block;
@@ -207,6 +207,7 @@ nav ul li a:hover {
 .search-bar-body {
   min-height: 35vh;
   width: 100%;
+  margin: 0px;
 }
 
 .search-container {
@@ -252,7 +253,7 @@ nav ul li a:hover {
   color: #33C3F0;
   text-align: center;
   height: 15vh;
-  width: 20%;
+  width: 40%;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   transition: all 500ms;
@@ -274,6 +275,7 @@ nav ul li a:hover {
   border-color: #fff;
   margin: 5px;
   font-size: 1.5rem;
+  white-space: normal;
 }
 
 .search-results-list button:hover {
@@ -291,7 +293,7 @@ nav ul li a:hover {
 .search-results-orgs {
   text-align: center;
   vertical-align: middle;
-  width: 100vh;
+  width: 100%
   min-height: 20vh;
   margin: auto;
   color: #FA824C;
@@ -307,6 +309,15 @@ nav ul li a:hover {
   margin: 5vh 0vh;
   text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+  .search-bar-header-ready {
+    font-size: 4rem;
+  }
+}
+
+
+/*** Orgs Page ***/
 
 .results-org-logo {
   display: inline;
@@ -371,9 +382,7 @@ nav ul li a:hover {
 /*** Categories Container ***/
 .category-grid-container {
  margin: auto;
-
 }
-
 
 .categories-container {
 font-family: 'Spinnaker', sans-serif;
@@ -390,12 +399,17 @@ flex-wrap: wrap;
 -webkit-flex-flow: row wrap;
 flex-flow: row wrap;
 -webkit-align-content: flex-end;
-align-content: flex-end;}
+align-content: flex-end;
+}
 
-.category-list-header {
-  color: #FA824C;
-  padding: 2%;
+.category-list-header h4 {
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  font-size: 4em;
+  letter-spacing: 4px;
+  color: #FA824C;
+  padding: 4%;
+  padding-top: 10%;
   text-align: center;
 }
 
@@ -405,7 +419,7 @@ align-content: flex-end;}
  display: inline-block;
  border-radius: 25%;
  flex-grow: 1;
-    width: 40vh;
+ width: 40vh;
  overflow: hidden;
 }
 
@@ -415,9 +429,10 @@ align-content: flex-end;}
 }
 
 .category-box figure {
-    overflow: hidden;
-    position: relative;
+ overflow: hidden;
+ position: relative;
  border-radius: 25%;
+ margin: 2rem auto;
  height: 35vh;
  width: 40vh;
 }
@@ -473,7 +488,7 @@ align-content: flex-end;}
     font-size: 2.5vh;
     margin: auto;
     position: relative;
-    top: -5vh;
+    top: -7%;
     width: 35vh;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
@@ -486,6 +501,22 @@ align-content: flex-end;}
     -moz-transform: translateY(40px);
     -webkit-transform: translateY(40px);
     transform: translateY(40px);
+}
+
+.category-title-media {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .category-title-media {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin: auto;
+  }
 }
 
 /*** ItemClass Container ***/
@@ -657,6 +688,7 @@ align-content: flex-end;}
 
 .org-logo {
   height: 20vh;
+  max-width: 30vh;
 }
 
 
