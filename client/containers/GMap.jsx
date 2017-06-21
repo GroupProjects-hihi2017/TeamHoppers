@@ -28,7 +28,6 @@ class GMap extends React.Component {
       center,
       zoom: 17
     })
-
     this.marker = new google.maps.Marker({
       position: center,
       map: this.map
@@ -36,17 +35,9 @@ class GMap extends React.Component {
   }
 
   render () {
-    const mapStyle = {
-      width: 300,
-      height: 300,
-    };
-
     return (
-      <div>
-        <div ref="map" style={mapStyle} >I should be a map!</div>
-      </div>
-    )
-  }
+        <div className='itemClass-org-map' ref="map" >I should be a map!</div>
+    )}
   }
 
 export default connect()(GMap)

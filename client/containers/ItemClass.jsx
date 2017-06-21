@@ -6,7 +6,7 @@ import {getItems} from '../actions/items'
 
 const renderItemClass = (itemClass, key) => (
 
-  <div className='itemClass-box 3 columns' key={key}>
+  <div className='itemClass-box' key={key}>
     <Link to={`/categories/${itemClass.category_id}/${itemClass.itemClass_id}`}>
       <img src={`${itemClass.itemClass_img}`}/>
       <h4 className="itemClass-name">{itemClass.itemClass_name}</h4>
