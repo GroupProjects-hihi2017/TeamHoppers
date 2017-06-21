@@ -6,22 +6,20 @@ import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
 const renderOrgClass = (org, key) => (
 
-  <div className='itemClass-box 3 columns' key={key}>
-    <img src={`${org.org_img}`}/>
+  <div className='itemClass-box' key={key}>
+    <hr className='itemClass-separator'/>
     <p><a href={org.org_url} target="_blank">{org.org_name}</a></p>
+    <img src={`${org.org_img}`}/>
     {renderMap(org)}
-    <p className="itemClass-info">{org.org_info}</p>
-    <p className="itemClass-info">Address: {org.org_address}</p>
-    <p className="itemClass-info">{org.org_location}</p>
+    <div className='itemClass-textbox'>
+      <p className="itemClass-info">Address: {org.org_address}</p>
+      <p className="itemClass-info">{org.org_info}</p>
+    </div>
   </div>
 
 )
 
-const renderMap = (org) => {
-  return <div className='map'>
-    <GMapLocate address={org.org_address}/>
-  </div>
-}
+const renderMap = (org) =>  <GMapLocate address={org.org_address}/>
 
 class OrgClass extends React.Component {
   constructor (props) {
@@ -46,34 +44,37 @@ class OrgClass extends React.Component {
   renderOrgList (orgs) {
     if (orgs != 0) {
       return (
-        <div className="donate-able">
-          <h5>You can {orgs[0].org_isDonatable ? 'Donate' : 'Recycle'} here:</h5>
-          {orgs.map((org, key) => renderOrgClass(org, key))}
+        <div className='isDonate-able-container'>
+          <h5>{orgs[0].org_isDonatable ? 'Donate' : 'Recycle'} here:</h5>
+          <div className="donate-able">
+            {orgs.map((org, key) => renderOrgClass(org, key))}
+          </div>
         </div>
       )
     }
   }
-  render () {
-    let {recycleAble, donateAble} = this.state
-    let itemClass_name = this.state.item ? this.state.item.itemClass_name : ''
-    return (
-      <div className = 'wallpaper-no-border'>
-        <div className='container'>
-          <div>
-            <h5 className="itemClass-list-header">The following organisations will take your {itemClass_name}:</h5>
-          </div>
-          <div className='itemClass-container '>
-            <div className='recycleAble'>
-              {this.renderOrgList(recycleAble)}
-            </div>
-            <div className='donateAble'>
-              {this.renderOrgList(donateAble)}
-            </div>
-          </div>
+
+render() {
+  let {recycleAble, donateAble} = this.state
+  let itemClass_name = this.state.item
+    ? this.state.item.itemClass_name
+    : ''
+  return (
+    <div className='wallpaper-no-border'>
+      <div className='container'>
+        <div className="itemClass-list-header">
+          <h1>The Following Organisations Will Take Your {itemClass_name}:</h1>
         </div>
+        <div className='itemClass-container'>
+            {this.renderOrgList(recycleAble)}
+            <br/>
+            {this.renderOrgList(donateAble)}
+          </div>
       </div>
-    )
-  }
+    </div>
+  )
+}
+
 }
 
 const filterDonate = (orgs, isDonatable) => {

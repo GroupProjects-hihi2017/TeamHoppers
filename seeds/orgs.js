@@ -22,7 +22,7 @@ exports.seed = function(knex, Promise) {
         {
           org_id: 66003,
           org_name: 'Wellington SPCA',
-          org_address: "Wellington City: 140 Alexandra Road, Newtown, Wellington 6021, New Zealand",
+          org_address: "140 Alexandra Road, Newtown, Wellington 6021, New Zealand",
           org_url: "https://www.wellingtonspca.org.nz/",
           org_img: "https://www.wellingtonspca.org.nz/themes/spcawellington/images/logo%20top.png",
           org_info: "Wellington SPCA promotes the humane treatment of animals and prevents cruelty to animals through law enforcement, community education and engagement.",
@@ -31,10 +31,10 @@ exports.seed = function(knex, Promise) {
         {
           org_id: 66004,
           org_name: 'Kaibosh Food Rescue',
-          org_address: "Wellington City: 3 Myrtle Crescent, Mount Cook, Wellington 6021, Lower Hutt: 33 Dudley Street, Hutt Central, Lower Hutt 5010",
+          org_address: "3 Myrtle Crescent, Mount Cook, Wellington 6021",
           org_url: "http://www.kaibosh.org.nz/",
           org_img: 'http://www.kaibosh.org.nz/wp-content/uploads/2015/10/kaibosh_frh_logo_colour-300x194.png',
-          org_info: "Food Rescue organization - Collects surplus food products from all over Wellington to deliver to community groups to feed nutritious meals to those who need it most, reducing food waste and helping people in the community.",
+          org_info: "Food Rescue organization - Collects surplus food products from all over Wellington to deliver to community groups to feed nutritious meals to those who need it most, reducing food waste and helping people in the community. See website for other Wellington area locations.",
           org_isDonatable: true
         },
         {
@@ -51,7 +51,7 @@ exports.seed = function(knex, Promise) {
           org_name: "Green Council Bags or Wheelie Bin",
           org_address: "101 Wakefield Street, Wellington 6011",
           org_url: "http://wellington.govt.nz/services/environment-and-waste/rubbish-and-recycling/recycling/wheelie-bins-bags-and-crates",
-          org_img: "http://wellington.govt.nz/~/media/services/environment-and-waste/rubbish-and-recycling/images/84983_0069_recycling_bin.jpg?mh=320&mw=320",
+          org_img: "https://www.bindoctor.com/bin-cleaning/wp-content/themes/bindoctor/images/organicbin.png",
           org_info: "Contact Wellington City Council to get your own Wheelie Recycle Bin, or council-approved green recycling bags.",
           org_isDonatable: false
         },
@@ -60,13 +60,13 @@ exports.seed = function(knex, Promise) {
           org_name: "Council Recycling Bin",
           org_address: "101 Wakefield Street, Wellington 6011",
           org_url: "http://wellington.govt.nz/~/media/services/environment-and-waste/rubbish-and-recycling/images/84983_0069_recycling_bin.jpg?mh=320&mw=320",
-          org_img: "http://wellington.govt.nz/~/media/your-council/news/images/2011/06/recycling-lg.jpg?mw=320&mh=320",
+          org_img: "/images/recycling-bin.png",
           org_info: "Contact Wellington City Council to get your own Green Glass Recycle Bin.",
           org_isDonatable: false
         },
         {
           org_id: 66008,
-          org_name: "Salvation Army Family Store",
+          org_name: "The Salvation Army Family Stores",
           org_address: '203 Willis St, Te Aro, Wellington 6011',
           org_url: "http://www.salvationarmy.org.nz/centres/nz/lower-north-island/wellington-city",
           org_img: "http://waynetheatre.org/wp-content/uploads/2016/08/salvation-army.png",
@@ -76,10 +76,10 @@ exports.seed = function(knex, Promise) {
         {
           org_id: 66009,
           org_name: "St. Vincent de Paul's OpShop",
-          org_address: "Wellington City Location: 107 Aro Street, Wellington 6021 (For full list of locations in your area, visit the St. Vincent dePaul's website).",
+          org_address: "107 Aro Street, Wellington 6021",
           org_url: "http://www.svdp.org.nz/'",
           org_img: "http://svdppoc.com/wp-content/uploads/2015/03/St-vincent-de-Paul-logo2.gif",
-          org_info: "The St Vincent de Paul OpShops sell second-hand clothes, furniture, and more, to assist in their fundraising efforts for local welfare programs. Their sustainability efforts also encourage used items to be recycled, which would otherwise be thrown away.",
+          org_info: "The St Vincent de Paul OpShops sell second-hand clothes, furniture, and more, to assist in their fundraising efforts for local welfare programs. Their sustainability efforts also encourage used items to be recycled, which would otherwise be thrown away.For full list of locations in your area, visit the St. Vincent de Paul's website.",
           org_isDonatable: true
         },
         {
@@ -93,20 +93,20 @@ exports.seed = function(knex, Promise) {
         },
         {
           org_id: 66011,
-          org_name: "Recycling Electronics E-Cycle",
-          org_address: "Web-Based",
-          org_url: "http://www.e-cycle.co.nz/",
-          org_img: "./images/EClogo141.jpg",
-          org_info: "E-Cycle specialises in responsible, environmentally friendly recycling of end of life electronic products.",
-          org_isDonatable: false
+          org_name: "Kiwi Community Assistance",
+          org_address: "5 Cambridge St, Tawa, Wellington 5028",
+          org_url: "https://www.kca.org.nz/",
+          org_img: "https://www.kca.org.nz/assets/images/logo.jpg",
+          org_info: "Kiwi Community Assistance is a registered charity based in Tawa, Wellington that is run by volunteers. As a distribution hub to local schools, foodbanks and other charities we provide fresh produce, non perishable food, clothing, books, toys, through to household goods including furniture and whiteware to families in need in communities throughout Wellington.",
+          org_isDonatable: true
         },
         {
           org_id: 66012,
           org_name: "Resene",
-          org_address: "Wellington City: 74 Cambridge Terrace, Basin Reserve, Wellington (For full list of Resene locations in your area, visit their website.')",
+          org_address: "74 Cambridge Terrace, Basin Reserve, Wellington",
           org_url: "http://www.resene.co.nz/",
           org_img: "http://www.aspectgroup.co.nz/public/db_images/section/section_image_175.png",
-          org_info: "Resene PaintWise collects unused paint to recycle, which would otherwise end up in a landfill. The paint is then donated to schools and other community groups.",
+          org_info: "Resene PaintWise collects unused paint to recycle, which would otherwise end up in a landfill. The paint is then donated to schools and other community groups.For full list of Resene locations in your area, visit their website.",
           org_isDonatable: true
         },
         {
@@ -125,6 +125,60 @@ exports.seed = function(knex, Promise) {
           org_url: "http://wellington.govt.nz/services/environment-and-waste/landfill/location-and-hours",
           org_img: "https://static2.stuff.co.nz/1383797061/879/9374879_600x400.jpg",
           org_info: "Second Treasures is a salvaged goods shop at the Southern Landfill. You can donate or buy a range of items.",
+          org_isDonatable: true
+        },
+        {
+          org_id: 66015,
+          org_name: "Dress for Success",
+          org_address: "Level 2, 53 Boulcott Street Wellington",
+          org_url: "http://www.dressforsuccesswgtn.org.nz/",
+          org_img: "http://www.cleantastic.co.nz/wp-content/uploads/2012/09/DFS__Logo1.png",
+          org_info: "Dress for Success helps women pursue their aspirations by providing appropriate clothing for job interviews, a network of support and career development tools. See their website for other Wellington locations.",
+          org_isDonatable: true
+        },
+        {
+          org_id: 66016,
+          org_name: "The Soup Kitchen",
+          org_address: "132 Tory St, Te Aro, Wellington",
+          org_url: "https://soupkitchen.org.nz/donate/",
+          org_img: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/319978_584458731579164_1227211911_n.jpg?oh=dc33c239eb81b739a222758d7dc3adda&oe=59D3F810",
+          org_info: "The Soup Kitchen is a safe place where people can find community, enjoy nutritious meals and participate in meaningful activities, such as learning computer skills and gardening.",
+          org_isDonatable: true
+        },
+        {
+          org_id: 66017,
+          org_name: "Wellington City Mission",
+          org_address: "19 Gordon Place, Newtown",
+          org_url: "http://www.wellingtoncitymission.org.nz/index.php/donate-food-or-goods/#Donate%20Food%20and%20Goods",
+          org_img: "http://dogoodjobs.co.nz/wp-content/uploads/company_logos/2015/11/WCM-Logo-2014-Short4.jpg",
+          org_info: "The Wellington City Mission is a charitable trust affiliated to the Anglican Church. They rely on the generosity of Wellingtonians to operate their Foodbank and Drop-in Centre.",
+          org_isDonatable: true
+        },
+        {
+          org_id: 66018,
+          org_name: "Wellington Curtain Bank",
+          org_address: "2 Forresters Lane, Te Aro, Wellington 6011",
+          org_url: "http://www.sustaintrust.org.nz/inyourcommunity/curtainbank/",
+          org_img: "https://pbs.twimg.com/profile_images/686334266079227905/oiCVacan.jpg",
+          org_info: "Wellington Curtain Bank is open Tuesday, Wednesday and Thursday from 9am to 4.30pm. Each year more than 500 families receive lined, fitted curtains free from the Curtain Bank. Please help by donating your pre-loved curtains, fabric, and tracks.",
+          org_isDonatable: true
+        },
+        {
+          org_id: 66019,
+          org_name: "DCM",
+          org_address: "2 Lukes Lane, Te Aro, Wellington",
+          org_url: "https://www.dcm.org.nz/",
+          org_img: "http://www.stjohnsinthecity.org.nz/wp-content/uploads/2013/06/dcm_logo.jpg",
+          org_info: "DCM works with people who are homeless in Wellington. Drop off unwanted books, CDs, DVDs, vinyl and puzzles for their annual bookfair.",
+          org_isDonatable: true
+        },
+        {
+          org_id: 66020,
+          org_name: "New Zealand Red Cross",
+          org_address: "69 Molesworth Street, Thorndon, Wellington 6011",
+          org_url: "https://www.redcross.org.nz/what-we-do/in-new-zealand/refugee-programmes/donating-goods/",
+          org_img: "https://upload.wikimedia.org/wikipedia/commons/3/32/New_Zealand_Red_Cross_Logo.gif",
+          org_info: "Families from refugee backgrounds often arrive with little more than a suitcase or two. The New Zealand Red Cross relies on the generosity of the community to help them set up their homes.",
           org_isDonatable: true
         }
       ]);
