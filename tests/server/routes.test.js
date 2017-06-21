@@ -47,7 +47,7 @@ test.cb('GET /items', t => {
       if (err) {
         console.log(err)
       }
-      t.is(res.body.length, 27)
+      t.is(res.body.length, 64)
       t.is(res.body[0].itemClass_id, 77016)
       t.end()
     })
@@ -63,7 +63,7 @@ test.cb('GET /joins', t => {
       if (err) {
         console.log(err)
       }
-      t.is(res.body[0].orgRelationships_id, 17)
+      t.is(res.body[0].orgRelationships_id, 31)
       t.end()
     })
 })

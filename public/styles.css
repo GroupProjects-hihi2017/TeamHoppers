@@ -508,6 +508,10 @@ align-content: flex-end;
 }
 
 @media screen and (max-width: 1000px) {
+  .category-list-header h4 {
+  font-size: 2em;
+  }
+
   .category-title-media {
     color: #fff;
     text-align: center;
@@ -519,83 +523,168 @@ align-content: flex-end;
   }
 }
 
-/*** ItemClass Container ***/
+/*** Item List Page ***/
 
-
-
-.itemClass-container {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column ;
-   flex-direction: column;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-}
-
-
-.itemClass-list-header h1{
-  font-size: 2em
-}
-
-.itemClass-list-header{
-  text-align: center;
-  font-family: 'Spinnaker', sans-serif;
+.itemClass-list-header {
+  color: #FA824C;
   font-weight: bold;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.itemClass-list-container {
+  font-family: 'Spinnaker', sans-serif;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+  margin-bottom: 5vh;
+}
+
+.itemClass-list-container h4 {
+  font-size: 2.4em;
+  text-align: center;
   font-weight: bold;
   color:  #FA824C;
   padding-top: 5%;
-  margin: 0%;
+  margin-bottom: 0;
   width: 100%;
 }
 
+.itemClass-list-container h6 {
+  font-size: 1em;
+  text-align: center;
+  color:  #FA824C;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.itemClass-list-box {
+  display: inline-block;
+  flex-grow: 1;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 25%;
+  max-height: 50%;
+  margin: auto 1.5rem;
+  overflow: hidden;
+}
+
+.itemClass-list-box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.itemClass-list-box a:hover {
+  text-decoration: underline;
+}
+
+.itemClass-list-box img {
+  max-width: 100%;
+  max-height: 15vh;
+}
+
+.itemClass-list-name {
+font-size: 1.2em;
+}
+
+.itemClass-list-info {
+  color: black;
+  font-size: 1.3em;
+}
+
+
+
+/*** isDonatable Page ***/
+
+
+.itemClass-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+}
+
+.isDonate-able-container {
+width: 50%;
+}
+
+.itemClass-separator {
+  width: 60%;
+}
+
+
 .itemClass-box {
   text-align: center;
-  max-width: 40%;
   margin: auto;
-  background-color: red;
-
 }
 
 .donate-able {
   text-align: center;
-  min-width: 300px;
-
 }
 
-.donate-able h5{
+.isDonate-able-container h5 {
   text-align: center;
   font-family: 'Spinnaker', sans-serif;
   font-weight: bold;
   color: #fff;
   padding-top: 5vh;
-
 }
 
 .itemClass-box img {
-  height: 200px;
-  max-width: 300%;
+  height: 30vh;
+  width: 30vh;
+  padding: 0vh 5vh 5vh 5vh;
   text-align: center;
+}
+
+.itemClass-box p a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  height: 10vh;
+}
+
+.itemClass-box p a:hover {
+  text-decoration: underline;
 }
 
 .itemClass-content {
   width: 60%;
   text-align: center;
   margin: auto;
-
 }
-
 
 .itemClass-info {
   text-align: center;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 5%;
+  margin: 5% 15%;
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
   color: white;
+}
 
+.itemClass-org-map {
+  margin: auto;
+  padding: 2em 0em;
+  height: 20vh;
+  width: 80%;
 }
 
 
@@ -747,15 +836,13 @@ align-content: flex-end;
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
   color: white;
-
-
 }
+
 .hopper-img {
   border-radius: 15%;
 	width: 30%;
   display: block;
   margin: auto;
-
 }
 
 .mulledwine-img {
@@ -764,7 +851,6 @@ align-content: flex-end;
   length: 30%;
   display: block;
   margin: auto;
-
 }
 
 /*** General Info  Page ***/
@@ -778,6 +864,7 @@ align-content: flex-end;
   font-weight: bold;
   color:  #FA824C;
   margin-bottom: 2%;
+  padding-top: 2%;
 }
 
 .info-text {
@@ -789,6 +876,7 @@ align-content: flex-end;
   font-family: 'Spinnaker', sans-serif;
   color: white
 }
+
 
 .info-text a {
   color: white;
@@ -803,7 +891,8 @@ align-content: flex-end;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 5%;
+  padding-bottom: 2%;
+
 }
 
 .info-div-2 {
@@ -889,27 +978,123 @@ align-content: flex-end;
 }
 
 /*** Admin Forms ***/
-
 .admin-form {
+font-family: 'Spinnaker', sans-serif;
+width: 50%;
+margin: auto;
+font-weight: bold;
+color: #fff;
+
+}
+
+.admin-form h4 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin: 5% 0;
+  margin: 0%;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 160%;
+  font-weight: bold;
+  color:  #FA824C;
+  padding-top: 5%;
 }
 
-.admin-form input h4 {
-  width: 40%;
-  margin: 1vh auto;
-}
-
-.items-to-org-form {
+.admin-form p {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin: 5% 0;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 120%;
+  color:  #FA824C;
+  margin-bottom: 2%;
 }
 
-.items-to-org-form select, input {
-  width: 40%;
-  margin: 1vh auto;
+.admin-form input {
+
+    width: 100%;
+    height: 8vh;
+    font-size: 3vh;
+    border-radius: 4px;
+
+}
+
+.admin-form textarea {
+  width: 100%;
+  height: 25vh;
+  font-size: 3vh;
+}
+
+
+
+.add-org button {
+  text align: center;
+  background-color: #FA824C;
+  color: #fff;
+  border-color: #fff;
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
+.add-org button:hover {
+  text align: center;
+  background-color: #fff;
+  color: #FA824C;
+  border-color: #FA824C;
+}
+
+
+
+.donate-or-recycle {
+  color: #FA824C;
+  font-weight: bold;
+}
+
+/*** Org Update Form ***/
+
+.add-org {
+  text-align: center;
+  margin-bottom: 5%;
+  display: block;
+}
+
+.add-org button {
+  text align: center;
+  background-color: #FA824C;
+  color: #fff;
+  border-color: #fff;
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
+.add-org button:hover {
+  text align: center;
+  background-color: #fff;
+  color: #FA824C;
+  border-color: #FA824C;
+}
+
+.drop-menu {
+  text-align: center;
+  background-color: inherit;
+  border-color: #fff;
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.drop-menu:hover {
+  text align: center;
+  background-color: #fff;
+  border-color: #FA824C;
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
 }

@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className = 'wallpaper-no-border'>
-      <div className='about-container'>
+      <div className='container'>
         <div className='about-page'>
           <hr></hr>
           <p className='about-title'>Introducing Team Hoppers!</p>

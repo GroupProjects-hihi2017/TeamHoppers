@@ -6,21 +6,20 @@ import {getOrgsByItem} from '../actions/joinItemToOrgs'
 
 const renderOrgClass = (org, key) => (
 
-  <div className='itemClass-box 3 columns' key={key}>
-    <img src={`${org.org_img}`}/>
+  <div className='itemClass-box' key={key}>
+    <hr className='itemClass-separator'/>
     <p><a href={org.org_url} target="_blank">{org.org_name}</a></p>
+    <img src={`${org.org_img}`}/>
     {renderMap(org)}
-    <p className="itemClass-info">{org.org_info}</p>
-    <p className="itemClass-info">Address: {org.org_address}</p>
+    <div className='itemClass-textbox'>
+      <p className="itemClass-info">Address: {org.org_address}</p>
+      <p className="itemClass-info">{org.org_info}</p>
+    </div>
   </div>
 
 )
 
-const renderMap = (org) => {
-  return <div className='map'>
-    <GMapLocate address={org.org_address}/>
-  </div>
-}
+const renderMap = (org) =>  <GMapLocate address={org.org_address}/>
 
 class OrgClass extends React.Component {
   constructor (props) {
@@ -45,9 +44,11 @@ class OrgClass extends React.Component {
   renderOrgList (orgs) {
     if (orgs != 0) {
       return (
-        <div className="donate-able">
+        <div className='isDonate-able-container'>
           <h5>{orgs[0].org_isDonatable ? 'Donate' : 'Recycle'} here:</h5>
-          {orgs.map((org, key) => renderOrgClass(org, key))}
+          <div className="donate-able">
+            {orgs.map((org, key) => renderOrgClass(org, key))}
+          </div>
         </div>
       )
     }
@@ -60,19 +61,16 @@ render() {
     : ''
   return (
     <div className='wallpaper-no-border'>
-        <div className='itemClass-container '>
-          <div className="itemClass-list-header">
-            <h1>The Following Organisations Will Take Your {itemClass_name}:</h1>
-
-          </div>
-          <div className='itemClass-content'>
-            {this.renderOrgList(recycleAble)}
-            {this.renderOrgList(donateAble)}
-
-          </div>
-
+      <div className='container'>
+        <div className="itemClass-list-header">
+          <h4>The Following Organisations Will Take Your {itemClass_name}:</h4>
         </div>
-
+        <div className='itemClass-container'>
+            {this.renderOrgList(recycleAble)}
+            <br/>
+            {this.renderOrgList(donateAble)}
+          </div>
+      </div>
     </div>
   )
 }
