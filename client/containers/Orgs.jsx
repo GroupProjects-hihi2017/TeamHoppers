@@ -31,6 +31,7 @@ class OrgClass extends React.Component {
     }
   }
   componentDidMount () {
+    window.scrollTo(0, 0)
     this.props.dispatch(getOrgsByItem())
   }
 
@@ -44,12 +45,12 @@ class OrgClass extends React.Component {
   renderOrgList (orgs) {
     if (orgs != 0) {
       return (
-        <div className='isDonate-able-container'>
-          <h5>{orgs[0].org_isDonatable ? 'Donate' : 'Recycle'} here:</h5>
-          <div className="donate-able">
-            {orgs.map((org, key) => renderOrgClass(org, key))}
+          <div className='isDonate-able-container'>
+            <h5>{orgs[0].org_isDonatable ? 'Donate' : 'Recycle'} here:</h5>
+            <div className="donate-able">
+              {orgs.map((org, key) => renderOrgClass(org, key))}
+            </div>
           </div>
-        </div>
       )
     }
   }

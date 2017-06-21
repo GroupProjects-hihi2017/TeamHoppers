@@ -546,17 +546,7 @@ align-content: flex-end;
   flex-flow: row wrap;
   -webkit-align-content: flex-end;
   align-content: flex-end;
-  margin-bottom: 5vh;
-}
-
-.itemClass-list-container h4 {
-  font-size: 2.4em;
-  text-align: center;
-  font-weight: bold;
-  color:  #FA824C;
-  padding-top: 5%;
-  margin-bottom: 0;
-  width: 100%;
+  margin: 5vh 0vh;
 }
 
 .itemClass-list-container h6 {
@@ -564,6 +554,7 @@ align-content: flex-end;
   text-align: center;
   color:  #FA824C;
   margin-bottom: 5%;
+  margin-top: 1%;
   width: 100%;
 }
 
@@ -572,8 +563,8 @@ align-content: flex-end;
   flex-grow: 1;
   vertical-align: middle;
   text-align: center;
-  max-width: 25%;
-  max-height: 50%;
+  width: 25%;
+  height: 50%;
   margin: auto 1.5rem;
   overflow: hidden;
 }
@@ -585,20 +576,29 @@ align-content: flex-end;
 
 .itemClass-list-box a:hover {
   text-decoration: underline;
+  color: #FA824C;
 }
 
 .itemClass-list-box img {
-  max-width: 100%;
-  max-height: 15vh;
+  max-width: 30vh;
+  max-height: 30vh;
+  padding-bottom: 2vh;
+  overflow: hidden;
 }
 
-.itemClass-list-name {
-font-size: 1.2em;
+.itemClass-list-container h4 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  color: #FA824C;
+  padding: 2vh 0vh;
+  margin: 0;
+  width: 100%;
 }
 
 .itemClass-list-info {
   color: black;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 
@@ -677,7 +677,7 @@ width: 50%;
   margin: 5% 15%;
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
-  color: white;
+  color: #fff;
 }
 
 .itemClass-org-map {
@@ -718,7 +718,6 @@ width: 50%;
   color: #FA824C;
   font-size: 3.5vh;
   margin: 1vh auto;
-  font-weight: bold;
 }
 
 .org-header p {
@@ -768,11 +767,14 @@ width: 50%;
   border-color: #fff;
   white-space: normal;
   line-height: 1.5em;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .org-button {
   max-width: 80%;
-  height: auto;
   margin: auto;
 }
 
@@ -808,6 +810,7 @@ width: 50%;
 /*** About Page ***/
 
 .about-title {
+  padding-top: 5%;
   text-align: center;
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
@@ -1048,6 +1051,43 @@ color: #fff;
   color: #FA824C;
   font-weight: bold;
 }
+
+.container-form {
+  margin: 0;
+}
+
+.submit-message {
+  margin: 0;
+  text-align: center;
+  padding: 10%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.admin-submit-box {
+  text-align: center;
+}
+
+.admin-submit-box a {
+  text-decoration: none;
+}
+
+.admin-button {
+  text align: center;
+  background-color: #FA824C;
+  color: #fff;
+  border-color: #fff;
+  margin: 0 auto 10% auto;
+  font-size: 1.5rem;
+}
+
+.admin-button:hover {
+  text align: center;
+  background-color: #fff;
+  color: #FA824C;
+  border-color: #FA824C;
+}
+
 
 /*** Org Update Form ***/
 

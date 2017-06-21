@@ -28,8 +28,9 @@ export const addNewOrg = (org) => {
   }
 }
 
-export function addOrg (org) {
-  return (dispatch) => {
+
+export function addOrg (org, callback) {
+  console.log({org, callback});
     request
       .post(`/api/orgs`)
       .send(org)
@@ -38,7 +39,22 @@ export function addOrg (org) {
           console.error(err.message)
           return
         }
-        dispatch(addNewOrg(res.body))
+        callback()
       })
-  }
 }
+//
+// export function addOrg (org, callback) {
+//   return (dispatch) => {
+//     request
+//       .post(`/api/orgs`)
+//       .send(org)
+//       .end((err, res) => {
+//         if (err) {
+//           console.error(err.message)
+//           return
+//         }
+//         callback()
+//         dispatch(addNewOrg(res.body))
+//       })
+//   }
+// }

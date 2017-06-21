@@ -43,7 +43,7 @@ exports.seed = function(knex, Promise) {
           org_address: "",
           org_url: "http://www.gurgl.nz/",
           org_img: "/images/gurglLogo.svg",
-          org_info: "Kids grow. Clothes don't. Gurgl's mission is to save resources, save our planet, and save you money by repurposing clothes for ever-growing infants.",
+          org_info: "GURGL provides a fun, easy platform for you to recycle your childrens wardrobes, and borrow more! With your help, they can redirect perfectly good clothing out of the landfill waste pile and onto the backs of children who need them.",
           org_isDonatable: true
         },
         {
@@ -186,7 +186,7 @@ exports.seed = function(knex, Promise) {
           org_name: "New Zealand Pharmacy Network",
           org_address: "",
           org_url: "https://nzpharmacy.wordpress.com/2009/06/09/disposal-of-unwanted-medicines/",
-          org_img: "http://directadmissiononline.com/direct/wp-content/uploads/2017/01/pharmacy_small.jpg",
+          org_img: "http://itsrecycled.com/wp-includes/SimplePie/Decode/tmp/images/logo.png",
           org_info: "Members of the public should be encouraged to return unused and expired medicines to their local pharmacy for disposal.",
           org_isDonatable: false
         }
