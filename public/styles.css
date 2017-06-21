@@ -522,27 +522,33 @@ align-content: flex-end;
 /*** ItemClass Container ***/
 
 
-
 .itemClass-container {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column ;
-   flex-direction: column;
-   -webkit-align-items: center;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
 }
 
+.isDonate-able-container {
+width: 50%;
+}
+
+.itemClass-separator {
+  width: 60%;
+}
 
 .itemClass-list-header h1{
-  font-size: 2em
-}
-
-.itemClass-list-header{
+  font-size: 2em;
   text-align: center;
   font-family: 'Spinnaker', sans-serif;
-  font-weight: bold;
   font-weight: bold;
   color:  #FA824C;
   padding-top: 5%;
@@ -552,50 +558,59 @@ align-content: flex-end;
 
 .itemClass-box {
   text-align: center;
-  max-width: 40%;
   margin: auto;
-  background-color: red;
-
 }
 
 .donate-able {
   text-align: center;
-  min-width: 300px;
-
 }
 
-.donate-able h5{
+.isDonate-able-container h5 {
   text-align: center;
   font-family: 'Spinnaker', sans-serif;
   font-weight: bold;
   color: #fff;
   padding-top: 5vh;
-
 }
 
 .itemClass-box img {
-  height: 200px;
-  max-width: 300%;
+  height: 30vh;
+  width: 30vh;
+  padding: 0vh 5vh 5vh 5vh;
   text-align: center;
+}
+
+.itemClass-box p a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  height: 10vh;
+}
+
+.itemClass-box p a:hover {
+  text-decoration: underline;
 }
 
 .itemClass-content {
   width: 60%;
   text-align: center;
   margin: auto;
-
 }
-
 
 .itemClass-info {
   text-align: center;
-  margin-left: 15%;
-  margin-right: 15%;
-  margin-top: 5%;
+  margin: 5% 15%;
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
   color: white;
+}
 
+.itemClass-org-map {
+  margin: auto;
+  padding: 2em 0em;
+  height: 20vh;
+  width: 80%;
 }
 
 
@@ -730,15 +745,13 @@ align-content: flex-end;
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
   color: white;
-
-
 }
+
 .hopper-img {
   border-radius: 15%;
 	width: 30%;
   display: block;
   margin: auto;
-
 }
 
 .mulledwine-img {
@@ -747,7 +760,6 @@ align-content: flex-end;
   length: 30%;
   display: block;
   margin: auto;
-
 }
 
 /*** General Info  Page ***/
