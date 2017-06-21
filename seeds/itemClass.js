@@ -19,8 +19,8 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77003,
           category_id: 88003,
           itemClass_name: 'Laptops',
-          itemClass_info: "Recycle your old laptop. Don't trash it. According to the EPA recycling 1 million laptops saves the energy equivalent to the electricity used by more than 3,500 homes in a year.",
-          itemClass_img: 'http://www.guide-to-laptops.com/images/laptop-wide-screen.jpg'
+          itemClass_info: "Recycle your old laptop. Don't trash it. Recycling 1 million laptops saves the energy equivalent to the electricity used by more than 3,500 homes in a year.",
+          itemClass_img: 'https://betanews.com/wp-content/uploads/2014/01/personal1.jpg'
         },
         {
           itemClass_id: 77004,
@@ -124,21 +124,21 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77018,
           category_id: 88003,
           itemClass_name: 'Computer Accessories',
-          itemClass_info: "This can include keyboards, speakers, mice, cords.",
-          itemClass_img: 'https://computeraccessoriessydney.files.wordpress.com/2015/04/cropped-computer-accessories-sydney1.png'
+          itemClass_info: "We all have that drawer full of spare computer cords, USB cables, speakers, etc. Donate or recycle them so that you can make room for the latest technology.",
+          itemClass_img: 'https://i.ebayimg.com/thumbs/images/g/XAEAAOSwDk5T4L3J/s-l225.jpg'
         },
         {
           itemClass_id: 77019,
           category_id: 88003,
           itemClass_name: 'DVD players',
-          itemClass_info: "E-waste also contains toxic and hazardous materials including mercury, lead, cadmium, beryllium, chromium, and chemical flame retardants, which have the potential to leach into our soil and water ways.",
+          itemClass_info: "E-waste also contains toxic and hazardous materials, which have the potential to leach into our soil and water ways.",
           itemClass_img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXUBm0McXuC5ajq_f6x2THJyAsS5_vf3BI3YB6lXrhhFoNoM_n'
         },
         {
           itemClass_id: 77020,
           category_id: 88003,
           itemClass_name: 'Cameras',
-          itemClass_info: "E-waste also contains toxic and hazardous materials including mercury, lead, cadmium, beryllium, chromium, and chemical flame retardants, which have the potential to leach into our soil and water ways.",
+          itemClass_info: "The options for disposing of a camera are to resell it, reuse it for repair parts, or reuse as a donation, or recycle and dispose of it properly.",
           itemClass_img: 'https://img.newatlas.com/canon-powershot-n-4.jpeg?auto=format%2Ccompress&fit=max&h=670&q=60&w=1000&s=ba686d58aaf3a5f40b7495040b4a3e5a'
         },
         {
@@ -236,7 +236,7 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77034,
           category_id: 88003,
           itemClass_name: 'Video Cassettes',
-          itemClass_info: "If the tapes are still usable, you could also donate them, otherwise they will need to go in your yellow rubbish bag if they’re no longer usable.",
+          itemClass_info: "If the tapes are still usable, you could donate them, otherwise they will need to go in your yellow rubbish bag.",
           itemClass_img: 'https://s-media-cache-ak0.pinimg.com/originals/77/15/7b/77157bc0a9985f9dca6fe6ddd7d44093.jpg'
         },
         {

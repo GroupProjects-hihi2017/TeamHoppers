@@ -510,6 +510,7 @@ align-content: flex-end;
 @media screen and (max-width: 1000px) {
   .category-list-header h4 {
   font-size: 2em;
+  text-decoration: none;
   }
 
   .category-title-media {
@@ -520,6 +521,10 @@ align-content: flex-end;
     font-weight: bold;
     font-size: 3.5rem;
     margin: auto;
+  }
+
+  .category-box a {
+    text-decoration: none;
   }
 }
 
