@@ -629,6 +629,7 @@ align-content: flex-end;
   color: #FA824C;
   font-size: 3.5vh;
   margin: 1vh auto;
+  font-weight: bold;
 }
 
 .org-header p {
@@ -698,6 +699,22 @@ align-content: flex-end;
   list-style: none;
   text-decoration: none;
 }
+
+.closing-tag{
+
+  color: #FA824C;
+  padding-top: 5vh;
+  font-style: italic;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.closing-tag a {
+  text-decoration: none;
+  color: inherit !important;
+}
+
+
 
 /*** About Page ***/
 
