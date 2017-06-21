@@ -50,15 +50,20 @@ class AdminForm extends React.Component {
         <h4>Add an organisation</h4>
         <hr className='orange-hr' />
         <p>Please enter the information of the organisation you would like to add to the database:</p>
-        <input type='text' id='org_name' name='org_name' placeholder='Organisation Name' onChange={(e) => this.handleChange(e)} />
-        <input type='text' id='org_address' name='org_address' placeholder='Organisation Address' onChange={(e) => this.handleChange(e)} />
-        <input type='text' id='org_url' name='org_url' placeholder='Organisation Homepage URL' onChange={(e) => this.handleChange(e)} />
-        <input type='text' id='org_img' name='org_img' placeholder="Link to Organisation's Logo" onChange={(e) => this.handleChange(e)} />
-        <input type='text' name='org_info' placeholder="Description of Organisation" onChange={(e) => this.handleChange(e)} />
+        <label className="labelone" htmlFor="name"> Organisation Name: </label>
+        <input type='text' id='org_name' name='org_name' onChange={(e) => this.handleChange(e)} />
+        <label className="labelone" htmlFor="name"> Organisation Address: </label>
+        <input type='text' id='org_address' name='org_address' onChange={(e) => this.handleChange(e)} />
+        <label className="labelone" htmlFor="name"> Organisation Homepage URL: </label>
+        <input type='text' id='org_url' name='org_url' onChange={(e) => this.handleChange(e)} />
+        <label className="labelone" htmlFor="name"> Organisation Logo: </label>
+        <input type='text' id='org_img' name='org_img' onChange={(e) => this.handleChange(e)} />
+        <label className="labelone" htmlFor="name"> Description of Organisation: </label>
+        <textarea name="comments" name='org_info' onChange={(e) => this.handleChange(e)} />
         <div className="add-org">
           <p className="donate-or-recycle">{this.state.org.org_isDonatable ? "This organisation takes donations." : "This organisation recycles."}</p>
-          <input className="button" type="button" onClick={(e) => this.toggleDonatable(e)} value="Click to Choose Donate or Recycle" />
-          <input className="submit" type='submit' id='submit' value='Submit New Organisation' />
+          <button className="btn" type="submit" onClick={(e) => this.toggleDonatable(e)} value="Click to Choose Donate or Recycle"> Click to Choose Donate or Recycle</button><br/>
+          <button className="btn" type='submit' id='submit' value='Submit New Organisation'>Submit New Organisation</button>
         </div>
       </form>
     )

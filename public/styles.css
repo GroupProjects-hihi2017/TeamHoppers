@@ -884,6 +884,14 @@ width: 50%;
 }
 
 /*** Admin Forms ***/
+.admin-form {
+font-family: 'Spinnaker', sans-serif;
+width: 50%;
+margin: auto;
+font-weight: bold;
+color: #fff;
+
+}
 
 .admin-form h4 {
   text-align: center;
@@ -908,18 +916,46 @@ width: 50%;
 }
 
 .admin-form input {
-  align-items: center;
-  display: block;
-  width: 50%;
-  height: 8vh;
-  font-size: 3vh;
-  border-radius: 4px;
+
+    width: 100%;
+    height: 8vh;
+    font-size: 3vh;
+    border-radius: 4px;
+
 }
+
+.admin-form textarea {
+  width: 100%;
+  height: 25vh;
+  font-size: 3vh;
+}
+
+
+
+.add-org button {
+  text align: center;
+  background-color: #FA824C;
+  color: #fff;
+  border-color: #fff;
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
+.add-org button:hover {
+  text align: center;
+  background-color: #fff;
+  color: #FA824C;
+  border-color: #FA824C;
+}
+
+
 
 .donate-or-recycle {
   color: #FA824C;
   font-weight: bold;
 }
+
+/*** Org Update Form ***/
 
 .add-org {
   text-align: center;
