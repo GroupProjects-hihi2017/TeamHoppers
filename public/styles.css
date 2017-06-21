@@ -546,7 +546,7 @@ align-content: flex-end;
   flex-flow: row wrap;
   -webkit-align-content: flex-end;
   align-content: flex-end;
-  margin-bottom: 5vh;
+  margin: 5vh 0vh;
 }
 
 .itemClass-list-container h6 {
@@ -554,6 +554,7 @@ align-content: flex-end;
   text-align: center;
   color:  #FA824C;
   margin-bottom: 5%;
+  margin-top: 1%;
   width: 100%;
 }
 
@@ -641,7 +642,7 @@ width: 50%;
   text-align: center;
   font-family: 'Spinnaker', sans-serif;
   font-weight: bold;
-  color: #FA824C;
+  color: #fff;
   padding-top: 5vh;
 }
 
@@ -675,7 +676,7 @@ width: 50%;
   margin: 5% 15%;
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
-  color: black;
+  color: #fff;
 }
 
 .itemClass-org-map {
@@ -716,7 +717,6 @@ width: 50%;
   color: #FA824C;
   font-size: 3.5vh;
   margin: 1vh auto;
-  font-weight: bold;
 }
 
 .org-header p {

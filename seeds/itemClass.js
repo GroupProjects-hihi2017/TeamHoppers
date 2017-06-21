@@ -41,7 +41,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88002,
           itemClass_name: 'Egg Cartons',
           itemClass_info: 'More and more people are keeping chickens in their backyards for fresh eggs. Ask around your community and you may find people who are on the lookout for egg cartons.',
-          itemClass_img: 'https://i.ebayimg.com/00/s/MjQzWDI4MA==/z/dZIAAOSw3ydVzp9m/'
+          itemClass_img: 'http://www.megasantacecilia.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/t/l/tlmd_tlmd_013112_huevosjpg_bim.jpg'
         },
         {
           itemClass_id: 77007,
@@ -62,14 +62,14 @@ exports.seed = function(knex, Promise) {
           category_id: 88006,
           itemClass_name: 'Drink Bottles',
           itemClass_info: "",
-          itemClass_img: ''
+          itemClass_img: 'https://userscontent2.emaze.com/images/de25feb7-7440-4f10-8a0f-5900e19b83b9/cc488e24b6dccc7514bbf3fac5279076.jpeg'
         },
         {
           itemClass_id: 77010,
           category_id: 88006,
           itemClass_name: 'Food Containers',
           itemClass_info: "Random fact, it requires 3 times the amount of water to produce a plastic bottle than it does to fill it.",
-          itemClass_img: 'https://thumbs.dreamstime.com/z/water-plastic-bottle-21279974.jpg'
+          itemClass_img: 'http://www.supplycity.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/T/S/TS64L.jpg'
         },
         {
           itemClass_id: 77011,
@@ -83,35 +83,35 @@ exports.seed = function(knex, Promise) {
           category_id: 88008,
           itemClass_name: 'Lawn Clippings',
           itemClass_info: "One of the easiest ways to recycle your leaves and grass clippings is simply by leaving them on your lawn. This practice is called grasscycling!",
-          itemClass_img: 'http://www.naturallivingideas.com/wp-content/uploads/2016/03/grass-clippings.jpg'
+          itemClass_img: 'http://www.gubba.co.nz/ic/2017661660/giant_garden_bag.jpg'
         },
         {
           itemClass_id: 77013,
           category_id: 88008,
           itemClass_name: 'Weeds',
           itemClass_info: "Using a simple compost heap you can recycle most of your organic household and garden.",
-          itemClass_img: 'http://www.educationquizzes.com/library/Gardening/Weeds/Groundsel-C.jpg'
+          itemClass_img: 'https://2ecffd01e1ab3e9383f0-07db7b9624bbdf022e3b5395236d5cf8.ssl.cf4.rackcdn.com/Product-800x800/ab298f2f-38d5-4eb9-9b30-bcd86e8ef7b5.png'
         },
         {
           itemClass_id: 77014,
           category_id: 88009,
           itemClass_name: 'Baby & Child Clothing',
           itemClass_info: "There a plenty of non-profit organisations willing to take your unwanted baby clothes for families in need.",
-          itemClass_img: 'http://cf.fitnessista.com/wp-content/uploads//2012/04/outfits.jpg'
+          itemClass_img: 'https://t4.ftcdn.net/jpg/00/72/77/37/240_F_72773780_C2fAOtqEL48etWvn61GMaY7ZopeRG37I.jpg'
         },
         {
           itemClass_id: 77015,
           category_id: 88009,
           itemClass_name: 'Cloth and Textiles',
           itemClass_info: "Recycling unwanted cloth reduces landfill waste as well as the amount of resources needed to produce new clothing.",
-          itemClass_img: 'http://www.lanzaroteinformation.com/files/ClothingRecycling.jpg'
+          itemClass_img: 'https://www.boscovs.com/wcsstore/boscovs/images/store/product/images/523756631m56886.jpg'
         },
         {
           itemClass_id: 77016,
           category_id: 88009,
           itemClass_name: 'Adult Clothing',
           itemClass_info: "Recycling your used clothing, keeps extra waste out of the landfills.",
-          itemClass_img: 'http://clothingcollectors.com/wp-content/uploads/2014/08/textile-heart.jpg'
+          itemClass_img: 'https://t4.ftcdn.net/jpg/00/72/77/37/240_F_72773780_C2fAOtqEL48etWvn61GMaY7ZopeRG37I.jpg'
         },
         {
           itemClass_id: 77017,
@@ -146,14 +146,14 @@ exports.seed = function(knex, Promise) {
           category_id: 88010,
           itemClass_name: 'Dishwashers',
           itemClass_info: "Recycling old appliances can save tons of energy and materials.",
-          itemClass_img: 'http://lifestyle.euronics.co.uk/wp-content/uploads/2016/02/dishwasher-recycling.jpg'
+          itemClass_img: 'http://www.vendeglatoipari-berendezesek.hu/_data/PR_10aad4ea89eaf5161196bd098757b634.jpg'
         },
         {
           itemClass_id: 77022,
           category_id: 88010,
           itemClass_name: 'Refrigerators',
           itemClass_info: "Recycling old appliances can save tons of energy and materials.",
-          itemClass_img: 'http://members.questline.com/images/Content/IndyMich_ApplianceRecycling_Mar13.jpg'
+          itemClass_img: 'http://best3reviews.com/wp-content/uploads/2011/09/mini-fridge.jpg'
         },
         {
           itemClass_id: 77023,
@@ -167,7 +167,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88010,
           itemClass_name: 'Vacuum Cleaners',
           itemClass_info: "We generate around 40 million tons of electronic waste every year, worldwide. That’s like throwing 800 vacuum every second.",
-          itemClass_img: 'https://sellyourdyson.co.uk/wp-content/uploads/2016/03/Dyson-DC01-De-Stijl-Vacuum-Cleaner-1.jpg'
+          itemClass_img: 'http://www.germes-online.com/direct/dbimage/50142041/Vacuum_Cleaner.jpg'
         },
         {
           itemClass_id: 77025,
@@ -250,15 +250,15 @@ exports.seed = function(knex, Promise) {
           itemClass_id: 77036,
           category_id: 88010,
           itemClass_name: 'Sewing Machines',
-          itemClass_info: "",
+          itemClass_info: "Donate old working sewing machines for further use.",
           itemClass_img: 'http://www.hobbycraft.co.uk/SupplyImages/587409_1000_1_800.jpg'
         },
         {
           itemClass_id: 77037,
           category_id: 88010,
           itemClass_name: 'Lamps',
-          itemClass_info: "",
-          itemClass_img: 'http://www.apnlightings.com/images/lamps/contemporary-table-lamps.jpg'
+          itemClass_info: "Improper disposal of lamps leads to environmental pollution and this may in turn harm human health. Click here to find out how to dispose your old lamps sustainably.",
+          itemClass_img: 'http://images.prod.meredith.com/product/a84a6aba5fd5c84e79961f92604f4041/6af05c9fd732a6f311b646bf1251fb6bf6ed87fc410a99c4cb147d5c81acfe39/l/square-ginger-jar-lamp-vintage-teal'
         },
         {
           itemClass_id: 77038,
@@ -363,7 +363,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88008,
           itemClass_name: 'Branches',
           itemClass_info: "If they are big branches, someone in your neighbourhood might want them for firewood.",
-          itemClass_img: 'https://previews.123rf.com/images/valda/valda0911/valda091100006/5863677-Pile-of-branches-in-wood-Stock-Photo.jpg'
+          itemClass_img: 'http://www.gardenshoponline.com/catalog/images/96926.jpg'
         },
         {
           itemClass_id: 77053,
@@ -426,7 +426,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88001,
           itemClass_name: 'Windows',
           itemClass_info: "Don't throughout your old windows. Most buliding recyclers will take them to be reused on other projects. ",
-          itemClass_img: 'http://colorado.momentumrecycling.com/wp-content/uploads/2016/04/Old-Windows1-1000x430.jpg'
+          itemClass_img: 'https://s-media-cache-ak0.pinimg.com/736x/70/74/18/70741890265bb3ab20b1a0b81369b223.jpg'
         },
         {
           itemClass_id: 77062,

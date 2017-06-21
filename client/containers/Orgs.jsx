@@ -45,12 +45,12 @@ class OrgClass extends React.Component {
   renderOrgList (orgs) {
     if (orgs != 0) {
       return (
-        <div className='isDonate-able-container'>
-          <h5>{orgs[0].org_isDonatable ? 'Donate' : 'Recycle'} here:</h5>
-          <div className="donate-able">
-            {orgs.map((org, key) => renderOrgClass(org, key))}
+          <div className='isDonate-able-container'>
+            <h5>{orgs[0].org_isDonatable ? 'Donate' : 'Recycle'} here:</h5>
+            <div className="donate-able">
+              {orgs.map((org, key) => renderOrgClass(org, key))}
+            </div>
           </div>
-        </div>
       )
     }
   }
@@ -61,15 +61,17 @@ render() {
     ? this.state.item.itemClass_name
     : ''
   return (
-    <div className='container'>
-      <div className="itemClass-list-header">
-        <h4>The Following Organisations Will Take Your {itemClass_name}:</h4>
-      </div>
-      <div className='itemClass-container'>
-          {this.renderOrgList(recycleAble)}
-          <br/>
-          {this.renderOrgList(donateAble)}
+    <div className='wallpaper-no-border'>
+      <div className='container'>
+        <div className="itemClass-list-header">
+          <h4>The Following Organisations Will Take Your {itemClass_name}:</h4>
         </div>
+        <div className='itemClass-container'>
+            {this.renderOrgList(recycleAble)}
+            <br/>
+            {this.renderOrgList(donateAble)}
+          </div>
+      </div>
     </div>
   )
 }
