@@ -41,8 +41,12 @@ class GMap extends React.Component {
     const mapStyle = {
       width: 300,
       height: 300,
-      border: '1px solid black'
-    }
+
+    };
+
+      
+  }
+
 
     return (
       <div>
