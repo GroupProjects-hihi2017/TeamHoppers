@@ -11,7 +11,7 @@ const GeneralInfo = () => {
           <p className='info-header'>Recycling tips for tidy kiwis.</p>
           <p className='info-text'>Just a few pointers to make your recycling efforts more productive:</p>
           <div className='info-div'>
-            <li className='info-pointers'>Close the lid of your wheelie bin so it doesn't fill with rain water and recycling materials won't blow away.</li>
+            <li className='info-pointers'> Close the lid of your wheelie bin so it doesn't fill with rain water and recycling materials won't blow away.</li>
             <li className='info-pointers'>If you live in the city, an easy way to manage your recycling is by sorting materials into clear plastic bags (supermarket bags are fine).</li>
             <li className='info-pointers'>Bundles of cardboard under 15kg may also be put out for collection - ensure they are flattened and securely tied with string or tape.</li>
             <li className='info-pointers'>You can recycle paper of any kind, unless it is waxed or foil-backed, or has plastic or food on it.</li>
@@ -22,7 +22,7 @@ const GeneralInfo = () => {
           <p className='info-text'>Composting is one of the first steps toward sustainable living. It significantly reduces the amount of waste going to landfills around Wellington.</p>
           <p className='info-text'>Here's a brief list of organic materials safe to compost:</p>
           <div className='info-div-2'>
-            <li className='info-pointers'>Vegetable scraps</li>
+            <li className='info-pointers'> &#127810; Vegetable scraps</li>
             <li className='info-pointers'>Coffee grounds and filters</li>
             <li className='info-pointers'>Lawn clippings</li>
             <li className='info-pointers'>Tree clippings (only small twigs and branches)</li>
