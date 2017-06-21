@@ -641,7 +641,7 @@ width: 50%;
   text-align: center;
   font-family: 'Spinnaker', sans-serif;
   font-weight: bold;
-  color: #fff;
+  color: #FA824C;
   padding-top: 5vh;
 }
 
@@ -675,7 +675,7 @@ width: 50%;
   margin: 5% 15%;
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
-  color: white;
+  color: black;
 }
 
 .itemClass-org-map {

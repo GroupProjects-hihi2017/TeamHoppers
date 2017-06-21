@@ -8,6 +8,7 @@ import OrgSingle from '../components/OrgSingle'
 
 class ListAllOrgs extends React.Component {
   componentDidMount () {
+    window.scrollTo(0, 0)
     this.props.dispatch(getAllOrgs())
     this.props.dispatch(getOrgsByItem())
   }
