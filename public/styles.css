@@ -475,37 +475,80 @@ align-content: flex-end;}
 
 /*** ItemClass Container ***/
 
+
+
 .itemClass-container {
    display: -webkit-flex;
    display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
+   -webkit-flex-direction: column ;
+   flex-direction: column;
    -webkit-align-items: center;
    align-items: center;
    -webkit-justify-content: center;
    justify-content: center;
 }
 
-.itemClass-list-header {
 
+.itemClass-list-header h1{
+  font-size: 2em
+}
+
+.itemClass-list-header{
+  text-align: center;
+  font-family: 'Spinnaker', sans-serif;
+  font-weight: bold;
+  font-weight: bold;
+  color:  #FA824C;
+  padding-top: 5%;
+  margin: 0%;
+  width: 100%;
 }
 
 .itemClass-box {
   text-align: center;
-  flex-grow: 1;
-  max-width: 200px;
+  max-width: 40%;
+  margin: auto;
+  background-color: red;
+
+}
+
+.donate-able {
+  text-align: center;
+  min-width: 300px;
+
+}
+
+.donate-able h5{
+  text-align: center;
+  font-family: 'Spinnaker', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 5vh;
+
 }
 
 .itemClass-box img {
-  height: 120px;
-  width: auto;
+  height: 200px;
+  max-width: 300%;
+  text-align: center;
 }
 
-.itemClass-name {
+.itemClass-content {
+  width: 60%;
+  text-align: center;
+  margin: auto;
 
 }
+
 
 .itemClass-info {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  height: 100%;
+  font-family: 'Spinnaker', sans-serif;
+  color: white;
 
 }
 

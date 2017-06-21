@@ -16,7 +16,6 @@ const renderOrgClass = (org, key) => (
     {renderMap(org)}
     <p className="itemClass-info">{org.org_info}</p>
     <p className="itemClass-info">Address: {org.org_address}</p>
-    <p className="itemClass-info">{org.org_location}</p>
   </div>
 
 )
@@ -52,33 +51,33 @@ class OrgClass extends React.Component {
     if (orgs != 0) {
       return (
         <div className="donate-able">
-          <h5>You can {orgs[0].org_isDonatable ? 'Donate' : 'Recycle'} here:</h5>
+          <h5>{orgs[0].org_isDonatable ? 'Donate' : 'Recycle'} here:</h5>
           {orgs.map((org, key) => renderOrgClass(org, key))}
         </div>
       )
     }
   }
-  render () {
-    let {recycleAble, donateAble} = this.state
-    let itemClass_name = this.state.item ? this.state.item.itemClass_name : ''
-    return (
-    <div className = 'wallpaper-no-border'>
-      <div className='container'>
-        <div>
-          <h5 className="itemClass-list-header">The following organisations will take your {itemClass_name}:</h5>
-        </div>
+render() {
+  let {recycleAble, donateAble} = this.state
+  let itemClass_name = this.state.item
+    ? this.state.item.itemClass_name
+    : ''
+  return (
+    <div className='wallpaper-no-border'>
         <div className='itemClass-container '>
-          <div className='recycleAble'>
-          {this.renderOrgList(recycleAble)}
+          <div className="itemClass-list-header">
+            <h1>The Following Organisations Will Take Your {itemClass_name}:</h1>
+
           </div>
-          <div className='donateAble'>
-          {this.renderOrgList(donateAble)}
+          <div className='itemClass-content'>
+            {this.renderOrgList(recycleAble)}
+            {this.renderOrgList(donateAble)}
           </div>
+
         </div>
-      </div>
     </div>
-    )
-  }
+  )
+}
 }
 
 const filterDonate = (orgs, isDonatable) => {
