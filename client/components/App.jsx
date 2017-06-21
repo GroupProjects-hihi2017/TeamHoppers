@@ -1,5 +1,6 @@
 import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
+import {createBrowserHistory} from 'react-router'
 
 import Home from './Home'
 import About from './About'
