@@ -54,7 +54,7 @@ class AddItemsToOrgForm extends React.Component {
             {this.props.listOrgs.map((org, key) => {
               return <option value={org.org_id}>{org.org_name}</option> })}
           </select>
-          <input className="submit" type='submit' id='submit' value='Submit Updates' />
+          <button class="btn" type="submit">Submit</button>
         </div>
       </form>
     )

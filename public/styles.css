@@ -927,7 +927,7 @@ width: 50%;
   display: block;
 }
 
-.add-org btn {
+.add-org button {
   text align: center;
   background-color: #FA824C;
   color: #fff;
@@ -936,7 +936,7 @@ width: 50%;
   font-size: 1.5rem;
 }
 
-.add-org btn:hover {
+.add-org button:hover {
   text align: center;
   background-color: #fff;
   color: #FA824C;
@@ -945,5 +945,26 @@ width: 50%;
 
 .drop-menu {
   text-align: center;
+  background-color: inherit;
+  border-color: #fff;
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
+.drop-menu:hover {
+  text align: center;
+  background-color: #fff;
+  border-color: #FA824C;
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
 }
