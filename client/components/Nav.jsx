@@ -9,8 +9,9 @@ class Nav extends React.Component {
       toggleNav: false
     }
   }
-  handleClick (toggleNav) {
+  handleClick (toggleNav, e) {
     this.setState({toggleNav})
+    e.preventDefault();
   }
 
   render () {
@@ -19,7 +20,7 @@ class Nav extends React.Component {
       <div className='no-border nav-box'>
         <header className = 'container'>
           <nav>
-            <a href="#" onClick={() => this.handleClick(!toggleNav)} className='menu-icon'>&#9776;</a>
+            <a href="#" onClick={(e) => this.handleClick(!toggleNav, e)} className='menu-icon'>&#9776;</a>
             <ul className={this.state.toggleNav ? 'toggle-on' : 'toggle-off'}>
               <li><Link to={'/'}>Home</Link></li>
               <li><Link to={'/organisations'}>Wellington Organisations</Link></li>
