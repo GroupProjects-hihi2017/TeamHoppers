@@ -847,6 +847,7 @@ width: 50%;
   font-weight: bold;
   color:  #FA824C;
   margin-bottom: 2%;
+  padding-top: 2%;
 }
 
 .info-text {
@@ -858,6 +859,7 @@ width: 50%;
   font-family: 'Spinnaker', sans-serif;
   color: white
 }
+
 
 .info-text a {
   color: white;
@@ -872,7 +874,8 @@ width: 50%;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 5%;
+  padding-bottom: 2%;
+
 }
 
 .info-div-2 {
