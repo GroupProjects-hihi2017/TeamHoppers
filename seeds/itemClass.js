@@ -447,7 +447,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88005,
           itemClass_name: 'Metal Pots, Pans & Lids',
           itemClass_info: "Most landfills that accept metal will be happy to take your old nonstick pans, which they will recycle along with other scrap metal.",
-          itemClass_img: 'http://static3.olympus-ims.com/data/Image/appnotes/clad_cookware.jpg?rev=3219'
+          itemClass_img: 'https://us.123rf.com/450wm/firina/firina1205/firina120500032/13724067-flower-pot-with-fresh-thyme-thymus-citriodorus-on-white-background.jpg?ver=6'
         }
       ]);
     });
