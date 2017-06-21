@@ -761,6 +761,7 @@ align-content: flex-end;
   font-weight: bold;
   color:  #FA824C;
   margin-bottom: 2%;
+  padding-top: 2%;
 }
 
 .info-text {
@@ -771,6 +772,10 @@ align-content: flex-end;
   height: 100%;
   font-family: 'Spinnaker', sans-serif;
   color: white
+}
+
+.info-pointers {
+  	content: "\01F342";
 }
 
 .info-text a {
@@ -786,7 +791,8 @@ align-content: flex-end;
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 5%;
+  padding-bottom: 2%;
+
 }
 
 .info-div-2 {
