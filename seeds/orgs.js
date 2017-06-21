@@ -43,7 +43,7 @@ exports.seed = function(knex, Promise) {
           org_address: "",
           org_url: "http://www.gurgl.nz/",
           org_img: "/images/gurglLogo.svg",
-          org_info: "Kids grow. Clothes don't. Gurgl's mission is to save resources, save our planet, and save you money by repurposing clothes for ever-growing infants.",
+          org_info: "GURGL provides a fun, easy platform for you to recycle your childrens wardrobes, and borrow more! With your help, they can redirect perfectly good clothing out of the landfill waste pile and onto the backs of children who need them.",
           org_isDonatable: true
         },
         {
