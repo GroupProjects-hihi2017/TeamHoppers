@@ -27,7 +27,7 @@ class ItemClass extends React.Component {
       <div>
         <div className='container'>
             <div className= 'itemClass-list-container'>
-              <h4>{itemClass.length > 0 ? itemClass[0].category_name : ''}</h4>
+              <h4 className='itemClass-list-header'>{itemClass.length > 0 ? itemClass[0].category_name : ''}</h4>
               <h6>Click to find out where you can bring these items.</h6>
               {itemClass.map((item, key) => renderItemClass(item, key))}
             </div>

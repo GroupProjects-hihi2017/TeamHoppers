@@ -41,7 +41,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88002,
           itemClass_name: 'Egg Cartons',
           itemClass_info: 'More and more people are keeping chickens in their backyards for fresh eggs. Ask around your community and you may find people who are on the lookout for egg cartons.',
-          itemClass_img: 'https://i.ebayimg.com/00/s/MjQzWDI4MA==/z/dZIAAOSw3ydVzp9m/'
+          itemClass_img: 'http://www.megasantacecilia.com/media/catalog/product/cache/1/image/800x800/9df78eab33525d08d6e5fb8d27136e95/t/l/tlmd_tlmd_013112_huevosjpg_bim.jpg'
         },
         {
           itemClass_id: 77007,
@@ -62,14 +62,14 @@ exports.seed = function(knex, Promise) {
           category_id: 88006,
           itemClass_name: 'Drink Bottles',
           itemClass_info: "",
-          itemClass_img: ''
+          itemClass_img: 'https://userscontent2.emaze.com/images/de25feb7-7440-4f10-8a0f-5900e19b83b9/cc488e24b6dccc7514bbf3fac5279076.jpeg'
         },
         {
           itemClass_id: 77010,
           category_id: 88006,
           itemClass_name: 'Food Containers',
           itemClass_info: "Random fact, it requires 3 times the amount of water to produce a plastic bottle than it does to fill it.",
-          itemClass_img: 'https://thumbs.dreamstime.com/z/water-plastic-bottle-21279974.jpg'
+          itemClass_img: 'http://www.supplycity.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/T/S/TS64L.jpg'
         },
         {
           itemClass_id: 77011,
