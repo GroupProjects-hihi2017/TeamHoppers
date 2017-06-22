@@ -4,12 +4,12 @@ exports.seed = function (knex, Promise) {
       return knex('joinItemToOrgs').insert([{
         orgRelationships_id: 1,
         itemClass_id: 77057,
-        org_id: 66012
+        org_id: 66016
       },
       {
         orgRelationships_id: 2,
         itemClass_id: 77056,
-        org_id: 66012
+        org_id: 66016
       },
       {
         orgRelationships_id: 3,
@@ -74,7 +74,7 @@ exports.seed = function (knex, Promise) {
       {
         orgRelationships_id: 15,
         itemClass_id: 77050,
-        org_id: 66012
+        org_id: 66016
       },
       {
         orgRelationships_id: 16,
@@ -109,7 +109,7 @@ exports.seed = function (knex, Promise) {
       {
         orgRelationships_id: 22,
         itemClass_id: 77064,
-        org_id: 66012
+        org_id: 66016
       },
       {
         orgRelationships_id: 23,
