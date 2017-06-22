@@ -3,13 +3,13 @@ exports.seed = function (knex, Promise) {
     .then(function () {
       return knex('joinItemToOrgs').insert([{
         orgRelationships_id: 1,
-        itemClass_id: 77001,
-        org_id: 66001
+        itemClass_id: 77057,
+        org_id: 66012
       },
       {
         orgRelationships_id: 2,
-        itemClass_id: 77001,
-        org_id: 66006
+        itemClass_id: 77056,
+        org_id: 66012
       },
       {
         orgRelationships_id: 3,
@@ -18,8 +18,8 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 4,
-        itemClass_id: 77002,
-        org_id: 66001
+        itemClass_id: 77057,
+        org_id: 66011
       },
       {
         orgRelationships_id: 5,
@@ -28,8 +28,8 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 6,
-        itemClass_id: 77002,
-        org_id: 66007
+        itemClass_id: 77014,
+        org_id: 66002
       },
       {
         orgRelationships_id: 7,
@@ -53,8 +53,8 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 11,
-        itemClass_id: 77005,
-        org_id: 66007
+        itemClass_id: 77057,
+        org_id: 66020
       },
       {
         orgRelationships_id: 12,
@@ -63,8 +63,8 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 13,
-        itemClass_id: 77006,
-        org_id: 66007
+        itemClass_id: 77049,
+        org_id: 66019
       },
       {
         orgRelationships_id: 14,
@@ -73,8 +73,8 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 15,
-        itemClass_id: 77007,
-        org_id: 66007
+        itemClass_id: 77050,
+        org_id: 66012
       },
       {
         orgRelationships_id: 16,
@@ -83,8 +83,8 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 17,
-        itemClass_id: 77008,
-        org_id: 66007
+        itemClass_id: 77048,
+        org_id: 66003
       },
       {
         orgRelationships_id: 18,
@@ -93,8 +93,8 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 19,
-        itemClass_id: 77009,
-        org_id: 66007
+        itemClass_id: 77024,
+        org_id: 66002
       },
       {
         orgRelationships_id: 20,
@@ -103,13 +103,13 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 21,
-        itemClass_id: 77010,
-        org_id: 66007
+        itemClass_id: 77012,
+        org_id: 66048
       },
       {
         orgRelationships_id: 22,
-        itemClass_id: 77011,
-        org_id: 66006
+        itemClass_id: 77064,
+        org_id: 66012
       },
       {
         orgRelationships_id: 23,
@@ -368,8 +368,8 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 74,
-        itemClass_id: 77032,
-        org_id: 66007
+        itemClass_id: 77016,
+        org_id: 66020
       },
       {
         orgRelationships_id: 75,
@@ -378,8 +378,8 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 76,
-        itemClass_id: 77033,
-        org_id: 66007
+        itemClass_id: 77016,
+        org_id: 66014
       },
       {
         orgRelationships_id: 77,
@@ -578,8 +578,8 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 117,
-        itemClass_id: 77053,
-        org_id: 66001
+        itemClass_id: 77014,
+        org_id: 66011
       },
       {
         orgRelationships_id: 118,
@@ -653,13 +653,13 @@ exports.seed = function (knex, Promise) {
       },
       {
         orgRelationships_id: 132,
-        itemClass_id: 77062,
-        org_id: 66006
+        itemClass_id: 77005,
+        org_id: 66003
       },
       {
         orgRelationships_id: 133,
         itemClass_id: 77062,
-        org_id: 66007
+        org_id: 66001
       },
       {
         orgRelationships_id: 134,
