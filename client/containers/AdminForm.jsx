@@ -2,17 +2,22 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
-import {addOrg} from '../actions/listOrgs'
+import {addOrg, getAllOrgs} from '../actions/listOrgs'
 
 class AdminForm extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
       dispatch: props.dispatch,
-      org: {org_isDonatable: true},
+      org: {org_isDonatable: true, org_name:''},
+      isUpdating: false,
       submitted: false,
       message: ''
     }
+  }
+
+  componentDidMount () {
+    this.props.dispatch(getAllOrgs())
   }
 
   toggleDonatable (e) {
@@ -20,6 +25,10 @@ class AdminForm extends React.Component {
     let org = this.state.org
     org.org_isDonatable = !org.org_isDonatable
     this.setState({org})
+  }
+
+  handleClick(isUpdating) {
+    this.setState({isUpdating})
   }
 
   handleChange (e) {
@@ -48,27 +57,40 @@ class AdminForm extends React.Component {
   }
 
   renderForm () {
+    console.log(this.state);
     return (
-      <form className='admin-form' onSubmit={(e) => this.handleSubmit(e)}>
+      <div className='container'>
         <h4>Add an organisation</h4>
         <hr className='orange-hr' />
-        <p>Please enter the information of the organisation you would like to add to the database:</p>
-        <label className="labelone" htmlFor="name"> Organisation Name: </label>
-        <input type='text' id='org_name' name='org_name' onChange={(e) => this.handleChange(e)} />
-        <label className="labelone" htmlFor="name"> Organisation Address: </label>
-        <input type='text' id='org_address' name='org_address' onChange={(e) => this.handleChange(e)} />
-        <label className="labelone" htmlFor="name"> Organisation Homepage URL: </label>
-        <input type='text' id='org_url' name='org_url' onChange={(e) => this.handleChange(e)} />
-        <label className="labelone" htmlFor="name"> Organisation Logo: </label>
-        <input type='text' id='org_img' name='org_img' onChange={(e) => this.handleChange(e)} />
-        <label className="labelone" htmlFor="name"> Description of Organisation: </label>
-        <textarea name="comments" name='org_info' onChange={(e) => this.handleChange(e)} />
-        <div className="add-org">
-          <p className="donate-or-recycle">{this.state.org.org_isDonatable ? "This organisation takes donations." : "This organisation recycles."}</p>
-          <button className="btn" type="submit" onClick={(e) => this.toggleDonatable(e)} value="Click to Choose Donate or Recycle"> Click to Choose Donate or Recycle</button><br/>
-          <button className="btn" type='submit' id='submit' value='Submit New Organisation'>Submit New Organisation</button>
-        </div>
-      </form>
+
+      <button className="update-button" onClick={ () => this.handleClick(!this.state.isUpdating)}>{this.state.isUpdating ? "Nevermind, I want to add a brand new organisation": "Click to Choose an Organisation to Update"}</button>
+
+        <form className='admin-form' onSubmit={(e) => this.handleSubmit(e)}>
+
+            {this.state.isUpdating &&
+            <select className="drop-menu" id='org_name' name='org_name' onChange={(e) => this.handleChange(e)}>
+              {this.props.listOrgs.map((org, key) => {
+                return <option value={org.org_name}>{org.org_name}</option> })}
+            </select>}
+
+          <p>Please enter the information of the organisation you would like to add to the database:</p>
+          <label className="labelone" htmlFor="name"> Organisation Name: </label>
+            <input type='text' id='org_name' name='org_name' value={this.state.org.org_name} onChange={(e) => this.handleChange(e)} />
+          <label className="labelone" htmlFor="name"> Organisation Address: </label>
+            <input type='text' id='org_address' name='org_address' onChange={(e) => this.handleChange(e)} />
+          <label className="labelone" htmlFor="name"> Organisation Homepage URL: </label>
+            <input type='text' id='org_url' name='org_url' onChange={(e) => this.handleChange(e)} />
+          <label className="labelone" htmlFor="name"> Organisation Logo: </label>
+            <input type='text' id='org_img' name='org_img' onChange={(e) => this.handleChange(e)} />
+          <label className="labelone" htmlFor="name"> Description of Organisation: </label>
+            <textarea name="comments" name='org_info' onChange={(e) => this.handleChange(e)} />
+          <div className="add-org">
+            <p className="donate-or-recycle">{this.state.org.org_isDonatable ? "This organisation takes donations." : "This organisation recycles."}</p>
+            <button className="btn" type="submit" onClick={(e) => this.toggleDonatable(e)} value="Click to Choose Donate or Recycle"> Click to Choose Donate or Recycle</button><br/>
+            <button className="btn" type='submit' id='submit' value='Submit New Organisation'>Submit New Organisation</button>
+          </div>
+        </form>
+      </div>
     )
   }
   render () {
@@ -82,4 +104,9 @@ class AdminForm extends React.Component {
   }
 }
 
-export default connect()(AdminForm)
+const mapStateToProps = (state) => {
+  console.log(state);
+  return {listOrgs: state.listOrgs}
+}
+
+export default connect(mapStateToProps)(AdminForm)

@@ -1032,8 +1032,6 @@ color: #fff;
   font-size: 3vh;
 }
 
-
-
 .add-org button {
   text align: center;
   background-color: #FA824C;
@@ -1049,7 +1047,6 @@ color: #fff;
   color: #FA824C;
   border-color: #FA824C;
 }
-
 
 
 .donate-or-recycle {
@@ -1111,6 +1108,11 @@ color: #fff;
   font-size: 1.5rem;
 }
 
+.update-button {
+  background-color: #fff;
+  text-align: center;
+}
+
 .add-org button:hover {
   text align: center;
   background-color: #fff;
@@ -1120,9 +1122,10 @@ color: #fff;
 
 .drop-menu {
   text-align: center;
-  background-color: inherit;
+  background-color: #fff;
   border-color: #fff;
-  margin: 5px;
+  margin: 5vh;
+  padding: 5vh 0vh;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 38px;
