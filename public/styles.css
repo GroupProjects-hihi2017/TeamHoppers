@@ -933,7 +933,7 @@ width: 50%;
   font-weight: bold;
   color:  #FA824C;
   margin-bottom: 2%;
-  margin-top: 5%;
+  padding-top: 5%;
 }
 
 .contact-form input {
@@ -986,6 +986,11 @@ width: 50%;
 }
 
 /*** Admin Forms ***/
+
+.form-container {
+  text-align: center;
+}
+
 .admin-form {
 font-family: 'Spinnaker', sans-serif;
 width: 50%;
@@ -995,7 +1000,7 @@ color: #fff;
 
 }
 
-.admin-form h4 {
+.admin-form-header {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1018,18 +1023,16 @@ color: #fff;
 }
 
 .admin-form input {
-
     width: 100%;
     height: 8vh;
-    font-size: 3vh;
+    font-size: 2.3rem;
     border-radius: 4px;
-
 }
 
 .admin-form textarea {
   width: 100%;
   height: 25vh;
-  font-size: 3vh;
+  font-size: 2.3rem;
 }
 
 .add-org button {
@@ -1052,10 +1055,6 @@ color: #fff;
 .donate-or-recycle {
   color: #FA824C;
   font-weight: bold;
-}
-
-.container-form {
-  margin: 0;
 }
 
 .submit-message {
@@ -1111,6 +1110,14 @@ color: #fff;
 .update-button {
   background-color: #fff;
   text-align: center;
+  margin: 5vh 0vh;
+}
+
+.update-button:hover {
+  text align: center;
+  background-color: #fff;
+  color: #FA824C;
+  border-color: #FA824C;
 }
 
 .add-org button:hover {
@@ -1125,20 +1132,6 @@ color: #fff;
   background-color: #fff;
   border-color: #fff;
   margin: 5vh;
-  padding: 5vh 0vh;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.drop-menu:hover {
-  text align: center;
-  background-color: #fff;
-  border-color: #FA824C;
-  margin: 5px;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 38px;

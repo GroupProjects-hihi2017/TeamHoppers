@@ -57,10 +57,9 @@ class AdminForm extends React.Component {
   }
 
   renderForm () {
-    console.log(this.state);
     return (
-      <div className='container'>
-        <h4>Add an organisation</h4>
+      <div className='container form-container'>
+        <h4 className='admin-form-header'>Add an organisation</h4>
         <hr className='orange-hr' />
 
       <button className="update-button" onClick={ () => this.handleClick(!this.state.isUpdating)}>{this.state.isUpdating ? "Nevermind, I want to add a brand new organisation": "Click to Choose an Organisation to Update"}</button>
@@ -73,7 +72,7 @@ class AdminForm extends React.Component {
                 return <option value={org.org_name}>{org.org_name}</option> })}
             </select>}
 
-          <p>Please enter the information of the organisation you would like to add to the database:</p>
+            <p>Please enter the information of the organisation you would like to add to the database:</p>
           <label className="labelone" htmlFor="name"> Organisation Name: </label>
             <input type='text' id='org_name' name='org_name' value={this.state.org.org_name} onChange={(e) => this.handleChange(e)} />
           <label className="labelone" htmlFor="name"> Organisation Address: </label>
@@ -96,16 +95,13 @@ class AdminForm extends React.Component {
   render () {
     return (
       <div className = 'wallpaper-no-border'>
-        <div className='container form'>
           {this.state.submitted ? this.renderMessage() : this.renderForm() }
-        </div>
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {listOrgs: state.listOrgs}
 }
 
