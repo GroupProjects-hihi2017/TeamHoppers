@@ -776,6 +776,9 @@ width: 50%;
   text-align: center;
   margin: 10px;
   color: #fff;
+  overflow: hidden;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  transition: width 2s, height 2s, transform 2s;
 }
 
 .org-details {

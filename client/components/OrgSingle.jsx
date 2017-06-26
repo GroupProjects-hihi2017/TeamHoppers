@@ -27,7 +27,8 @@ class OrgSingle extends React.Component {
       <div className="org-single-box">
         <div className="org-details">
           <a href={org.org_url} target="_blank"><img className='org-logo' src={org.org_img}/></a>
-            <div className='org-button'><button onClick={ () => this.handleClick(!showItems) }>{org.org_name}</button></div>
+            <div className='org-button'>
+              <button onClick={ () => this.handleClick(!showItems) }>{org.org_name}</button></div>
         </div>
         {this.state.showItems && (
           <div className='items-by-org-grid'>
