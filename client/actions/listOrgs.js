@@ -40,19 +40,3 @@ export function addOrg (org, callback) {
       callback()
     })
 }
-//
-// export function addOrg (org, callback) {
-//   return (dispatch) => {
-//     request
-//       .post(`/api/orgs`)
-//       .send(org)
-//       .end((err, res) => {
-//         if (err) {
-//           console.error(err.message)
-//           return
-//         }
-//         callback()
-//         dispatch(addNewOrg(res.body))
-//       })
-//   }
-// }
