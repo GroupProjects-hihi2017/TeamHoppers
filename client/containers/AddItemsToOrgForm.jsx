@@ -29,7 +29,7 @@ class AddItemsToOrgForm extends React.Component {
   handleSubmit (e) {
     e.preventDefault()
     this.state.dispatch(addItemJoin(this.state.itemJoin))
-    this.setState({submitted: true, message: 'Your organisation has been submitted.'})
+    this.setState({submitted: true, message: 'Your organisation has been updated.'})
   }
 
   refreshForm () {

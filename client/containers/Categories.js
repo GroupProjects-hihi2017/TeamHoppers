@@ -29,7 +29,7 @@ class Categories extends React.Component {
       <div className='wallpaper-no-border'>
         <div className='container category-grid-container'>
           <div className="category-list-header">
-            <h4>Explore Sustainability</h4>
+            <p>Explore Sustainability</p>
           </div>
           <div className='categories-container'>
             {categories.map((category, key) => renderCategory(category, key))}
