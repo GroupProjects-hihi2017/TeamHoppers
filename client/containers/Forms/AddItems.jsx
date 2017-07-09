@@ -49,13 +49,19 @@ class AddItems extends React.Component {
       <form className='admin-form' onSubmit={(e) => this.handleSubmit(e)}>
         <h4>Add New Item to Database</h4>
         <hr className='orange-hr' />
-        <p>Please select a category for your item to be listed under:</p>
+        <p>Please select a category for your item to be listed under, then add the item's information.</p>
         <div>
           <select className="drop-menu" name="name" value="name" onChange={(e) => this.handleChange(e)}>
             {this.props.categories.map((category, key) => {
               return <option value={category.category_id}>{category.category_name}</option> })}
           </select>
-          <button class="btn" type="submit">Submit</button>
+          <label className="labelone" htmlFor="name"> Item Name: </label>
+            <input type='text' id='itemClass_name' name='itemClass_name' value={this.state.newItem.itemClass_name} onChange={(e) => this.handleChange(e)} />
+          <label className="labelone" htmlFor="name"> Item Information: </label>
+            <textarea type='text' id='itemClass_info' name='itemClass_info' value={this.state.newItem.itemClass_info} onChange={(e) => this.handleChange(e)} />
+          <label className="labelone" htmlFor="name"> Item Image URL: </label>
+            <input type='text' id='itemClass_img' name='itemClass_img' value={this.state.newItem.itemClass_img} onChange={(e) => this.handleChange(e)} />
+          <button class="btn" type="submit">Submit New Item</button>
         </div>
       </form>
     )
