@@ -3,9 +3,9 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
 import {getCategories} from '../../actions/categories'
-import {addItemClass} from '../../actions/items'
+import {addItem} from '../../actions/items'
 
-class AddItems extends React.Component {
+class AddItem extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -25,11 +25,12 @@ class AddItems extends React.Component {
     let newItem = this.state.newItem
     newItem[e.target.name] = e.target.value
     this.setState({newItem})
+    console.log({newItem});
   }
 
   handleSubmit (e) {
     e.preventDefault()
-    this.state.dispatch(addItemClass(this.state.newItem))
+    this.state.dispatch(addItem(this.state.newItem))
     this.setState({submitted: true, message: 'Your item has been added to the database.'})
   }
 
@@ -51,7 +52,7 @@ class AddItems extends React.Component {
         <hr className='orange-hr' />
         <p>Please select a category for your item to be listed under, then add the item's information.</p>
         <div>
-          <select className="drop-menu" name="name" value="name" onChange={(e) => this.handleChange(e)}>
+          <select className="drop-menu" name="category_id" value={this.state.newItem.category_id} onChange={(e) => this.handleChange(e)}>
             {this.props.categories.map((category, key) => {
               return <option value={category.category_id}>{category.category_name}</option> })}
           </select>
@@ -61,7 +62,7 @@ class AddItems extends React.Component {
             <textarea type='text' id='itemClass_info' name='itemClass_info' value={this.state.newItem.itemClass_info} onChange={(e) => this.handleChange(e)} />
           <label className="labelone" htmlFor="name"> Item Image URL: </label>
             <input type='text' id='itemClass_img' name='itemClass_img' value={this.state.newItem.itemClass_img} onChange={(e) => this.handleChange(e)} />
-          <button class="btn" type="submit">Submit New Item</button>
+          <button className="btn" type="submit">Submit New Item</button>
         </div>
       </form>
     )
@@ -82,4 +83,4 @@ const mapStateToProps = (state) => {
   return {itemClass: state.itemClass, categories: state.categories}
 }
 
-export default connect(mapStateToProps)(AddItems)
+export default connect(mapStateToProps)(AddItem)

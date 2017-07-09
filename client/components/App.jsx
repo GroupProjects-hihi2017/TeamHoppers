@@ -13,7 +13,7 @@ import Orgs from '../containers/Orgs'
 import ItemClass from '../containers/ItemClass'
 import ListAllOrgs from '../containers/ListAllOrgs'
 import AdminForm from '../containers/Forms/AdminForm'
-import AddItems from '../containers/Forms/AddItems'
+import AddItem from '../containers/Forms/AddItem'
 
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const App = () => {
         <Route exact path='/categories/:category_id' component={ItemClass} />
         <Route exact path='/categories/:category_id/:itemClass_id' component={Orgs} />
         <Route exact path='/admin' component={AdminForm} />
-        <Route exact path='/admin/add-items' component={AddItems} />
+        <Route exact path='/admin/add-item' component={AddItem} />
 
         <Footer />
       </div>
