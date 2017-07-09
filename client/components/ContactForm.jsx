@@ -41,9 +41,9 @@ class ContactForm extends React.Component {
           <hr className='orange-hr' />
           <label className="labelone" htmlFor="name">Name: </label>
           <input name="name" onChange={(e) => this.updateFormDetails(e)}/>
-          <label htmlFor="email">Email: </label>
+          <label className="labelone" htmlFor="email">Email: </label>
           <input name="email" onChange={(e) => this.updateFormDetails(e)} />
-          <label htmlFor="comments">Comments: </label>
+          <label className="labelone" htmlFor="comments">Comments: </label>
           <textarea name="comments" onChange={(e) => this.updateFormDetails(e)}></textarea>
         </fieldset>
         <div className="send">

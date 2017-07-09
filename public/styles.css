@@ -159,6 +159,10 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+.footer a:hover {
+  text-decoration: none;
+}
+
 .footer-slogan {
   font-family: 'Spinnaker', sans-serif;
   font-weight: bold;
@@ -970,6 +974,10 @@ width: 50%;
 
 /*** Admin Forms ***/
 
+.labelone {
+  padding: 4vh 0vh 2vh 0vh;
+}
+
 .form-container {
   text-align: center;
 }
@@ -1029,7 +1037,7 @@ color: #fff;
   background-color: #FA824C;
   color: #fff;
   border-color: #fff;
-  margin: 5px;
+  margin: 3vh;
   font-size: 1.5rem;
 }
 
@@ -1043,6 +1051,7 @@ color: #fff;
 .donate-or-recycle {
   color: #FA824C;
   font-weight: bold;
+  padding: 3vh 0vh 1vh 0vh;
 }
 
 .submit-message {
