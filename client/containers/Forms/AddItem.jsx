@@ -50,7 +50,6 @@ class AddItem extends React.Component {
       <form className='admin-form' onSubmit={(e) => this.handleSubmit(e)}>
         <h4 className='admin-form-header'>Add New Item to Database</h4>
         <hr className='orange-hr' />
-        <p>Please select a category for your item to be listed under, then add the item's information.</p>
         <label className="labelone" htmlFor="name"> Item Category: </label>
           <select className="drop-menu" name="category_id" value={this.state.newItem.category_id} onChange={(e) => this.handleChange(e)}>
             {this.props.categories.map((category, key) => {
