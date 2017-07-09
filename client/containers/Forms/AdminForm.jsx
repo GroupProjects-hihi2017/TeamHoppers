@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
-import {addOrg, getAllOrgs} from '../actions/listOrgs'
+import {addOrg, getAllOrgs} from '../../actions/listOrgs'
 
 class AdminForm extends React.Component {
   constructor (props) {

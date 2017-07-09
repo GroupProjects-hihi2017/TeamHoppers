@@ -2,43 +2,44 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
-import {getAllOrgs} from '../actions/listOrgs'
-import {addItemJoin} from '../actions/joinItemToOrgs'
+import {getCategories} from '../../actions/categories'
+import {addItemClass} from '../../actions/items'
 
-class AddItemsToOrgForm extends React.Component {
+class AddItems extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
       dispatch: props.dispatch,
-      itemJoin: {},
+      newItem: {},
+      categories: {},
       submitted: false,
       message: ''
     }
   }
 
   componentDidMount () {
-    this.props.dispatch(getAllOrgs())
+    this.props.dispatch(getCategories())
   }
 
   handleChange (e) {
-    let org = this.state.listOrg
-    org[e.target.name] = e.target.value
-    this.setState({org})
+    let newItem = this.state.newItem
+    newItem[e.target.name] = e.target.value
+    this.setState({newItem})
   }
 
   handleSubmit (e) {
     e.preventDefault()
-    this.state.dispatch(addItemJoin(this.state.itemJoin))
-    this.setState({submitted: true, message: 'Your organisation has been updated.'})
+    this.state.dispatch(addItemClass(this.state.newItem))
+    this.setState({submitted: true, message: 'Your item has been added to the database.'})
   }
 
   refreshForm () {
-    this.setState({itemJoin: {}, submitted: false, message: ''})
+    this.setState({newItem: {}, submitted: false, message: ''})
   }
 
   renderMessage () {
     return <div>
-      <Link to={`/organisations`}><h4 className="submit-message">{this.state.message}</h4></Link>
+      <Link to={`/`}><h4 className="submit-message">{this.state.message}</h4></Link>
       <button onClick={(e) => this.refreshForm()}>Start New Form</button>
     </div>
   }
@@ -46,13 +47,13 @@ class AddItemsToOrgForm extends React.Component {
   renderForm () {
     return (
       <form className='admin-form' onSubmit={(e) => this.handleSubmit(e)}>
-        <h4>Update Organisation</h4>
+        <h4>Add New Item to Database</h4>
         <hr className='orange-hr' />
-        <p>Please select your Organisation and then update the relevant fields:</p>
-        <div className="add-org">
+        <p>Please select a category for your item to be listed under:</p>
+        <div>
           <select className="drop-menu" name="name" value="name" onChange={(e) => this.handleChange(e)}>
-            {this.props.listOrgs.map((org, key) => {
-              return <option value={org.org_id}>{org.org_name}</option> })}
+            {this.props.categories.map((category, key) => {
+              return <option value={category.category_id}>{category.category_name}</option> })}
           </select>
           <button class="btn" type="submit">Submit</button>
         </div>
@@ -72,7 +73,7 @@ class AddItemsToOrgForm extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  return {joinItemToOrgs: state.joinItemToOrgs, listOrgs: state.listOrgs}
+  return {itemClass: state.itemClass, categories: state.categories}
 }
 
-export default connect(mapStateToProps)(AddItemsToOrgForm)
+export default connect(mapStateToProps)(AddItems)

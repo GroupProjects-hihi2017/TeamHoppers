@@ -12,8 +12,8 @@ import ContactForm from './ContactForm'
 import Orgs from '../containers/Orgs'
 import ItemClass from '../containers/ItemClass'
 import ListAllOrgs from '../containers/ListAllOrgs'
-import AdminForm from '../containers/AdminForm'
-import AddItemsToOrgForm from '../containers/AddItemsToOrgForm'
+import AdminForm from '../containers/Forms/AdminForm'
+import AddItems from '../containers/Forms/AddItems'
 
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const App = () => {
         <Route exact path='/categories/:category_id' component={ItemClass} />
         <Route exact path='/categories/:category_id/:itemClass_id' component={Orgs} />
         <Route exact path='/admin' component={AdminForm} />
-        <Route exact path='/admin/add-items-to-org' component={AddItemsToOrgForm} />
+        <Route exact path='/admin/add-items' component={AddItems} />
 
         <Footer />
       </div>
