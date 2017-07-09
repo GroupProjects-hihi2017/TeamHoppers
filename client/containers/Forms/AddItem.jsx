@@ -48,10 +48,10 @@ class AddItem extends React.Component {
   renderForm () {
     return (
       <form className='admin-form' onSubmit={(e) => this.handleSubmit(e)}>
-        <h4>Add New Item to Database</h4>
+        <h4 className='admin-form-header'>Add New Item to Database</h4>
         <hr className='orange-hr' />
         <p>Please select a category for your item to be listed under, then add the item's information.</p>
-        <div>
+        <label className="labelone" htmlFor="name"> Item Category: </label>
           <select className="drop-menu" name="category_id" value={this.state.newItem.category_id} onChange={(e) => this.handleChange(e)}>
             {this.props.categories.map((category, key) => {
               return <option value={category.category_id}>{category.category_name}</option> })}
@@ -62,8 +62,9 @@ class AddItem extends React.Component {
             <textarea type='text' id='itemClass_info' name='itemClass_info' value={this.state.newItem.itemClass_info} onChange={(e) => this.handleChange(e)} />
           <label className="labelone" htmlFor="name"> Item Image URL: </label>
             <input type='text' id='itemClass_img' name='itemClass_img' value={this.state.newItem.itemClass_img} onChange={(e) => this.handleChange(e)} />
-          <button className="btn" type="submit">Submit New Item</button>
-        </div>
+            <div className='form-submit-button'>
+              <button className="btn" type="submit">Submit New Item</button>
+            </div>
       </form>
     )
   }

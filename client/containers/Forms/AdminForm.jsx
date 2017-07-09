@@ -83,7 +83,7 @@ class AdminForm extends React.Component {
             <input type='text' id='org_img' name='org_img' onChange={(e) => this.handleChange(e)} />
           <label className="labelone" htmlFor="name"> Description of Organisation: </label>
             <textarea name="comments" name='org_info' onChange={(e) => this.handleChange(e)} />
-          <div className="add-org">
+          <div className='form-submit-button'>
             <p className="donate-or-recycle">{this.state.org.org_isDonatable ? "This organisation takes donations." : "This organisation recycles."}</p>
             <button className="btn" type="submit" onClick={(e) => this.toggleDonatable(e)} value="Click to Choose Donate or Recycle"> Click to Choose Donate or Recycle</button><br/>
             <button className="btn" type='submit' id='submit' value='Submit New Organisation'>Submit New Organisation</button>

@@ -1031,8 +1031,8 @@ color: #fff;
   font-family: 'Spinnaker', sans-serif;
   font-size: 160%;
   font-weight: bold;
-  color:  #FA824C;
-  padding-top: 5%;
+  color:  #FFF;
+  padding-top: 7%;
 }
 
 .admin-form p {
@@ -1057,7 +1057,13 @@ color: #fff;
   font-size: 2.3rem;
 }
 
-.add-org button {
+.form-submit-button {
+  text-align: center;
+  margin-bottom: 5%;
+  display: block;
+}
+
+.form-submit-button button {
   text align: center;
   background-color: #FA824C;
   color: #fff;
@@ -1066,13 +1072,12 @@ color: #fff;
   font-size: 1.5rem;
 }
 
-.add-org button:hover {
+.form-submit-button button:hover {
   text align: center;
   background-color: #fff;
   color: #FA824C;
   border-color: #FA824C;
 }
-
 
 .donate-or-recycle {
   color: #FA824C;
@@ -1114,20 +1119,6 @@ color: #fff;
 
 /*** Org Update Form ***/
 
-.add-org {
-  text-align: center;
-  margin-bottom: 5%;
-  display: block;
-}
-
-.add-org button {
-  text align: center;
-  background-color: #FA824C;
-  color: #fff;
-  border-color: #fff;
-  margin: 5px;
-  font-size: 1.5rem;
-}
 
 .update-button {
   background-color: #fff;
@@ -1142,18 +1133,12 @@ color: #fff;
   border-color: #FA824C;
 }
 
-.add-org button:hover {
-  text align: center;
-  background-color: #fff;
-  color: #FA824C;
-  border-color: #FA824C;
-}
-
 .drop-menu {
   text-align: center;
   background-color: #fff;
   border-color: #fff;
-  margin: 5vh;
+  margin: 2vh auto 5vh auto;
+  width: 100%;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 38px;
