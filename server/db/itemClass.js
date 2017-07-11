@@ -4,6 +4,18 @@ const getItemClass = (db) => {
     .select('*').orderBy('itemClass_name')
 }
 
+const addItemClass = (itemClass, db) => {
+  return db('itemClass').insert(itemClass)
+}
+
+const getItemById = (itemClassId, db) => {
+  return db('itemClass')
+    .where('itemClass_id', itemClassId)
+    .first()
+}
+
 module.exports = {
-  getItemClass
+  getItemClass,
+  addItemClass,
+  getItemById
 }
