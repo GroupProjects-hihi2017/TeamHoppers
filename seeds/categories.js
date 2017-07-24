@@ -28,7 +28,7 @@ exports.seed = function(knex, Promise) {
         {
           category_id: 88005,
           category_name: 'Aluminium & Metals',
-          category_img: 'http://www.alupro.org.uk/wp-content/uploads/2013/12/ALU-CANS-cropped.jpg',
+          category_img: 'https://static1.squarespace.com/static/52655d9ce4b077de040565fc/t/55dc9817e4b010e13a15e11b/1440507725617/Cans.jpg',
           category_info: "Aluminium is considered a sustainable metal, which means it can be recycled again and again"
         },
         {
