@@ -59,7 +59,7 @@ exports.seed = function(knex, Promise) {
           org_id: 66007,
           org_name: "Council Recycling Bin",
           org_address: "101 Wakefield Street, Wellington 6011",
-          org_url: "http://wellington.govt.nz/~/media/services/environment-and-waste/rubbish-and-recycling/images/84983_0069_recycling_bin.jpg?mh=320&mw=320",
+          org_url: "http://wellington.govt.nz/services/environment-and-waste/rubbish-and-recycling/recycling/wheelie-bins-bags-and-crates",
           org_img: "/images/recycling-bin.png",
           org_info: "Contact Wellington City Council to get your own Green Glass Recycle Bin.",
           org_isDonatable: false
@@ -77,7 +77,7 @@ exports.seed = function(knex, Promise) {
           org_id: 66009,
           org_name: "St. Vincent de Paul's OpShop",
           org_address: "107 Aro Street, Wellington 6021",
-          org_url: "http://www.svdp.org.nz/'",
+          org_url: "https://www.svdp.org.nz/shops",
           org_img: "http://svdppoc.com/wp-content/uploads/2015/03/St-vincent-de-Paul-logo2.gif",
           org_info: "The St Vincent de Paul OpShops sell second-hand clothes, furniture, and more, to assist in their fundraising efforts for local welfare programs. Their sustainability efforts also encourage used items to be recycled, which would otherwise be thrown away.For full list of locations in your area, visit the St. Vincent de Paul's website.",
           org_isDonatable: true
@@ -131,7 +131,7 @@ exports.seed = function(knex, Promise) {
           org_id: 66015,
           org_name: "Dress for Success",
           org_address: "Level 2, 53 Boulcott Street Wellington",
-          org_url: "http://www.dressforsuccesswgtn.org.nz/",
+          org_url: "https://wellington.dressforsuccess.org/",
           org_img: "http://www.cleantastic.co.nz/wp-content/uploads/2012/09/DFS__Logo1.png",
           org_info: "Dress for Success helps women pursue their aspirations by providing appropriate clothing for job interviews, a network of support and career development tools. See their website for other Wellington locations.",
           org_isDonatable: true
