@@ -42,6 +42,7 @@ body {
   height: 100%;
   width: auto;
 }
+
 .hack {
   font-family: 'Spinnaker', sans-serif;
   font-weight: bold;
@@ -99,8 +100,8 @@ nav ul li a:hover {
 }
 
 .navbar-inverse .navbar-toggle {
-    border-color: #fff !important;
-    color: #fff !important;
+  border-color: #fff !important;
+  color: #fff !important;
 }
 
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
@@ -262,9 +263,9 @@ nav ul li a:hover {
 }
 
 .search-results-list button:hover {
-    background-color: #fff;
-    color: #FA824C;
-    border-color: #FA824C;
+  background-color: #fff;
+  color: #FA824C;
+  border-color: #FA824C;
 }
 
 .search-result {
@@ -327,7 +328,6 @@ nav ul li a:hover {
   max-width: 50%;
   margin:auto;
   font-size: 2rem;
-
 }
 
 .items-by-org-grid {
@@ -361,28 +361,27 @@ nav ul li a:hover {
 }
 
 
-
 /*** Categories Container ***/
 .category-grid-container {
  margin: auto;
 }
 
 .categories-container {
-font-family: 'Spinnaker', sans-serif;
-display: -webkit-flex;
-display: flex;
--webkit-align-items: center;
-align-items: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-flex-direction: row;
-flex-direction: row;
--webkit-flex-wrap: wrap;
-flex-wrap: wrap;
--webkit-flex-flow: row wrap;
-flex-flow: row wrap;
--webkit-align-content: flex-end;
-align-content: flex-end;
+  font-family: 'Spinnaker', sans-serif;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
 }
 
 .category-list-header {
@@ -421,24 +420,24 @@ align-content: flex-end;
 }
 
 .category-box figcaption {
-    background: rgba(250, 130, 76, 0.8);
-    border-radius: 25%;
-    color: white;
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 100;
+  background: rgba(250, 130, 76, 0.8);
+  border-radius: 25%;
+  color: white;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
 }
 
 .category-box figcaption h3 p {
-    position: relative;
-    top: 15vh;
-    height: 40vh;
-    width: 40vh;
-    vertical-align: middle;
+  position: relative;
+  top: 15vh;
+  height: 40vh;
+  width: 40vh;
+  vertical-align: middle;
 }
 
 .category-box figcaption h3 {
@@ -448,39 +447,38 @@ align-content: flex-end;
 }
 
 .category-box:hover figcaption {
-    border-radius: 25%;
-    opacity: 1;
+  border-radius: 25%;
+  opacity: 1;
 }
-
 
 .category-box img {
   height: auto;
-   border-radius: 25%;
+  border-radius: 25%;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     transition: all 300ms;
- height: 35vh;
-    width: 40vh;
+  height: 35vh;
+  width: 40vh;
 }
 
 .category-box:hover img {
- border-radius: 25%;
+  border-radius: 25%;
 }
 
 .category-box figcaption p {
-    font-size: 2.5vh;
-    margin: auto;
-    position: relative;
-    top: -7%;
-    width: 35vh;
+  font-size: 2.5vh;
+  margin: auto;
+  position: relative;
+  top: -7%;
+  width: 35vh;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .category-box:hover figcaption p {
- border-radius: 25%;
+  border-radius: 25%;
     -moz-transform: translateY(40px);
     -webkit-transform: translateY(40px);
     transform: translateY(40px);
@@ -491,10 +489,11 @@ align-content: flex-end;
 }
 
 @media screen and (max-width: 1000px) {
+
   .category-list-header {
-  font-size: 2em;
-  text-decoration: none;
-  letter-spacing: normal;
+    font-size: 2em;
+    text-decoration: none;
+    letter-spacing: normal;
   }
 
   .category-title-media {
@@ -591,9 +590,7 @@ align-content: flex-end;
 }
 
 
-
 /*** isDonatable Page ***/
-
 
 .itemClass-container {
   display: -webkit-flex;
@@ -611,7 +608,7 @@ align-content: flex-end;
 }
 
 .isDonate-able-container {
-width: 50%;
+  width: 50%;
 }
 
 .itemClass-separator {
@@ -775,7 +772,6 @@ width: 50%;
   max-width: 30vh;
 }
 
-
 .org-item-list ul li {
   display: inline-block;
   font-size: 1.5vh;
@@ -784,7 +780,6 @@ width: 50%;
 }
 
 .closing-tag{
-
   color: #FA824C;
   padding-top: 5vh;
   font-style: italic;
@@ -798,7 +793,6 @@ width: 50%;
 }
 
 
-
 /*** About Page ***/
 
 .about-title {
@@ -810,7 +804,6 @@ width: 50%;
   font-size: 160%;
   font-weight: bold;
   color:  #FA824C;
-
 }
 
 .about-header {
@@ -820,7 +813,6 @@ width: 50%;
   font-weight: bold;
   color: #fff;
   padding-top: 5vh;
-
 }
 
 .about-text {
@@ -872,7 +864,6 @@ width: 50%;
   color: white
 }
 
-
 .info-text a {
   color: white;
   text-decoration: none;
@@ -887,7 +878,6 @@ width: 50%;
   margin-left: 20%;
   margin-right: 20%;
   padding-bottom: 2%;
-
 }
 
 .info-div-2 {
@@ -968,10 +958,10 @@ width: 50%;
 }
 
 .send button:hover {
-    text align: center;
-    background-color: #fff;
-    color: #FA824C;
-    border-color: #FA824C;
+  text align: center;
+  background-color: #fff;
+  color: #FA824C;
+  border-color: #FA824C;
 }
 
 /*** Admin Forms ***/
@@ -985,12 +975,11 @@ width: 50%;
 }
 
 .admin-form {
-font-family: 'Spinnaker', sans-serif;
-width: 50%;
-margin: auto;
-font-weight: bold;
-color: #fff;
-
+  font-family: 'Spinnaker', sans-serif;
+  width: 50%;
+  margin: auto;
+  font-weight: bold;
+  color: #fff;
 }
 
 .admin-form-header {
@@ -1016,11 +1005,11 @@ color: #fff;
 }
 
 .admin-form input {
-    width: 100%;
-    height: 8vh;
-    font-size: 2.3rem;
-    border-radius: 4px;
-    color: black;
+  width: 100%;
+  height: 8vh;
+  font-size: 2.3rem;
+  border-radius: 4px;
+  color: black;
 }
 
 .admin-form textarea {
@@ -1092,7 +1081,6 @@ color: #fff;
 
 
 /*** Org Update Form ***/
-
 
 .update-button {
   background-color: #fff;
