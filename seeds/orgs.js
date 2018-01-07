@@ -141,7 +141,7 @@ exports.seed = function(knex, Promise) {
           org_name: "The Soup Kitchen",
           org_address: "132 Tory St, Te Aro, Wellington",
           org_url: "https://soupkitchen.org.nz/donate/",
-          org_img: "https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/319978_584458731579164_1227211911_n.jpg?oh=dc33c239eb81b739a222758d7dc3adda&oe=59D3F810",
+          org_img: "https://www.everydayhero.co.nz/events/downloads/0000/1417/Soup-Kitchen-Logo-Horizontal.jpg",
           org_info: "The Soup Kitchen is a safe place where people can find community, enjoy nutritious meals and participate in meaningful activities, such as learning computer skills and gardening.",
           org_isDonatable: true
         },

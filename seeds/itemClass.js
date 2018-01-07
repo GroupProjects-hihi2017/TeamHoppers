@@ -223,7 +223,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88007,
           itemClass_name: 'Chopsticks',
           itemClass_info: "Wooded chopsticks are treated like green waste.",
-          itemClass_img: 'http://919seafm.com.au/wp-content/uploads/2017/03/chopsticks-628.png'
+          itemClass_img: 'https://ae01.alicdn.com/kf/HTB1oDBnae2CK1JjSZFsq6x6AVXas/40-Pairs-Bag-Chinese-High-Quality-Chopsticks-Disposable-Bamboo-Wooden-Chopsticks-Hashi-Individually-Wrapped.jpg'
         },
         {
           itemClass_id: 77033,
@@ -300,7 +300,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88011,
           itemClass_name: 'Office Chairs',
           itemClass_info: "No longer need your office chair? Consider donating these to an op shop or to a not for profit organisation that might need furniture for their offices.",
-          itemClass_img: 'https://sits-pod43.demandware.net/dw/image/v2/AAWO_PRD/on/demandware.static/-/Sites-wsl-master-catalog/default/dw9cf3da82/d4/b1/B79657_00.jpg?sw=232&sh=232&sm=fit'
+          itemClass_img: 'https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_1000x1000/FNCOMFOBK_comfo_cantilever_bs_ch_bk.jpg'
         },
         {
           itemClass_id: 77044,
@@ -419,7 +419,7 @@ exports.seed = function(knex, Promise) {
           category_id: 88001,
           itemClass_name: 'Drinking Glasses',
           itemClass_info: "Unfortunately we can't recycle these items because they are made from a toughened glass which contains certain chemicals, it is best to donate them.",
-          itemClass_img: 'http://thesweethome.com/wp-content/uploads/sites/3/2015/11/01-widget-our-pick-drinking-glasses-6301.jpg'
+          itemClass_img: 'http://www.ikea.com/PIAimages/0334899_PE527626_S5.JPG'
         },
         {
           itemClass_id: 77061,
