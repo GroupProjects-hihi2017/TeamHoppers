@@ -58,7 +58,7 @@ exports.seed = function(knex, Promise) {
         {
           category_id: 88010,
           category_name: 'Appliances',
-          category_img: 'http://www.gorecyclenow.com/Images/services_appliances.jpg',
+          category_img: 'http://www.asapappliancedallas.com/wp-content/uploads/2016/08/arlington-appliance-repair.jpg',
           category_info: "If disposed of improperly, appliances can become environmentally harmful and poison ecosystems"
         },
         {
@@ -70,7 +70,7 @@ exports.seed = function(knex, Promise) {
         {
           category_id: 88012,
           category_name: 'Food',
-          category_img: 'http://challengeforsustainability.org/wp-content/uploads/2014/07/food-donation.jpg',
+          category_img: 'https://thumbs.dreamstime.com/b/full-grocery-cart-shopping-isolated-white-background-35581745.jpg',
           category_info: "Cut your environmental footprint by donating rather than throwing out quality surplus food"
         }
       ]);

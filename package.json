@@ -54,13 +54,14 @@
     "react-dom": "^15.5.4",
     "react-test-renderer": "^15.5.4",
     "sinon": "^2.3.5",
-    "sqlite3": "^3.1.8",
+    "sqlite3": "^3.1.13",
     "supertest": "^3.0.0",
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
+    "babel": "^6.23.0",
     "basic-authentication": "^1.9.0",
     "body-parser": "^1.15.2",
     "cors": "^2.8.3",
@@ -69,7 +70,6 @@
     "jump.js": "^1.0.2",
     "knex": "^0.13.0",
     "mailgun-js": "^0.11.2",
-    "pg": "^6.2.3",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0",
