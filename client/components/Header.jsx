@@ -12,7 +12,7 @@ const Header = () => {
           </a>
         </div>
         <Link to={'/admin'}>
-          <img className='header-img' src='http://www.koehlerdramm.com/wp-content/uploads/2016/04/happy-earth-day-2016-1024x427.jpg'/>
+          <img className='header-img' src='images/recyclehack_logo.jpg'/>
         </Link>
       </div>
     </div>
