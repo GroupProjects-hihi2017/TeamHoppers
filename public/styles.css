@@ -357,7 +357,7 @@ nav ul li a:hover {
 .downArrow {
   text-align: center;
   cursor:s-resize;
-  margin: 5vh 0vh;
+  margin: 5vh auto;
 }
 
 

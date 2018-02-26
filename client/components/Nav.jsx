@@ -7,7 +7,7 @@ class Nav extends React.Component {
 
   render () {
     return (
-      <nav className="navbar navbar-inverse">
+      <nav className="navbar navbar-inverse no-border">
         <div className='container-fluid'>
           <div className='navbar-header'>
             <button type='button' className='navbar-toggle' data-toggle='collapse' data-target='#mainNavBar'> &#9776;﻿</button>
